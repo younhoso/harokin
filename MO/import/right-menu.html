@@ -1,0 +1,44 @@
+<!--@layout(/layout/basic/main.html)-->
+<style>
+   #hamburger_content03 {background: rgba(255,255,255,.9);}
+   #hamburger_content03 .content{position: absolute;top:65px;left:0;width:100%;background:rgba(255,255,255,0.9);height: 100vh;z-index: 9999;}
+   #hamburger_content03 .content p {margin-bottom:0px;padding-left:26px;text-align:left; font-size:13px;font-family:Calibri; letter-spacing:3px;}
+    #hamburger_content03 .content a{
+   	color:#333;
+    }
+    .order_b_white {display:none;}
+</style>
+<!--
+<div class="right-menu" >
+    <div id="content_bt">
+   		<a href="#" id="hamburger03" data-action="load_side_cart">
+            <p module="Layout_orderBasketcount" class="order_b right_black">
+                <span class="count {$basket_count_display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span>
+            </p>
+        </a>
+        <a href="#" id="hamburger04" data-action="load_side_cart">
+            <p module="Layout_orderBasketcount" class="order_b_white right_white">
+                <span class="count {$basket_count_display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span>
+            </p>
+        </a>
+    </div>
+</div>-->
+<!--/*Philip Kim 추가*/-->
+<!-- 위  id='hamburger03'에  data-action="load_side_cart" 추가함 -->
+<!--/*Philip Kim 추가*/-->
+
+
+<div class="right-menu" style="top:25px; ">
+    <div id="content_bt">
+        <div module="Layout_statelogoff">
+            <p module="Layout_orderBasketcount" class="order_b" onclick="location.href='/member/login.html'">
+                <a href="/member/login.html" class="btnBasket"><span class="count {$basket_count_display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+            </p>
+        </div>
+        <div module="Layout_statelogon">
+            <p module="Layout_orderBasketcount" class="order_b" onclick="location.href='/order/basket.html'">
+                <a href="/order/basket.html" class="btnBasket"><span class="count {$basket_count_display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+            </p>
+        </div>
+    </div>
+</div>

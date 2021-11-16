@@ -1,0 +1,187 @@
+<!--@layout(/layout/basic/layout.html)-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
+<!--@css(/css/stockist.css)-->
+<style>
+    .footer {display:none;}
+    .store_list .text{
+    	padding:0 10px 20px 10px;
+        font-size:11px;
+    }
+    
+    .store_list{/*padding:0 4%;background: url(/SkinImg/new/stockist.png) top left no-repeat;    background-size: 12px;
+    background-position-x: 12px;*/    margin-bottom: 30px;}
+    .store_list .in{padding-left:0px;}
+    
+    .store_list .name{color:#000; font-family:Calibrib; font-size:13px; margin-bottom:5px;}
+
+    .store_list .address{font-size:10px; color:#000;    line-height: 22px; margin-bottom:10px;}
+	.store_list .map{}
+    .store_list .map a{    font-family: Calibrib;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: #000;
+    width: 120px;
+    display: block;
+    padding: 2px 0;}
+    
+    .white_content {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+            z-index:9;
+        background: rgba(0, 0, 0, 0.8);
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+    .white_content:target {
+        opacity:1;
+        pointer-events: auto;
+    }
+    .white_content > div {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 90%;
+        height: 100%;
+        padding: 0px;
+        border: 0px solid orange;
+        overflow: auto;	
+
+    }
+    
+   .white_content .map{position:relative;}
+	.white_content .map:before {   content: "";   display: block;   padding-bottom: 80%;}
+
+	.white_content .map iframe{width:100%; height:100%;position:absolute;    top: 0;   left: 0;}
+    .white_content .close{font-family:Calibrib; font-size:16px; text-align:right; padding-bottom:10px;}
+    .white_content .close a{color:#fff;}
+    
+    .swiper-pagination-store  {bottom:115px !important;}
+    .swiper-pagination-store .swiper-pagination-bullet{width:25px; height:3px;background:#f7f7f7;border-radius:0px;opacity: 1;margin:0 !important;}
+    .swiper-pagination-store .swiper-pagination-bullet-active{background:#000;}
+    
+    .text_box h1 {font-family:'Roboto';font-size:16px;font-weight:500;margin-bottom:10px;}
+    .text_box p {font-family:'Roboto';font-size:10px;line-height:15px;}
+</style>
+<div style="padding:0px 10px 0;">
+
+<div class="location">
+    <div class="left">
+        <ul class="tabs">
+       
+            <li>
+            	<div class="box">
+                    <div class="in">
+                        <div class="name">
+                            <a href="#tab1">AOYAMA WOMENS</a>
+                        </div>
+                        <div class="address">
+                            1F BLEU CINQ POINT A, 5-3-22 Minamiaoyama,<br>
+                            Minato-ku, Tokyo, Japan 107-0062<br>
+
+                            Tel. 03 3407 1232
+                             <a href="" class="map_btn">MAP</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<div class="box">
+                    <div class="in">
+                        <div class="name">
+                            <a href="#tab1">AOYAMA WOMENS</a>
+                        </div>
+                        <div class="address">
+                            1F BLEU CINQ POINT A, 5-3-22 Minamiaoyama,<br>
+                            Minato-ku, Tokyo, Japan 107-0062<br>
+
+                            Tel. 03 3407 1232
+                             <a href="" class="map_btn">MAP</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<div class="box">
+                    <div class="in">
+                       <div class="name">
+                            <a href="#tab1">AOYAMA WOMENS</a>
+                        </div>
+                        <div class="address">
+                            1F BLEU CINQ POINT A, 5-3-22 Minamiaoyama,<br>
+                            Minato-ku, Tokyo, Japan 107-0062<br>
+
+                            Tel. 03 3407 1232
+                             <a href="" class="map_btn">MAP</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<div class="box">
+                    <div class="in">
+                        <div class="name">
+                            <a href="#tab1">AOYAMA WOMENS</a>
+                        </div>
+                        <div class="address">
+                            1F BLEU CINQ POINT A, 5-3-22 Minamiaoyama,<br>
+                            Minato-ku, Tokyo, Japan 107-0062<br>
+
+                            Tel. 03 3407 1232
+                            <a href="" class="map_btn">MAP</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<div class="box">
+                    <div class="in">
+                        <div class="name">
+                            <a href="#tab1">AOYAMA WOMENS</a>
+                        </div>
+                        <div class="address">
+                            1F BLEU CINQ POINT A, 5-3-22 Minamiaoyama,<br>
+                            Minato-ku, Tokyo, Japan 107-0062<br>
+
+                            Tel. 03 3407 1232
+                             <a href="" class="map_btn">MAP</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+<script type="text/javascript">
+    var swiper = new Swiper('.swiper-container-store', {
+      pagination: {
+        el: '.swiper-pagination-store',
+      },
+    });
+    
+$(document).ready(function() {
+	$(".tab_content").hide(); 
+	$("ul.tabs li:first").addClass("active").show(); 
+	$(".tab_content:first").show(); 
+
+
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); 
+		$(this).addClass("active"); 
+		$(".tab_content").hide(); 
+		var activeTab = $(this).find("a").attr("href");
+		$(activeTab).fadeIn(); 
+		return false;
+	});
+
+});
+</script>

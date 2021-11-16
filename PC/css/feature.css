@@ -1,0 +1,334 @@
+.feature{max-width:1400px;margin:0 auto 200px;}
+.feature .ov_text{
+    position:absolute;    
+    bottom: -20px;
+    font-size: 14px;
+    font-family: Calibri; display:none;}
+
+.feature .box1{}
+.feature .box1:after { content:""; clear:both; display:block; }
+.feature .box1 .left{background:url(/web/img/lookbook/lookbook01.png) top center no-repeat; background-size:100%; width:47%; position:relative; cursor:pointer; margin-top: 0; float: left;}
+.feature .box1 .left:hover .ov_text{display:block;}
+.feature .box1 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 130%;
+}
+.feature .box1 .right{background:url(/web/img/lookbook/lookbook02.png) top center no-repeat; background-size:cover; width:31%; position:relative; cursor:pointer; margin-top: 10%; float: right;}
+.feature .box1 .right:hover .ov_text{display:block;}
+.feature .box1 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 130%;
+}
+
+
+.feature .box2{}
+.feature .box2:after { content:""; clear:both; display:block; }
+
+.feature .box2 .midd{background:url(/web/img/lookbook/lookbook03.png) top center no-repeat; background-size:100%; width:55%; position:relative; cursor:pointer; margin-top:10%;float:right;margin-right:10%;}
+.feature .box2 .midd:hover .ov_text{display:block;}
+.feature .box2 .midd:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+
+
+
+.feature .box3{}
+.feature .box3:after { content:""; clear:both; display:block; }
+.feature .box3 .left{background:url(/web/img/lookbook/lookbook04.png) top center no-repeat; background-size:100%; width:27%; position:relative; cursor:pointer; margin-top: 15%; float: left;}
+.feature .box3 .left:hover .ov_text{display:block;}
+.feature .box3 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 130%;
+}
+
+.feature .box3 .right{background:url(/web/img/lookbook/lookbook05.png) top center no-repeat; background-size:100%; width:35%; position:relative; cursor:pointer; margin-top: 10%; margin-right:0; float: right;}
+.feature .box3 .right:hover .ov_text{display:block;}
+.feature .box3 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 77%;
+}
+
+
+.feature .box4{}
+.feature .box4:after { content:""; clear:both; display:block; }
+
+.feature .box4 .right{background:url(/web/img/lookbook/lookbook06.png) top center no-repeat; background-size:100%; width:30%; position:relative; cursor:pointer; margin-top:-2%; float: right;margin-right:15%;}
+.feature .box4 .right:hover .ov_text{display:block;}
+.feature .box4 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 130%;
+}
+
+
+.feature .box5{margin-top: 0%;}
+.feature .box5:after { content:""; clear:both; display:block; }
+.feature .box5 .left{background:url(/web/img/lookbook/lookbook07.png) top center no-repeat; background-size:100%; width:45%; position:relative; cursor:pointer; margin-top: 10%; float: left;}
+.feature .box5 .left:hover .ov_text{display:block;}
+.feature .box5 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 77%;
+}
+
+.feature .box6{}
+.feature .box6:after { content:""; clear:both; display:block; }
+.feature .box6 .left{background:url(/web/img/lookbook/lookbook08.png) top center no-repeat; background-size:100%; width:40%; position:relative; cursor:pointer; margin-top:-2%; float: right;}
+.feature .box6 .left:hover .ov_text{display:block;}
+.feature .box6 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 77%;
+}
+
+
+.feature .box7{}
+.feature .box7:after { content:""; clear:both; display:block; }
+.feature .box7 .left{background:url(/web/img/lookbook/lookbook09.png) top center no-repeat; background-size:100%; width:30%; position:relative; cursor:pointer; margin-top:-4%; margin-left:10%; float: left;}
+.feature .box7 .left:hover .ov_text{display:block;}
+.feature .box7 .left:before {
+    content: "";
+    display: block;
+    padding-bottom:130%;
+}
+
+.feature .box8{}
+.feature .box8:after { content:""; clear:both; display:block; }
+
+.feature .box8 .right{background:url(/web/img/lookbook/lookbook10.png) top center no-repeat; background-size:100%; width:30%; position:relative; cursor:pointer; margin-top:-5%; float: right;}
+.feature .box8 .right:hover .ov_text{display:block;}
+.feature .box8 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 130%;
+}
+
+
+.feature .box9{}
+.feature .box9:after { content:""; clear:both; display:block; }
+.feature .box9 .left{background:url(/web/img/lookbook/lookbook11.png) top center no-repeat; background-size:100%; width:45%; position:relative; cursor:pointer;margin-top:-5%;float:left;}
+.feature .box9 .left:hover .ov_text{display:block;}
+.feature .box9 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 77%;
+}
+
+
+
+.feature .box10{}
+.feature .box10:after { content:""; clear:both; display:block; }
+.feature .box10 .right{background:url(/web/img/lookbook/lookbook12.png) top center no-repeat; background-size:100%; width:29%; position:relative; cursor:pointer; float:right;margin-top:5%;margin-right:10%;}
+.feature .box10 .right:hover .ov_text{display:block;}
+.feature .box10 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 130%;
+}
+
+
+
+.feature .box11{}
+.feature .box11:after { content:""; clear:both; display:block; }
+.feature .box11 .left{background:url(/web/img/lookbook/lookbook13.png) top center no-repeat; background-size:100%; width:30%; position:relative; cursor:pointer; margin-top:-15%; float: left;margin-left:10%;}
+.feature .box11 .left:hover .ov_text{display:block;}
+.feature .box11 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 130%;
+}
+
+
+
+.feature .box12{}
+.feature .box12:after { content:""; clear:both; display:block; }
+.feature .box12 .right{background:url(/web/img/lookbook/lookbook14.png) top center no-repeat; background-size:100%; width:45%; position:relative; cursor:pointer;margin-top:10%;float:right;}
+.feature .box12 .right:hover .ov_text{display:block;}
+.feature .box12 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 77%;
+}
+
+
+.feature .box13{}
+.feature .box13:after { content:""; clear:both; display:block; }
+.feature .box13 .left{background:url(/web/img/lookbook/lookbook15.png) top center no-repeat; background-size:100%; width:30%; position:relative; cursor:pointer; margin-top:-15%; float: left;}
+.feature .box13 .left:hover .ov_text{display:block;}
+.feature .box13 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 130%;
+}
+.feature .box13 .right{background:url(/web/img/magazine/feature/26.jpg) top center no-repeat; background-size:cover; width:34%; position:relative; cursor:pointer; margin-top:6%; float: right;}
+.feature .box13 .right:hover .ov_text{display:block;}
+.feature .box13 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+
+
+
+.feature .box14{}
+.feature .box14:after { content:""; clear:both; display:block; }
+.feature .box14 .left{background:url(/web/img/magazine/feature/27.jpg) top center no-repeat; background-size:cover; width:34%; position:relative; cursor:pointer; margin-top:10%; margin-left:15%; float: left;}
+.feature .box14 .left:hover .ov_text{display:block;}
+.feature .box14 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 67%;
+}
+.feature .box14 .right{background:url(/web/img/magazine/feature/28.jpg) top center no-repeat; background-size:cover; width:33.5%; position:relative; cursor:pointer; margin-top:20%; margin-right:10%; float: right;}
+.feature .box14 .right:hover .ov_text{display:block;}
+.feature .box14 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+
+.feature .box15{}
+.feature .box15:after { content:""; clear:both; display:block; }
+.feature .box15 .left{background:url(/web/img/magazine/feature/29.jpg) top center no-repeat; background-size:cover; width:53.5%; position:relative; cursor:pointer; margin-top:10%; margin-left:0%; float: left;}
+.feature .box15 .left:hover .ov_text{display:block;}
+.feature .box15 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 67%;
+}
+.feature .box15 .right{background:url(/web/img/magazine/feature/30.jpg) top center no-repeat; background-size:cover; width:41.5%; position:relative; cursor:pointer; margin-top:25%; margin-right:0%; float: right;}
+.feature .box15 .right:hover .ov_text{display:block;}
+.feature .box15 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+
+
+
+
+.feature .box16{}
+.feature .box16:after { content:""; clear:both; display:block; }
+.feature .box16 .left{background:url(/web/img/magazine/feature/31.jpg) top center no-repeat; background-size:cover; width:37%; position:relative; cursor:pointer; margin-top:15%; margin-left:2%; float: left;}
+.feature .box16 .left:hover .ov_text{display:block;}
+.feature .box16 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 67%;
+}
+.feature .box16 .right{background:url(/web/img/magazine/feature/32.jpg) top center no-repeat; background-size:cover; width:42.5%; position:relative; cursor:pointer; margin-top:25%; margin-right:0%; float: right;}
+.feature .box16 .right:hover .ov_text{display:block;}
+.feature .box16 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+
+.feature .box17{}
+.feature .box17:after { content:""; clear:both; display:block; }
+.feature .box17 .midd{background:url(/web/img/magazine/feature/33.jpg) top center no-repeat; background-size:cover; width:41.5%; position:relative; cursor:pointer; margin:10% auto 0;}
+.feature .box17 .midd:hover .ov_text{display:block;}
+.feature .box17 .midd:before {
+    content: "";
+    display: block;
+    padding-bottom: 65%;
+}
+
+
+.feature .box18{}
+.feature .box18:after { content:""; clear:both; display:block; }
+.feature .box18 .left{background:url(/web/img/magazine/feature/34.gif) top center no-repeat; background-size:cover; width:22.5%; position:relative; cursor:pointer; margin-top:-8%; margin-left:0%; float: left;}
+.feature .box18 .left:hover .ov_text{display:block;}
+.feature .box18 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 178%;
+}
+.feature .box18 .right{background:url(/web/img/magazine/feature/35.jpg) top center no-repeat; background-size:cover; width:32%; position:relative; cursor:pointer; margin-top:10%; margin-right:0%; float: right;}
+.feature .box18 .right:hover .ov_text{display:block;}
+.feature .box18 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+
+.feature .box19{}
+.feature .box19:after { content:""; clear:both; display:block; }
+.feature .box19 .midd{background:url(/web/img/magazine/feature/36.jpg) top center no-repeat; background-size:cover; width:39.5%; position:relative; cursor:pointer; margin:4% auto 0;}
+.feature .box19 .midd:hover .ov_text{display:block;}
+.feature .box19 .midd:before {
+    content: "";
+    display: block;
+    padding-bottom: 65%;
+}
+
+
+.feature .box20{}
+.feature .box20:after { content:""; clear:both; display:block; }
+.feature .box20 .left{background:url(/web/img/magazine/feature/37.jpg) top center no-repeat; background-size:cover; width:34.5%; position:relative; cursor:pointer; margin-top:10%; margin-left:0%; float: left;}
+.feature .box20 .left:hover .ov_text{display:block;}
+.feature .box20 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 150%;
+}
+.feature .box20 .right{background:url(/web/img/magazine/feature/38.jpg) top center no-repeat; background-size:cover; width:59%; position:relative; cursor:pointer; margin-top:22.8%; margin-right:0%; float: right;}
+.feature .box20 .right:hover .ov_text{display:block;}
+.feature .box20 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+.feature .box21{}
+.feature .box21:after { content:""; clear:both; display:block; }
+.feature .box21 .left{background:url(/web/img/magazine/feature/40.jpg) top center no-repeat; background-size:cover; width:27%; position:relative; cursor:pointer; margin-top: 12%; float: left;}
+.feature .box21 .left:hover .ov_text{display:block;}
+.feature .box21 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+.feature .box21 .right{background:url(/web/img/magazine/feature/41_A.jpg) top center no-repeat; background-size:cover; width:27%; position:relative; cursor:pointer; margin-top:0%; margin-right:0%; float: right;}
+.feature .box21 .right:hover .ov_text{display:block;}
+.feature .box21 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 125%;
+}
+.feature .box21{}
+.feature .box21:after { content:""; clear:both; display:block; }
+.feature .box21 .midd{background:url(/web/img/magazine/feature/42.jpg) top center no-repeat; background-size:cover; width:27%; position:relative; cursor:pointer; margin:4% auto 0;}
+.feature .box21 .midd:hover .ov_text{display:block;}
+.feature .box21 .midd:before {
+    content: "";
+    display: block;
+    padding-bottom: 65%;
+}
+.feature .box26{}
+.feature .box26:after { content:""; clear:both; display:block; }
+.feature .box26 .left{background:url(/web/img/magazine/feature/43.jpg) top center no-repeat; background-size:cover; width:40%; position:relative; cursor:pointer; margin-top: 4%; float: left;}
+.feature .box26 .left:hover .ov_text{display:block;}
+.feature .box26 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+.feature .box26{}
+.feature .box26:after { content:""; clear:both; display:block; }
+.feature .box26 .midd{background:url(/web/img/magazine/feature/44.jpg) top center no-repeat; background-size:cover; width:39.5%; position:relative; cursor:pointer; margin:4% auto 0;}
+.feature .box26 .midd:hover .ov_text{display:block;}
+.feature .box26 .midd:before {
+    content: "";
+    display: block;
+    padding-bottom: 65%;
+}

@@ -1,0 +1,251 @@
+<style>
+    .left-menu {position: absolute;left: 25px;top:-7px;}
+    #hamburger01 {
+    width: 30px;
+    height: 30px;
+    position:relative;z-index:99;display:block;   
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    
+    #hamburger01.change { 
+     position:fixed;
+     z-index:1100;
+     left:25px;
+     top:37px;
+    }
+    
+    #hamburger01 .bar {
+        position: absolute;
+        display: inline-block;
+        width: 24px;
+        height: 2px;
+        background: #000;
+        left: 0;
+        top: 0;
+        -webkit-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+    }
+	#hamburger01 .bar:nth-child(2) {top:6px;}
+    #hamburger01 .bar:nth-child(3) {top:12px;}
+    #hamburger01.change .bar{
+        left: 0px!important;
+        top: 6px;
+        -webkit-transform: translateY(0px) rotate(45deg);
+        -ms-transform: translateY(0px) rotate(45deg);transform: translateY(0px) rotate(45deg);
+        }
+	#hamburger01.change .bar:nth-child(2) {
+        display:none;
+        right: 6px!important;
+        top: 0px;
+        -webkit-transform: translateY(0px) rotate(-45deg);
+        -ms-transform: translateY(0px) rotate(-45deg);transform: translateY(0px) rotate(-45deg);
+    }
+    
+    #hamburger01.change .bar:nth-child(3) {
+        
+        right: 6px!important;
+        top: 6px;
+        -webkit-transform: translateY(0px) rotate(-45deg);
+        -ms-transform: translateY(0px) rotate(-45deg);transform: translateY(0px) rotate(-45deg);
+    }
+   #hamburger_content01 {background: rgba(255,255,255,.9);}
+    .side_left{position:fixed;top:0px;left:0;box-sizing:border-box;margin-left:-285px;width:285px;height:550px;z-index:1000;background:rgba(255,255,255,0.95);transition:margin-left ease 0.3s;overflow-y:auto;}
+	.side_left.active{margin-left:0;}
+   #hamburger_content01 .content{position: absolute;top:65px;left:0;width:100%;background:rgba(255,255,255,0.9);height: 100vh;z-index: 9999;}
+   #hamburger_content01 .content p {margin-bottom:0px;padding-left:26px;text-align:left; font-size:13px;font-family:Calibri; letter-spacing:3px;}
+    #hamburger_content01 .content a{
+   	color:#333;
+    }
+    
+    .side_pro{
+    text-align:left;
+    padding-left:25px;
+    padding-top:25px;
+}
+    .side_pro .close{float:left; font-family: adlinnaka; font-size:12px;}
+
+    
+    .side_pro .box4{margin-top:100px;}
+    .side_pro .box4 li{ }
+    
+.side_left .left_bt{border-top:1px solid #000;    position: absolute;    width: 100%;
+    bottom: 0;}
+.side_left .left_bt li{float:left; width:49.58%; text-align:center; font-size:16px; font-family:Calibri; height:38px; line-height:38px;  }
+.side_left .left_bt li:first-child{border-right:1px solid #000;}
+.side_left .left_bt:after { content:""; clear:both; display:block; }
+    
+.side_left .left_info{ position: absolute;    width: 90%; bottom: 20px; left:15px; text-align:left;}
+.side_left .left_info a{color:#999; font-family:Roboto_r;font-size: 11px;line-height: 24px;}
+    
+.side_left .left_login li{vertical-align:middle;font-size: 16px;font-family:'Roboto';font-weight:bold;line-height:25px;}
+.side_left .left_login li:after{content:''; display:inline-block;    margin: 0 5px;}
+.side_left .left_login li:last-child:after{content:none;}
+ 
+    .left_white {display:none;}
+
+.menu_new{font-family:'Roboto'; font-size:13px;}
+.menu_new  .accordion-toggle {cursor: pointer;}
+.menu_new .accordion-content {display: none;}
+.menu_new .accordion-content.default {display: block;}
+.menu_new .accordion-content p{padding: 0 0 0 15px; line-height: 20px;}
+.menu_new .accordion-content p a{font-size:12px; color:#999;}
+    
+.menu_new .ac_title{margin:6px 0;letter-spacing: 1px;}
+
+.menu_new .active{/*color:black;*/}
+.menu_new .accordion-toggle:after{
+  content:"+";
+  width:10px;
+  display:inline-block;
+  text-align:center;
+}
+.menu_new .active:after{
+  content:"-";
+  width:10px;
+  display:inline-block;
+  text-align:center;  
+}
+</style>
+<div class="left-menu">
+    <div id="content_bt">
+        <a href="#" id="hamburger01">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </a>
+    </div>
+</div>
+<div class="left-menu"></div>
+<div class="side_left" id="side_left">
+      <div class="content">
+            <div class="side_pro">
+                <!--a href="#" id="left_close" class="close"><img src="/SkinImg/new/left_close.png" style="height:18px;"></a-->
+                
+                <div class="box4" style="position: relative;">
+                    <div class="menu_new">
+                        <div id="accordion">
+                            <div class="accordion-toggle ac_title">SHOP</div>
+                              <div class="accordion-content">
+                                <p>
+                                	<a href="/product/list.html?cate_no=29">All</a><br/>
+                                    <a href="/product/list.html?cate_no=30">Top</a><br/>
+                                    <a href="/product/list.html?cate_no=31">Bottom</a><br/>
+                                    <a href="/product/list.html?cate_no=42">Acc</a>
+                                </p>
+                              </div>
+                            <div class="ac_title"><a href="/page/philosophy.html">PHILOSOPHY</a></div>
+                              <div class="accordion-toggle ac_title">ARCHIVE</div>
+                              <div class="accordion-content">
+                                <p>
+                                	<a href="/page/archive1.html" style="color:red;">HAROKIN x VOGUE Korea Donation program</a><br/>
+                                    <a href="/page/archive2.html">2021 1st HAROKIN Collection </a>
+                                </p>
+                              </div>
+                              <div class="ac_title"><a href="/page/stockist.html">STOCKIST</a></div>
+                            <!--<div class="accordion-toggle ac_title">STOCKIST</div>
+                              <div class="accordion-content">
+                                <p>
+                                	<a href="#none" target="_blank">29cm</a><br/>
+                                    <a href="#none" target="_blank">Casestudy</a>
+                                </p>
+                              </div>-->
+                            
+                       </div>
+                    </div>
+                </div>
+                
+            </div>
+      </div>
+    <div class="left_bt" style="display:none;">
+        <ul>
+            <li module="Layout_stateLogoff">
+                <a href="/member/login.html">ACCOUNT</a>
+            </li>
+            <li module="Layout_stateLogoff">
+                <a href="/member/login.html">LOG IN</a>
+            </li>
+            <li module="Layout_stateLogon">
+                <a href="/myshop/index.html">ACCOUNT</a>
+            </li>
+            <li module="Layout_stateLogon">
+                <a href="{$action_logout}">LOG OUT</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+ 	//$("#hamburger01").click(function () {
+    //    $("#hamburger_content01").toggle("slow"); 
+    //});
+    //$("#hamburger02").click(function () {
+    //    $("#hamburger_content01").toggle("close"); 
+   // });
+    $(function (){
+        $(".menu01_open").click(function (){
+            $(".menu_hover").css('display','inline-block');
+        });
+    });
+ $(document).ready(function(){
+        $("#hamburger01").click(function(){
+            var ham = $('#hamburger01');
+            $side_left=$("#side_left");
+            $body=$("body");
+
+            if($side_left.hasClass("active")){
+                ham.removeClass('change');
+                $side_left.removeClass("active");
+                $body.removeClass("fixed");
+                //$("html,body").scrollTop(0);
+            } else{
+                ham.addClass('change');
+                $side_left.addClass("active");
+                $body.addClass("fixed");
+                $("html,body").scrollTop(0);
+            }
+
+
+        });
+        
+
+        $("#left_close").click(function(){
+            $side_left=$("#side_left");
+            $body=$("body");
+
+            $side_left.removeClass("active");
+            $body.removeClass("fixed");
+        });
+        $(".close_btn").click(function(){
+            $side_left=$("#side_left");
+            $body=$("body");
+
+            $side_left.removeClass("active");
+            $body.removeClass("fixed");
+        });
+    });
+    
+</script>
+<script>
+	$(document).ready(function($) {
+    $('#accordion').find('.accordion-toggle').click(function(){
+// modified from union deisgn+code at http://uniondesign.ca/simple-accordion-without-jquery-ui/
+      // mc 4/2/2015
+      //Expand or collapse this panel
+      var isActive = $(this).hasClass("active");
+			$('.accordion-toggle').removeClass('active')
+      if (!isActive) {
+        $(this).toggleClass('active');
+      }
+         
+      $(this).next().slideToggle('fast');     
+      //Hide the other panels
+      $(".accordion-content").not($(this).next()).slideUp('fast');
+
+    });
+  });
+</script>

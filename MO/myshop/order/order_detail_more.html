@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes">
+    <title></title>
+    <!--@css(/css/common.css)-->
+    <!--@css(/css/custom.css)-->
+    <!--@js(/js/ui.js)-->
+</head>
+<body>
+    <div id="contents" class="gMargin" module="MyShop_OrderHistoryDetail" unroll="1">
+        <div class="mTitle">
+            <h2>주문상품 정보</h2>
+        </div>
+
+        <div class="mResult">
+            <div class="mBoard colType1 {$basic_display|display}">
+                <table border="1" summary="">
+                <caption></caption>
+                <colgroup>
+                    <col style="width:auto;">
+                    <col style="width:5%">
+                    <col style="width:10%">
+                    <col style="width:10%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">상품명</th>
+                        <th scope="col">수량</th>
+                        <th scope="col">판매가<br>(적립예정)</th>
+                        <th scope="col">처리상태</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><strong class="txtTitle">[기본배송]</strong> 상품 구매 금액 {$basic.product_price} + 배송비 {$basic.ship_fee} + 특수지역배송비  {$basic.special_ship_fee} = <strong class="txtEm">합계 {$basic.total_price}</strong></td>
+                    </tr>
+                </tfoot>
+                <tbody module="Myshop_OrderHistoryDetailBasic">
+                    <tr>
+                        <td class="product">
+                            <p>{$name}</p>
+                            {$opt_str}
+                            {$option_add}
+                            <span class="{$opt_price_display|display}">({$opt_price}{$price_unit_tail})</span>
+                            <a href="/board/product/write.html{$param_postscript}" class="tButton type2"><span>구매후기</span></a>
+                        </td>
+                        <td class="quantity">{$quantity}</td>
+                        <td class="price">{$price}<br>({$mileage})</td>
+                        <td class="state">{$state}</td>
+                    </tr>
+                    <tr>
+                        <td class="product">
+                            <p>{$name}</p>
+                            {$opt_str}
+                            {$option_add}
+                            <span class="{$opt_price_display|display}">({$opt_price}{$price_unit_tail})</span>
+                            <a href="/board/product/write.html{$param_postscript}" class="tButton type2"><span>구매후기</span></a>
+                        </td>
+                        <td class="quantity">{$quantity}</td>
+                        <td class="price">{$price}<br>({$mileage})</td>
+                        <td class="state">{$state}</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <div class="mBoard colType1 {$individual_display|display}">
+                <table border="1" summary="">
+                <caption></caption>
+                <colgroup>
+                    <col style="width:auto;">
+                    <col style="width:5%">
+                    <col style="width:10%">
+                    <col style="width:10%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">상품명</th>
+                        <th scope="col">수량</th>
+                        <th scope="col">판매가<br>(적립예정)</th>
+                        <th scope="col">처리상태</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr class="{$individual_display|display}">
+                        <td colspan="4"><strong class="txtTitle">[개별배송]</strong> 상품 구매 금액 {$individual.product_price} + 배송비 {$individual.ship_fee} + 특수지역배송비  {$individual.special_ship_fee} = <strong class="txtEm">합계 {$individual.total_price}</strong></td>
+                    </tr>
+                </tfoot>
+                <tbody module="Myshop_OrderHistoryDetailIndividual">
+                    <tr>
+                        <td class="product">
+                            <p>{$name}</p>
+                            {$opt_str}
+                            {$option_add}
+                            <span class="{$opt_price_display|display}">({$opt_price}{$price_unit_tail})</span>
+                            <a href="/board/product/write.html{$param_postscript}" class="tButton type2"><span>구매후기</span></a>
+                        </td>
+                        <td class="quantity">{$quantity}</td>
+                        <td class="price">{$price}<br>({$mileage})</td>
+                        <td class="state">{$state}</td>
+                    </tr>
+                    <tr>
+                        <td class="product">
+                            <p>{$name}</p>
+                            {$opt_str}
+                            {$option_add}
+                            <span class="{$opt_price_display|display}">({$opt_price}{$price_unit_tail})</span>
+                            <a href="/board/product/write.html{$param_postscript}" class="tButton type2"><span>구매후기</span></a>
+                        </td>
+                        <td class="quantity">{$quantity}</td>
+                        <td class="price">{$price}<br>({$mileage})</td>
+                        <td class="state">{$state}</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <div class="mBoard colType1 {$gift_display|display}">
+                <table border="1" summary="">
+                <caption></caption>
+                <colgroup>
+                    <col style="width:auto;">
+                    <col style="width:5%">
+                    <col style="width:10%">
+                    <col style="width:10%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">상품명</th>
+                        <th scope="col">수량</th>
+                        <th scope="col">판매가<br>(적립예정)</th>
+                        <th scope="col">처리상태</th>
+                    </tr>
+                </thead>
+                <tbody module="Myshop_OrderHistoryDetailGift">
+                    <tr>
+                        <td class="product">
+                            <p>{$name}</p>
+                            {$opt_str}
+                            {$option_add}
+                            <span class="{$opt_price_display|display}">({$opt_price}{$price_unit_tail})</span>
+                        </td>
+                        <td class="quantity">{$quantity}</td>
+                        <td class="price"></td>
+                        <td class="state">{$state}</td>
+                    </tr>
+                    <tr>
+                        <td class="product">
+                            <p>{$name}</p>
+                            {$opt_str}
+                            {$option_add}
+                            <span class="{$opt_price_display|display}">({$opt_price}{$price_unit_tail})</span>
+                        </td>
+                        <td class="quantity">{$quantity}</td>
+                        <td class="price"></td>
+                        <td class="state">{$state}</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <div class="gTotalPrice">
+                <p>상품구매금액 {$total.product_price} + 배송비 {$total.ship_fee} = <strong class="txtEm">총 주문합계 : {$total.total_price}</strong></p>
+            </div>
+
+            <div class="mButton">
+                <p>
+                    <a href="#none" class="tSubmit1" onclick="javascrit:self.close();"><span>닫기</span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,453 @@
+.styling{padding: 12% 48px 12% 48px;}
+.styling .ov_text{
+    position:absolute;    
+    bottom: -24px;
+    font-size: 14px;
+    font-family: Calibri; display:none;}
+
+.styling .box1{}
+.styling .box1:after { content:""; clear:both; display:block; }
+.styling .box1 .left{background:url(/web/img/magazine/styling/01.jpg) top center no-repeat; background-size:cover; width:33%; position:relative; cursor:pointer; margin-top: 4%; float: left;}
+.styling .box1 .left:hover .ov_text{display:block;}
+.styling .box1 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+.styling .box1 .midd{background:url(/web/img/magazine/styling/02.jpg) top center no-repeat; background-size:cover; width:39%; position:relative; cursor:pointer; float:left;    margin-left: 2%;    margin-top: 7%;}
+.styling .box1 .midd:hover .ov_text{display:block;}
+.styling .box1 .midd:before {
+    content: "";
+    display: block;
+    padding-bottom: 54%;
+}
+.styling .box1 .right{background:url(/web/img/magazine/styling/03.jpg) top center no-repeat; background-size:cover; width:24%; position:relative; cursor:pointer; margin-top: 0%; float: right;}
+.styling .box1 .right:hover .ov_text{display:block;}
+.styling .box1 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+.styling .box2{}
+.styling .box2:after { content:""; clear:both; display:block; }
+.styling .box2 .left{background:url(/web/img/magazine/styling/04.jpg) top center no-repeat; background-size:cover; width:32%; position:relative; cursor:pointer; margin-top: 10%; margin-left:2%; float: left;}
+.styling .box2 .left:hover .ov_text{display:block;}
+.styling .box2 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+
+.styling .box2 .right{background:url(/web/img/magazine/styling/05.jpg) top center no-repeat; background-size:cover; width:44.5%; position:relative; cursor:pointer; margin-top: 16%; float: right;}
+.styling .box2 .right:hover .ov_text{display:block;}
+.styling .box2 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+
+
+.styling .box3{}
+.styling .box3:after { content:""; clear:both; display:block; }
+.styling .box3 .left{background:url(/web/img/magazine/styling/06.jpg) top center no-repeat; background-size:cover; width:36.5%; position:relative; cursor:pointer; margin-top: -2%; margin-left:10%; float: left;}
+.styling .box3 .left:hover .ov_text{display:block;}
+.styling .box3 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+
+.styling .box4{}
+.styling .box4:after { content:""; clear:both; display:block; }
+
+.styling .box4 .right{background:url(/web/img/magazine/styling/07.jpg) top center no-repeat; background-size:cover; width:52.5%; position:relative; cursor:pointer; margin-top: 6%; float: right;}
+.styling .box4 .right:hover .ov_text{display:block;}
+.styling .box4 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+
+
+.styling .box5{}
+.styling .box5:after { content:""; clear:both; display:block; }
+.styling .box5 .left{background:url(/web/img/magazine/styling/08.jpg) top center no-repeat; background-size:cover; width:57.5%; position:relative; cursor:pointer; margin-top: 6%; margin-left:3%; float: left;}
+.styling .box5 .left:hover .ov_text{display:block;}
+.styling .box5 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+
+
+
+
+.styling .box6{}
+.styling .box6:after { content:""; clear:both; display:block; }
+
+.styling .box6 .right{background:url(/web/img/magazine/styling/09.jpg) top center no-repeat; background-size:cover; width:48.5%; position:relative; cursor:pointer; margin-top: 10%; float: right;}
+.styling .box6 .right:hover .ov_text{display:block;}
+.styling .box6 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 55%;
+}
+
+
+.styling .box7{}
+.styling .box7:after { content:""; clear:both; display:block; }
+.styling .box7 .left{background:url(/web/img/magazine/styling/10.jpg) top center no-repeat; background-size:cover; width:48.5%; position:relative; cursor:pointer; margin-top: -8%; margin-left:0%; float: left;}
+.styling .box7 .left:hover .ov_text{display:block;}
+.styling .box7 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 55%;
+}
+
+
+
+.styling .box8{}
+.styling .box8:after { content:""; clear:both; display:block; }
+
+.styling .box8 .right{background:url(/web/img/magazine/styling/11.jpg) top center no-repeat; background-size:cover; width:39.5%; position:relative; cursor:pointer; margin-top:-8%; margin-right:5%; float: right;}
+.styling .box8 .right:hover .ov_text{display:block;}
+.styling .box8 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+
+
+.styling .box9{}
+.styling .box9:after { content:""; clear:both; display:block; }
+.styling .box9 .left{background:url(/web/img/magazine/styling/12.jpg) top center no-repeat; background-size:cover; width:31%; position:relative; cursor:pointer; margin-top: 10%; float: left;}
+.styling .box9 .left:hover .ov_text{display:block;}
+.styling .box9 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 74%;
+}
+.styling .box9 .midd{background:url(/web/img/magazine/styling/13.jpg) top center no-repeat; background-size:cover; width:31%; position:relative; cursor:pointer; margin:8% auto 0;}
+.styling .box9 .midd:hover .ov_text{display:block;}
+.styling .box9 .midd:before {
+    content: "";
+    display: block;
+    padding-bottom: 74%;
+}
+.styling .box9 .right{background:url(/web/img/magazine/styling/14.jpg) top center no-repeat; background-size:cover; width:31%; position:relative; cursor:pointer; margin-top:-9%; float: right;}
+.styling .box9 .right:hover .ov_text{display:block;}
+.styling .box9 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 74%;
+}
+
+
+.styling .box10{}
+.styling .box10:after { content:""; clear:both; display:block; }
+.styling .box10 .left{background:url(/web/img/magazine/styling/15.jpg) top center no-repeat; background-size:cover; width:50%; position:relative; cursor:pointer; margin-top: 10%; margin-left:0%; float: left;}
+.styling .box10 .left:hover .ov_text{display:block;}
+.styling .box10 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+.styling .box10 .right{background:url(/web/img/magazine/styling/16.jpg) top center no-repeat; background-size:cover; width:40.5%; position:relative; cursor:pointer; margin-top: 12%; float: right;}
+.styling .box10 .right:hover .ov_text{display:block;}
+.styling .box10 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+
+.styling .box11{}
+.styling .box11:after { content:""; clear:both; display:block; }
+.styling .box11 .left{background:url(/web/img/magazine/styling/19.jpg) top center no-repeat; background-size:cover; width:26.5%; position:relative; cursor:pointer; margin-top: 10%; float: left;}
+.styling .box11 .left:hover .ov_text{display:block;}
+.styling .box11 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+.styling .box11 .midd{background:url(/web/img/magazine/styling/18.jpg) top center no-repeat; background-size:cover; width:31%; position:relative; cursor:pointer; margin:18% auto 0;}
+.styling .box11 .midd:hover .ov_text{display:block;}
+.styling .box11 .midd:before {
+    content: "";
+    display: block;
+    padding-bottom: 67%;
+}
+.styling .box11 .right{background:url(/web/img/magazine/styling/17.jpg) top center no-repeat; background-size:cover; width:31%; position:relative; cursor:pointer; margin-top:-32%; float: right;}
+.styling .box11 .right:hover .ov_text{display:block;}
+.styling .box11 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+
+
+
+.styling .box12{}
+.styling .box12:after { content:""; clear:both; display:block; }
+.styling .box12 .left{background:url(/web/img/magazine/styling/20.jpg) top center no-repeat; background-size:cover; width:50%; position:relative; cursor:pointer; margin-top: 10%; margin-left:0%; float: left;}
+.styling .box12 .left:hover .ov_text{display:block;}
+.styling .box12 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 68%;
+}
+
+.styling .box12 .right{background:url(/web/img/magazine/styling/21.jpg) top center no-repeat; background-size:cover; width:40.5%; position:relative; cursor:pointer; margin-top: 14%; float: right;}
+.styling .box12 .right:hover .ov_text{display:block;}
+.styling .box12 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+
+
+
+
+.styling .box13{}
+.styling .box13:after { content:""; clear:both; display:block; }
+.styling .box13 .left{background:url(/web/img/magazine/styling/23.jpg) top center no-repeat; background-size:cover; width:38%; position:relative; cursor:pointer; margin-top: 18%; margin-left:3%; float: left;}
+.styling .box13 .left:hover .ov_text{display:block;}
+.styling .box13 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 68%;
+}
+
+.styling .box13 .right{background:url(/web/img/magazine/styling/22.jpg) top center no-repeat; background-size:cover; width:35.5%; position:relative; cursor:pointer; margin-top: 14%; margin-right:2%; float: right;}
+.styling .box13 .right:hover .ov_text{display:block;}
+.styling .box13 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+
+
+
+.styling .box14{}
+.styling .box14:after { content:""; clear:both; display:block; }
+.styling .box14 .right{background:url(/web/img/magazine/styling/24.jpg) top center no-repeat; background-size:cover; width:29.5%; position:relative; cursor:pointer; margin-top: 10%; margin-right:25%; float: right;}
+.styling .box14 .right:hover .ov_text{display:block;}
+.styling .box14 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+
+
+
+
+.styling .box15{}
+.styling .box15:after { content:""; clear:both; display:block; }
+.styling .box15 .left{background:url(/web/img/magazine/styling/25.jpg) top center no-repeat; background-size:cover; width:31%; position:relative; cursor:pointer; margin-top: -7%; margin-left:6%; float: left;}
+.styling .box15 .left:hover .ov_text{display:block;}
+.styling .box15 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 148%;
+}
+
+.styling .box15 .right{background:url(/web/img/magazine/styling/26.jpg) top center no-repeat; background-size:cover; width:37.5%; position:relative; cursor:pointer; margin-top: 7%; margin-right:2%; float: right;}
+.styling .box15 .right:hover .ov_text{display:block;}
+.styling .box15 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 66%;
+}
+
+
+
+
+.styling .box16{}
+.styling .box16:after { content:""; clear:both; display:block; }
+.styling .box16 .left{background:url(/web/img/magazine/styling/28.jpg) top center no-repeat; background-size:cover; width:38%; position:relative; cursor:pointer; margin-top:18%; margin-left:6%; float: left;}
+.styling .box16 .left:hover .ov_text{display:block;}
+.styling .box16 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+.styling .box16 .right{background:url(/web/img/magazine/styling/27.jpg) top center no-repeat; background-size:cover; width:37.5%; position:relative; cursor:pointer; margin-top: 7%; margin-right:12%; float: right;}
+.styling .box16 .right:hover .ov_text{display:block;}
+.styling .box16 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 57%;
+}
+
+
+
+
+
+.styling .box17{}
+.styling .box17:after { content:""; clear:both; display:block; }
+.styling .box17 .left{background:url(/web/img/magazine/styling/30.jpg) top center no-repeat; background-size:cover; width:26.5%; position:relative; cursor:pointer; margin-top:18%; margin-left:22%; float: left;}
+.styling .box17 .left:hover .ov_text{display:block;}
+.styling .box17 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+.styling .box17 .right{background:url(/web/img/magazine/styling/29.jpg) top center no-repeat; background-size:cover; width:44.5%; position:relative; cursor:pointer; margin-top: 0%; margin-right:1%; float: right;}
+.styling .box17 .right:hover .ov_text{display:block;}
+.styling .box17 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 57%;
+}
+
+
+
+.styling .box18{}
+.styling .box18:after { content:""; clear:both; display:block; }
+.styling .box18 .left{background:url(/web/img/magazine/styling/31.jpg) top center no-repeat; background-size:cover; width:31%; position:relative;cursor:pointer; margin-top:2%; margin-left:0%; float: left;}
+.styling .box18 .left:hover .ov_text{display:block;}
+.styling .box18 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+
+
+
+
+.styling .box19{}
+.styling .box19:after { content:""; clear:both; display:block; }
+.styling .box19 .left{background:url(/web/img/magazine/styling/32.jpg) top center no-repeat; background-size:cover; width:27.5%; position:relative; cursor:pointer; margin-top:2%; margin-left:0%; float: left;}
+.styling .box19 .left:hover .ov_text{display:block;}
+.styling .box19 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+.styling .box19 .right{background:url(/web/img/magazine/styling/33.jpg) top center no-repeat; background-size:cover; width:27.5%; position:relative; cursor:pointer; margin-top:-2%; margin-right:0%; float: right;}
+.styling .box19 .right:hover .ov_text{display:block;}
+.styling .box19 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 57%;
+}
+
+
+
+.styling .box20{}
+.styling .box20:after { content:""; clear:both; display:block; }
+.styling .box20 .left{background:url(/web/img/magazine/styling/34.jpg) top center no-repeat; background-size:cover; width:27%; position:relative; cursor:pointer; margin:6% auto 0;}
+.styling .box20 .left:hover .ov_text{display:block;}
+.styling .box20 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+
+
+.styling .box21{}
+.styling .box21:after { content:""; clear:both; display:block; }
+.styling .box21 .left{background:url(/web/img/magazine/styling/35.jpg) top center no-repeat; background-size:cover; width:35.5%; position:relative; cursor:pointer; margin-top:6%; margin-left:0%; float: left;}
+.styling .box21 .left:hover .ov_text{display:block;}
+.styling .box21 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+.styling .box21 .right{background:url(/web/img/magazine/styling/36.jpg) top center no-repeat; background-size:cover; width:33.5%; position:relative; cursor:pointer; margin-top:6%; margin-right:2%; float: right;}
+.styling .box21 .right:hover .ov_text{display:block;}
+.styling .box21 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 57%;
+}
+
+
+
+
+.styling .box22{}
+.styling .box22:after { content:""; clear:both; display:block; }
+.styling .box22 .left{background:url(/web/img/magazine/styling/37.jpg) top center no-repeat; background-size:cover; width:34%; position:relative; cursor:pointer; margin:6% auto 0;}
+.styling .box22 .left:hover .ov_text{display:block;}
+.styling .box22 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+
+
+.styling .box23{}
+.styling .box23:after { content:""; clear:both; display:block; }
+.styling .box23 .left{background:url(/web/img/magazine/styling/38.jpg) top center no-repeat; background-size:cover; width:32.5%; position:relative; cursor:pointer; margin-top:6%; margin-left:0%; float: left;}
+.styling .box23 .left:hover .ov_text{display:block;}
+.styling .box23 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+.styling .box23 .right{background:url(/web/img/magazine/styling/39.jpg) top center no-repeat; background-size:cover; width:45.5%; position:relative; cursor:pointer; margin-top:13%; margin-right:7%; float: right;}
+.styling .box23 .right:hover .ov_text{display:block;}
+.styling .box23 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 57%;
+}
+
+
+
+
+.styling .box24{}
+.styling .box24:after { content:""; clear:both; display:block; }
+.styling .box24 .left{background:url(/web/img/magazine/styling/40.jpg) top center no-repeat; background-size:cover; width:42.5%; position:relative; cursor:pointer; margin-top:0%; margin-left:0%; float: left;}
+.styling .box24 .left:hover .ov_text{display:block;}
+.styling .box24 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+.styling .box24 .right{background:url(/web/img/magazine/styling/41.jpg) top center no-repeat; background-size:cover; width:39.5%; position:relative; cursor:pointer; margin-top:13%; margin-right:0%; float: right;}
+.styling .box24 .right:hover .ov_text{display:block;}
+.styling .box24 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 57%;
+}
+
+
+
+
+.styling .box25{}
+.styling .box25:after { content:""; clear:both; display:block; }
+.styling .box25 .left{background:url(/web/img/magazine/styling/42.jpg) top center no-repeat; background-size:cover; width:42.5%; position:relative; cursor:pointer; margin-top:3%; margin-left:7%; float: left;}
+.styling .box25 .left:hover .ov_text{display:block;}
+.styling .box25 .left:before {
+    content: "";
+    display: block;
+    padding-bottom: 56%;
+}
+
+.styling .box25 .right{background:url(/web/img/magazine/styling/43.jpg) top center no-repeat; background-size:cover; width:37.5%; position:relative; cursor:pointer; margin-top:32%; margin-right:5%; float: right;}
+.styling .box25 .right:hover .ov_text{display:block;}
+.styling .box25 .right:before {
+    content: "";
+    display: block;
+    padding-bottom: 57%;
+}
+
+/*네이버 페이 버튼 스타일 ST*/
+.npay_btn_link.btn_green {border-color: #003ec7 !important; background-color: #003ec7 !important;}
+/*네이버 페이 버튼 스타일 ED*/

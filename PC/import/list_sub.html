@@ -1,0 +1,21 @@
+<style>
+    .list_menu{transition:all ease 0.3s;    padding-left: 8px; }
+	.menuCategory .active{display:block;}
+ 
+</style>
+
+<div class="list_menu" style="display:none;">
+    <a href="#" class="list_menu_bt"  id="list_menu"><img src="/SkinImg/img/list_menu.png" style="height:50px;"></a>
+</div>
+<script>
+    $("#list_menu").click(function(){
+        $menu_cate=$("#menu_cate");
+
+        if($menu_cate.is(":visible")){
+            $menu_cate.hide();
+        } else{
+            $menu_cate.show();
+        }
+    });
+
+</script>

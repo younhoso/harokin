@@ -1,0 +1,77 @@
+.top_menu{
+    /*position:relative;
+    top:100px;
+    left:50%;
+    margin-left:-516px;*/
+        position: absolute;
+    left: 465px;
+    top: 28px;
+}
+
+.top_menu ul{list-style:none; margin:0px; padding:0px;}
+.top_menu .one{float:left; }/* 전체 메뉴를 float 시킴 */
+.top_menu .one > li{float:left; height:40px;}   /*1단 메뉴를 일렬로 늘어놓기 */
+.top_menu .one ul{display:none;position:absolute;left:90px; top: 57px; width:100%; background:rgba(0,0,0,0.5); z-index:999;}  /*2단 메뉴를 숨기고, 절대 위치 */
+.top_menu .one li:hover > ul {display:block;}  /*1단 메뉴에 마우스 오버했을 때 2단 메뉴 드러내가 */
+ 
+.top_menu ul li a{text-decoration:none; height: 60px;line-height: 30px;text-align:left; color:#333;letter-spacing: 3px; font-size:16px;} 
+.top_menu ul li {margin-right:105px; font-family:Roboto; font-weight:300; position:relative;}  
+/* .top_menu ul li a:hover{ border-bottom:2px solid #000;} */
+
+/*
+.top_menu ul li:hover a{color:#f83938 !important;}
+.top_menu ul li:hover:after{    content: "";
+    width: 20px;
+    background-color: #f83938;
+    border-radius:500%;
+    height: 20px;
+    margin-left: -1px;
+    display: inline-block;
+    position:absolute;
+	top:5px;
+    left:20px;
+}*/
+
+.top_menu td{
+    content:"l";
+}
+.overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+      overflow-y: hidden;
+      transition: 0.5s;
+  }
+
+  .overlay-content {
+      position: relative;
+      top: 221px;
+      width: 100%;
+      height:300px;
+      margin:0 auto;
+      text-align: center;
+      margin-top: 30px;
+  }
+    .overlay-content div {}
+  .overlay a {
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+      text-decoration: none;
+  }

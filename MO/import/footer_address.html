@@ -1,0 +1,71 @@
+<div class="accordion2">
+
+  <div class="item">
+    <div class="heading"></div>
+    <div class="content" style="text-align:center;    font-size: 11px;   line-height:22px; margin:10px 0; color:#666;">
+    	<div>
+			LAYER HQ, 26, Apqujeong-ro 42-gil,Gangnam-gu,<br>Seoul,Korea    I   02-511-7288     <br>
+            A/S : cs@layercoltd.com<br>OPEN HOUR : AM 10:00 - PM 17 : 00 <br>(LUNCH AM 11:30 - PM 12:30) <br>
+            BUSINESS REGISTATION : 261-81-01530<br>MAIL-ORDER SALES LICENSE : 2013-SEOULGANGNAM-02629<br>
+            DIRECTOR : CHANHO SHIN   I   WEB MASTER : SUNGJIN LEE
+        </div>
+    </div>
+  </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script>
+$('.accordion2 .item .heading').click(function() {
+		
+	var a = $(this).closest('.item');
+	var b = $(a).hasClass('open');
+	var c = $(a).closest('.accordion2').find('.open');
+		
+	if(b != true) {
+		$(c).find('.content').slideUp(200);
+		$(c).removeClass('open');
+	}
+
+	$(a).toggleClass('open');
+	$(a).find('.content').slideToggle(200);
+
+});
+</script>
+
+
+
+
+
+<style>
+.accordion2 {
+  overflow: hidden;
+  margin:50px auto 5px;
+    padding-left:0px;
+}
+
+.accordion2 .item .heading {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #000;
+  background: #fff url('/SkinImg/new/arrow_on.jpg') top center no-repeat;
+background-size: 4%;
+  box-sizing: border-box;
+    font-family:Calibri;
+    letter-spacing:3px;
+}
+
+.accordion2 .item.open .heading,
+.accordion2 .item:last-child .heading { border: 0; }
+
+.accordion2 .item.open .heading {  background: #fff url('/SkinImg/new/arrow_off.jpg')  top center no-repeat;background-size: 4%;}
+
+.accordion2 .item .content {
+  display: none;
+  /*padding: 10px 0;
+  background: #fff;
+  font-size: 13px;
+    line-height:24px;*/
+}
+</style>

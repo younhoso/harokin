@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function openApp() {
+            var urlScheme = getParameterByName('url_scheme');
+            var id = getParameterByName('id');
+            var appLink = urlScheme + "://";
+            var link = getParameterByName('link');
+            if (link) {
+                appLink += "web?url=" + encodeURIComponent(link);
+            }
+
+            setTimeout(function () {
+                window.location = 'itms-apps://itunes.apple.com/app/id' + id;
+            }, 25);
+            window.location = appLink;
+        }
+
+        function getParameterByName(name, url) {
+            if (!url) {
+                url = window.location.href;
+            }
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"), results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+    </script>
+</head>
+<body onload="openApp();">
+</body>
+</html>

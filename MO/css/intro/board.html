@@ -1,0 +1,44 @@
+<!--@layout(/layout/basic/main.html)-->
+<div class="mTitle">
+    <h2>로그인</h2>
+</div>
+
+<div class="mLogin gLogin" module="Intro_boardPackage">
+    <fieldset>
+        <p class="under19"><span>19</span>19세 미만의 미성년자는 <br>출입을 금합니다.</p>
+
+        <div module="Member_Adult">
+            <h3>성인인증</h3>
+            <p>
+                <span class="loginForm">
+                    {$form.realname}
+                    {$form.ssn}
+                </span>
+                <a href="#none" onclick="{$action_submit}" class="tButton type3"><span>로그인</span></a>
+                <input id="adult_login" name="adult_login" type="hidden" value="T" />
+            </p>
+            <p class="agree">
+                입력하신 고유식별정보는 별도 저장되지 않으며, 본인확인인용으로만 이용됩니다. 이에 동의하지 않으실 경우, 서비스 이용이 제한됩니다.<br>
+            {$form.identification_check}
+            </p>
+        </div>
+
+        <div module="Member_Login">
+        <!--
+            $forbidIpUrl = member/adminFail.html
+            $defaultReturnUrl = /index.html
+        -->
+            <h3>회원 로그인</h3>
+            <p>
+                <span class="loginForm">
+                    {$form.member_id}
+                    {$form.member_passwd}
+                </span>
+                <a href="#none" onclick="{$action_func_login}" class="tButton type3"><span>로그인</span></a>
+                <span class="save {$display_nomember|display}">{$form.check_save_id}</span>
+            </p>
+            <p class="findInfo">아이디/비밀번호 찾기는 PC버전에서 하실 수 있습니다.<input id="check_secret_connect0" name="check_secret_connect" value="T" type="checkbox" checked="checked" style="display:none;"></p>
+        </div>
+        <p class="warning">허위로 주민번호 생성시 법적처벌을 받습니다.</p>
+    </fieldset>
+</div>

@@ -1,0 +1,156 @@
+.left_menu {position: fixed;
+    left: 41px;
+    top: 89px;
+    bottom: 0px;z-index:210;cursor:pointer;}
+.side{}
+
+.side .in{}
+.side a:hover{text-decoration:none;}
+
+.side .menu{margin:43px 0 55px 0;}
+.side .menu a span{font-size: 9px; opacity:0;display:inline-block;margin-right:5px;}
+
+.side .menu .m_b a:hover span{opacity:1;}
+.side .menu a span{}
+
+.side .menu .accordion:hover .accordion-item:hover .accordion-item-content,
+.side .menu .accordion .accordion-item--default .accordion-item-content {
+    height: 12em;
+}
+
+.side .menu .accordion:hover .accordion-item:hover .c_item,
+.side .menu .accordion .accordion-item--default .c_item {
+    height: 11em;
+}
+
+.side .menu .accordion:hover .accordion-item:hover .c_item,
+.side .menu .accordion .accordion-item--default .c_item li{line-height:24px}
+
+.side .menu .accordion:hover .accordion-item:hover .s_item,
+.side .menu .accordion .accordion-item--default .s_item {
+    height: 11em;
+}
+
+.side .menu .accordion:hover .accordion-item:hover .s_item,
+.side .menu .accordion .accordion-item--default .s_item li{line-height:24px}
+
+.side .menu .accordion-item-content,
+.side .menu .accordion:hover .accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: height .25s;
+    margin-top:0;
+    margin-left: -4px;
+}
+
+/* Aesthetic */
+
+.side .menu .accordion {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.side .menu .accordion .accordion-item {
+  
+  padding: 7px 0;
+  color: #eee;
+}
+
+.side .menu .accordion .accordion-item li a{color:#000; font-size:14px; font-family:Calibri;}
+
+.side .menu .accordion h1 {
+  margin: 0;
+    font-family:Calibri;
+    font-weight:normal;
+    padding-left:10px;
+}
+
+.side .menu .accordion h1 a{font-size:14px; color:#000;}
+
+.side .m_b{}
+.side .m_b:hover .menu3{display:block; transition: all ease 0.25s; }
+.side .m_b .menu3{display:none; transition: all ease 0.3s; position:relative; top:0px; min-width:90px; padding:15px 20px;}
+.side .m_b .menu3 ul{}
+.side .m_b .menu3 li{margin-bottom:10px;}
+.side .m_b .menu3 li:last-child{margin:0;}
+.side .m_b .menu3 li a:hover{color:#333;}
+
+.side .m_b .menu3_1{top:245px;}
+
+
+/*
+.side .m_b{}
+.side .m_b:hover .menu3{display:block; transition: all ease 0.3s; }
+.side .m_b .menu3{display:none; transition: all ease 0.3s; position:absolute; top:225px; right:10px; min-width:90px; border:1px solid #ccc; background:#fff; padding:15px 20px;}
+.side .m_b .menu3 ul{}
+.side .m_b .menu3 li{margin-bottom:10px;}
+.side .m_b .menu3 li:last-child{margin:0;}
+.side .m_b .menu3 li a:hover{color:#333;}
+
+.side .m_b .menu3_1{top:245px;}
+*/
+.side .color_l{width:200px; height:4px; background:url(/SkinImg/img/color_bar.jpg)}
+.side .info{position:absolute; bottom:65px;}
+
+.side .info li{margin-bottom:15px;line-height: 11px;}
+.side .info li:last-child{margin-bottom:0px;}
+.side .info a{ font-family:Calibri; font-size:13px; color:#333;}
+.side .info a:hover{color:#999;}
+
+
+
+.side .menu .accordion2 #nav1 a {
+  color: #000;
+}
+
+.side .menu .accordion2 #nav1 li ul li a:hover {
+
+}
+
+.side .menu .accordion2 div ul li ul {
+
+  list-style: none
+}
+
+.side .menu .accordion2 #nav1 > li > a {
+  padding: 7px 0px 7px 0px;
+  text-decoration: none;
+  display: block;
+    font-family: 'Roboto';
+    font-size:13px;
+}
+
+.side .menu .accordion2 #nav1 li ul li a {
+  padding: 0 0 7px 0;
+  text-decoration: none;
+  display: block;
+}
+
+.side .menu .accordion2 div {
+  background-color: #000000;
+  background-color: #343434;
+  width: 280px;
+}
+/* Hide Dropdowns by Default 
+.side .menu .accordion2 #nav1 li ul {
+  display: none;
+  margin-left:10px;
+    padding:7px 0px;
+}
+*/
+.side .menu .accordion2 #nav1 li ul li a{color:#999999;}
+    
+.side .menu .accordion2 .ov_menu{font-size: 13px;font-family:'Roboto'; font-weight: normal;}
+.item1{height: 0;
+    overflow: hidden;
+    transition: height .25s;
+    margin-top: 0;}
+.side .menu .accordion2 .ov_menu:hover .item01 {height:7em;padding-left:10px;padding-top:5px;}
+.side .menu .accordion2 .ov_menu:hover .item02 {height:2em;padding-left:10px;padding-top:5px;}
+.side .menu .accordion2 .ov_menu:hover .item03 {height:5em;padding-left:10px;padding-top:5px;}
+.side .menu .accordion2 a span{font-size: 9px; opacity:0;display:inline-block;margin-right:5px;}
+.side .menu .accordion2 a:hover span{opacity:1;}
+.side .menu .accordion2 .item2 li:hover span{opacity:1;}
+.side .menu .accordion2 .item2 li{    padding: 0 0 0 20px;}
+.side .menu .accordion2 .item2 li a{color:#8c8c8c !important;}

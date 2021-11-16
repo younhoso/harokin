@@ -1,0 +1,20 @@
+.xans-layout-statelogon { /*float:right; height:45px; line-height:45px;*/ }
+/*.xans-layout-statelogon > a { padding:0 4px 0 10px; color:#757575; font-size:12px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 1px; }*/
+.xans-layout-statelogon .myinfo{    text-align: center;  display: block;  padding: 10px 0;}
+.xans-layout-statelogon .myinfo span { color:#0f0f0f; font-size:20px;font-family: 'Noto Sans KR'; }
+.xans-layout-statelogon .myinfo strong { float:left; line-height: 68px;margin-left: 15px;}
+.xans-layout-statelogon .level{width:68px; height:68px; background:#f5f5f5; border-radius:100%; text-align:center; font-size:13px; float:right; line-height:68px;    margin-bottom: 15px;}
+.xans-layout-statelogon .level span{font-size:13px;}
+.xans-layout-statelogon .myinfo a { padding:0 4px 0 10px; color:#757575; font-size:12px; }
+
+.xans-layout-statelogon .bt_gray{color:#0f0f0f; font-size:14px; text-align:center; font-family: 'Noto Sans KR'; background:#f5f5f5;    margin: 5px;  padding: 5px;    clear: both;}
+
+.xans-layout-statelogon .bt_gray a{font-family: 'Noto Sans KR';}
+
+.xans-layout-statelogon .bt_black{color:#fff; font-size:16px; text-align:center; background:#000;    margin: 5px;  padding: 8px;}
+
+.xans-layout-statelogon .bt_black a{font-family:Calibri; color:#fff;}
+.xans-layout-statelogon > a .count,
+.xans-layout-statelogon > a .count span { position:relative; display:inline-block; background:url("//img.echosting.cafe24.com/skin/base/layout/bg_basket_count.png") no-repeat; }
+.xans-layout-statelogon > a .count { left:-4px; top:-1px; margin:0 -5px 0 6px; padding:0 0 0 7px; vertical-align:middle; background-position:0 0; }
+.xans-layout-statelogon > a .count span { height:14px; padding:1px 8px 1px 0; font-weight:bold; color:#fff; font-size:11px; line-height:14px; vertical-align:top; background-position:right -26px; }

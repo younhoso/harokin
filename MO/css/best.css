@@ -1,0 +1,98 @@
+.main-container{
+    left:50%;
+    margin-left:-165px;
+}
+
+
+.main_tab li{
+    float:left;
+    width:50%;
+}
+
+.main_tab li img{
+    width:128px;
+}
+
+.best_item {
+	text-align:center;
+	margin:0 0 0px 0;
+
+}
+
+.best_item .productWrap {
+	position:relative;
+	padding:0px;
+	border:0px solid #EEE;
+    width:100% !important;
+    height:300px !important;
+    /*overflow:hidden;*/
+}
+
+.best_item .product {
+	width:100%;
+}
+
+.best_item .product > ul > li {
+	float:left;
+    font-family:"돋움"; 
+}
+
+.best_item .product .thumbnail img { 
+    margin:0 0 15px;
+    width:160px; 
+    height:160px;
+}
+.best_item .product .description { text-align:center; font-family:Calibri; line-height:20px; }
+.best_item .product .description .name { display:block; margin:0px; text-align:center; }
+.best_item .product .description .name a { color:#000; text-decoration:none; }
+
+.best_item .product .description span{font-size:12px !important;}
+
+.best_item .product .toolbar {
+	overflow:hidden;
+    display:none;
+}
+
+.best_item .product .toolbar a.left {
+	background:url('/SkinImg/best_left_bt_c.png') no-repeat;
+	width:56px;
+	height:56px;
+	position:absolute;
+	cursor:pointer;
+	z-index:100;
+	text-indent:-10000px;
+	display:inline-block;
+}
+
+.best_item .product .toolbar .right {
+	background:url('/SkinImg/best_right_bt_c.png') no-repeat;
+	width:56px;
+	height:56px;
+	position:absolute;
+	cursor:pointer;
+	z-index:100;
+	text-indent:-10000px;
+	display:inline-block;
+}
+
+.best_item .product .toolbar a.left {
+	background-position:right 0;
+	left:-80px;
+	margin-left:0px;
+}
+
+.best_item .product .toolbar a.right {
+	background-position:0 0;
+	right:-80px;
+	margin-right:0px;
+}
+
+.best_item .product .toolbar a.left:hover {
+	background-position:right bottom;
+}
+
+.best_item .product .toolbar a.right:hover {
+	background-position:left bottom;
+}
+
+.best_item .toolbar a {top:80px !important;}

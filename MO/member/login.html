@@ -1,0 +1,116 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div id="titleArea">
+    <h2 style="font-family:'Roboto';font-weight:bold;font-size:16px;">LOGIN</h2>
+</div>
+<div module="member_login" id="{$member_login_module_id}">
+    <!--@css(/css/module/member/login.css)-->
+    <!--@js(/js/module/member/login.js)-->
+    <!--
+        $defaultReturnUrl = /index.html
+    -->
+    <!--주문조회-->
+    <div class="loginWrap">
+        <div class="tab eTab {$member_login_tab_display|display}">
+            <ul>
+                <li class="selected">
+                    <a href="#member">회원</a>
+                </li>
+                <li>
+                    <a href="#noMember">비회원</a>
+                </li>
+            </ul>
+        </div>
+        <div class="loginHeader">
+            <div class="keyboard" style="display:none;">
+                <button type="button" class="btnKey korean" title="korean">한글자판</button>
+                <button type="button" class="btnKey special" title="special">특수문자</button>
+            </div>
+            <div class="view">
+                <div class="korean"><img src="http://img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard.png" alt="" width="254"></div>
+                <div class="special"><img src="http://img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard_special.png" alt="" width="254"></div>
+            </div>
+        </div>
+        <fieldset>
+            <div class="formBox">
+                <div class="form">
+                    <p class="login_ti" style="font-family:'Roboto';font-weight:bold;font-size:16px;margin-bottom:10px;">USERNAME</p>
+                    {$form.member_id}
+                    <p class="login_ti" style="font-family:'Roboto';font-weight:bold;font-size:16px;margin-bottom:10px;">PASSWORD</p>
+                    {$form.member_passwd}
+                </div>
+                <div class="option">
+                    <span class="auto">{$form.use_login_keeping}</span>
+                    <span class="save">{$form.check_save_id}</span>
+                    <span class="ssl"><img src="http://img.echosting.cafe24.com/skin/mobile_ko_KR/member/ico_ssl.png" alt="보안접속"><em>보안접속</em></span>
+                </div>
+                <div class="btnArea type1" style="max-width:100%;">
+                    <button type="button" class="btnSubmit" onclick="{$action_func_login}" style="width:100%;height:40px;line-height:40px;font-family:'Roboto';font-weight:bold;margin-bottom:10px;">LOGIN</button>
+                </div>
+                
+                <div class="btnArea type1 {$display_nomember|display}" style="max-width:100%;">
+                    <a href="{$returnUrl}" onclick="{$action_nomember_order}" class="btnEm" style="width:100%;height:40px;line-height:40px;font-family:'Roboto';font-weight:bold;margin-bottom:10px; display:block;">비회원 구매</a>
+                </div>
+                <div class="btnArea typeLogin" style="max-width:100%;height:100%;">
+                    <a href="/member/id/find_id.html" class="btnLogin">FIND ID</a><br>
+                    <a href="/member/passwd/find_passwd_info.html" class="btnLogin">FIND PASSWORD</a><br>
+                    <a href="/member/login.html?noMemberOrder&returnUrl=%2Fmyshop%2Forder%2Fdetail.html" class="btnLogin">A NON MEMBER ORDER CHECK</a>
+                    <!--a href="/member/agreement.html" class="btnLogin">회원가입</a-->
+                </div>
+                <div class="btnArea type1" >
+                    <a href="#none" class="btnNaver {$display_naver|display}" onclick="{$naver_func_login}"><span>네이버 로그인</span></a>
+                    <a href="#none" class="btnFacebook {$display_facebook|display}" onclick="{$facebook_func_login}"><span>Facebook 로그인</span></a>
+                    <a href="#none" class="btnGoogle {$display_google|display}" onclick="{$google_func_login}"><span>구글 로그인</span></a>
+                </div>
+                <div class="btnArea type1 " style="max-width:100%;">
+                    <a href="/member/agreement.html" class="btnEm" style="width:100%;height:40px;line-height:40px;font-family:'Roboto';font-weight:bold;background:#000;color:#fff;margin-top:20px;">REGISTER</a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+     <!--//주문조회-->
+</div>
+
+<div module="MyShop_OrderHistoryNologin" id="{$order_history_nologin_id}">
+    <!--@css(/css/module/myshop/orderHistoryNologin.css)-->
+    <!--
+        $orderDetailUrl = /myshop/order/detail.html
+    -->
+    <div class="tab eTab">
+        <ul>
+            <li>
+                <a href="#member">회원</a>
+            </li>
+            <li class="selected">
+                <a href="#noMember">비회원</a>
+            </li>
+        </ul>
+    </div>
+    <div class="loginHeader">
+        <div class="keyboard">
+            <button type="button" class="btnKey korean" title="korean">한글자판</button>
+            <button type="button" class="btnKey special" title="special">특수문자</button>
+        </div>
+        <div class="view">
+            <div class="korean"><img src="http://img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard.png" alt="" width="254"></div>
+            <div class="special"><img src="http://img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard_special.png" alt="" width="254"></div>
+        </div>
+    </div>
+    <fieldset>
+        <div class="formBox">
+            <div class="form">
+                {$form.order_name}
+                {$form.order_id}
+                {$form.order_password}
+            </div>
+            <div class="">
+                <button type="button" class="btnSubmit" onclick="$('#historyNoLoginForm').submit();" style="display:inline-block;width:100%;height:40px;line-height:40px;text-align:center;font-family:'Roboto';font-weight:bold;color:#fff;font-size:16px;background:#000;border:none;">INQUIRY</button>
+            </div>
+            <div class="btnJoin">
+                <a href="/member/agreement.html" class="btnEm" style="display:inline-block;text-align:center;font-size:15px;width:100%;height:40px;line-height:40px;font-family:'Roboto';font-weight:bold;background:#000;color:#fff;margin-top:20px;">REGISTER</a>
+            </div>
+            <div class="help">
+                <p>비회원인 경우 주문번호로 주문조회만 가능합니다.</p>
+            </div>
+        </div>
+    </fieldset>
+</div>

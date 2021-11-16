@@ -1,0 +1,15 @@
+.xans-member-findid { background:#f5f5f5; border:1px solid #d2d2cf; padding:60px 0 70px;}
+.xans-member-findid .inner { width:200px; margin:0 auto; }
+.xans-member-findid .inner input { font-size:11px; }
+.xans-member-findid .inner p.check { width:210px; }
+.xans-member-findid .inner p.check img { display:block; padding:8px 0 4px; }
+.xans-member-findid .inner p.check span { display:block; padding:2px 0 0; color:#8f8f91; }
+.xans-member-findid .inner p.check span.type { padding:30px 0 15px; }
+.xans-member-findid .inner p.check span label { padding:0 15px 0 0; }
+.xans-member-findid .inner .findType { padding:0 0 30px; }
+.xans-member-findid .inner .findType span { display:block; padding:3px 0 0; font-size:.9em; color:#000; }
+.xans-member-findid .inner .findType span.question { margin:2px 0 0; padding:2px 5px; width:168px; background:#34a7b3; color:#fff; font-size:11px;}
+.xans-member-findid .inner .findType .question input { border:1px solid #34a7b3; background:#34a7b3; color:#fff; }
+.xans-member-findid .inner .lostInput {border:1px solid #bcbcbc; width:166px; height:14px; padding:2px 5px; }
+.xans-member-findid .inner #ssn1 { width:70px; }
+.xans-member-findid .inner #ssn2 { width:70px; }

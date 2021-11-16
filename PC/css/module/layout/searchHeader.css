@@ -1,0 +1,10 @@
+.top_search{}
+.top_search .in{text-align:left;}
+.top_search .in .title{display:inline-block;     font-size: 13px;    font-family: Roboto_r; color:#333; padding-right:35px;}
+.top_search .in .title:after{content:'l'; display:inline-block;}
+.top_search .in .search{display:inline-block;}
+
+
+.xans-layout-searchheader { display:inline-block; margin:0px 0 0; width:350px;border:none; }
+.xans-layout-searchheader fieldset { }
+.xans-layout-searchheader #keyword  {width:250px;height:52px; border:0; line-height:52px; font-size:13px; color:#000; background:#fff;padding:0px 10px 0px 90px;font-family:'Noto Sans KR',sans-serif;border: 1px solid #ccc;}

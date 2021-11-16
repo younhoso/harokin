@@ -1,0 +1,103 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+    .board_list{max-width:1160px; margin:0 auto 0; padding-top:15px;}
+    .board_list:after { content:""; clear:both; display:block; }
+    .board_list .left{padding:0 4%;    margin-bottom: 25px;}
+    .board_list .left .fr{}
+    .board_list .left .fr .title{font-family:Calibrib; font-size:13px;display:inline-block;}
+    .board_list .left .fr .content{font-family:Calibri; font-size:13px; color:#666;display:inline-block;}
+    .board_list .left .fr .content2{font-family:Calibri; font-size:12px; color:#666;display:inline-block;}
+    .board_list .left .fr .bt{}
+    .board_list .left .fr .bt img{    height: 23px;  margin-top: 10px;}
+    
+    .board_list .xans-myshop-boardpackage .list .subject{font-size:14px;}
+    .board_list .xans-myshop-boardlist{border-top:2px solid #000;}
+    .board_list .xans-myshop-boardpackage .list li{border-bottom:1px solid #000;}
+    .board_list .xans-myshop-boardpackage .list .date{padding:0; margin:0;}
+    .board_list .xans-myshop-boardpackage .list .date:before{display:none;}
+</style>
+
+<div class="board_list">
+	<div class="left">
+        <div class="fr">
+            <div style="margin-bottom:10px;">
+                <div class="title">
+                    CS CENTER
+                </div>
+                <div class="content">
+                    02-511-7288
+                </div>
+            </div>
+            <div class="title">
+                OPEN HOUR
+           	</div>
+            <div class="content2">
+                AM 11:00 - PM 05:00 /
+                LUNCH 
+                PM 12:00 - PM 01:00 / 
+                HOL : OFF
+           	</div>
+            <div class="bt">
+                <a href="#"><img src="/SkinImg/new/bt_qna.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <div module="myshop_BoardPackage">
+        <!--@css(/css/module/myshop/boardPackage.css)-->
+        <div module="myshop_boardTitle" class="tab" style="display:none;">
+            <!--
+                $relation_post = yes
+            -->
+            <ul>
+                <li class="selected"><a href="/myshop/board_list.html">게시글 ({$my_board_count}) </a></li>
+                <li><a href="/myshop/board_comment.html">댓글 ({$my_comment_count})</a></li>
+            </ul>
+        </div>
+
+        <div module="myshop_boardList">
+            <ul class="list">
+                <!--
+                    $count = 5
+                    $relation_post = yes
+                -->
+                <li>
+                    <p class="summary">
+                        <a href="{$board_read_url}">
+                            <span class="subject">{$icon_re} {$icon_mobile} {$icon_lock} <strong>[{$board_category}]</strong> {$subject} {$comment_count} {$icon_file} {$icon_new}</span>
+                            <span class="id" title="작성자" style="display:none;">{$writer}</span><span class="date" title="작성일">{$write_date}</span>
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p class="summary">
+                        <a href="{$board_read_url}">
+                            <span class="subject">{$icon_re} {$icon_mobile} {$icon_lock} <strong>[{$board_category}]</strong> {$subject} {$comment_count} {$icon_file} {$icon_new}</span>
+                            <span class="id" title="작성자" style="display:none;">{$writer}</span><span class="date" title="작성일">{$write_date}</span>
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div module="myshop_boardlistPaging" class="paginate typeList">
+        <!--
+            $relation_post = yes
+        -->
+        <p class="prev"><a href="{$param_prev}"><span>이전 페이지</span></a></p>
+        <ol>
+            <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+            <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+        </ol>
+        <p class="next"><a href="{$param_next}"><span>다음 페이지</span></a></p>
+    </div>
+
+    <div module="myshop_boardlistSearch">
+        <!--@css(/css/module/myshop/boardlistSearch.css)-->
+        <fieldset class="boardSearch">
+            <legend>게시물 검색</legend>
+            <div class="category">{$form.search_key}</div>
+            <div class="keyword">{$form.search} <button class="btnStrong" onclick="{$action_search}">검색</button></div>
+        </fieldset>
+    </div>
+</div>

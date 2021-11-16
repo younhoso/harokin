@@ -1,0 +1,31 @@
+<!--@layout(/layout/basic/main.html)-->
+<div class="mTitle">
+    <h2>로그인</h2>
+</div>
+
+<div module="Intro_memberPackage">
+    <div class="mLogin gLogin" module="member_login">
+    <!--
+        $forbidIpUrl = member/adminFail.html
+        $defaultReturnUrl = /index.html
+    -->
+        <fieldset>
+            <h3 class="member"><span>회원전용</span> 쇼핑몰</h3>
+            <p class="memberInfo">회원 로그인 후 상품구매가 가능합니다.<br>회원가입 후 사용해 주십시요.</p>
+            <p>
+                <span class="loginForm">
+                    {$form.member_id}
+                    {$form.member_passwd}
+                </span>
+                <a href="#" onclick="{$action_func_login}" class="tButton type3"><span>로그인</span></a>
+                <span class="auto">{$form.use_login_keeping}</span>
+                <span class="save">{$form.check_save_id}</span> 
+                <span class="ssl"><img src="http://img.echosting.cafe24.com/mobileWeb/common/ico_ssl.gif" alt="보안접속" />보안접속</span>
+            </p>
+            <p class="findInfo">아이디/비밀번호 찾기는 PC버전에서 하실 수 있습니다.</p>
+        </fieldset>
+        <div class="mButton">
+            <p><a href="/member/agreement.html" class="tSubmit2"><span>회원가입</span></a></p>
+        </div>
+    </div>
+</div>

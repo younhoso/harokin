@@ -1,0 +1,10 @@
+.xans-myshop-bankbook { margin:10px 0; padding:20px 0 0; color:#333; background:url(http://img.echosting.cafe24.com/design/skin/mono/myshop/bg_myInfo.gif) 0 0 no-repeat; }
+.xans-myshop-bankbook ul { padding:0 20px 20px; background:url(http://img.echosting.cafe24.com/design/skin/mono/myshop/bg_myInfo.gif) 0 bottom no-repeat; }
+.xans-myshop-bankbook li { padding:6px 0; overflow:hidden; color:#000; }
+.xans-myshop-bankbook li.mileage strong.cont { color:#34a7b3; }
+.xans-myshop-bankbook li.mileage strong.cont span { color:#000; }
+.xans-myshop-bankbook li strong { float:left; }
+.xans-myshop-bankbook li strong.title { width:50px; font-weight:normal; }
+.xans-myshop-bankbook li strong.cont { width:100px; text-align:right; }
+.xans-myshop-bankbook li strong.cont span { font-weight:normal; }
+.xans-myshop-bankbook li a { float:left; margin:-1px 0 0 4px; }

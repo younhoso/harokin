@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <title>HAROKIN</title>
+    <!--@css(/layout/basic/css/common.css)-->
+    <!--@css(/layout/basic/css/layout.css)-->
+    <!--@css(/layout/basic/css/button.css)-->
+    <!--@css(/layout/basic/css/paginate.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-product.css)-->
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+
+    <!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
+    <!--@js(/layout/basic/js/common.js)-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){ //DOM이 준비되고
+        $('#toggleButton').click(function(){ // ID가 toggleButton인 요소를 클릭하면
+            var state = $('#moreMenu').css('display'); // state 변수에 ID가 moreMenu인 요소의 display의 속성을 '대입'
+            if(state == 'none'){ // state가 none 상태일경우 
+                $('#moreMenu').show(); // ID가 moreMenu인 요소를 show();
+            }else{
+                $('#moreMenu').hide(); // ID가 moreMenu인 요소를 hide();			
+            }
+        });
+    });
+    $(document).ready(function(){ //DOM이 준비되고
+        $('#toggleButton2').click(function(){ // #toggleButton2를 클릭하면
+            $('#moreMenu2').toggle(); // #moreMenu2를 알아서 토.글!
+        });
+    });
+</script>
+</head>
+<body id="main">
+    <div module="Popup_MultiPopup">
+        <!--
+            $banner_popup_no =
+            ※ 노출시킬 팝업의 ID를 숫자로 넣어주세요.
+        -->
+        {$popup}
+    </div>
+    <div module="Popup_MultiBanner">
+        <!--
+            $banner_popup_no =
+            ※ 노출시킬 배너의 ID를 숫자로 넣어주세요.
+        -->
+        {$banner}
+    </div>
+    <!--@import(/import/top_ban.html)--->
+    <div id="wrap" style="margin-bottom:100px;">
+        <!--@import(/layout/basic/sidebar.html)--->
+        <!--/*Philip Kim 추가*/-->
+        <!--@import(/layout/basic/cart.html)--->
+        <!--/*Philip Kim 추가*/-->
+        <hr class="layout">
+        <div id="container">
+            <header id="header">
+                <div class="header">
+					<div class="top2">
+                      <!--@css(/css/top.css)-->
+                        <div class="logo logo_black">
+                        	<a href="/index.html"><img src="/SkinImg/img/logo.png"></a>
+                        </div>
+                        <!--@import(/import/side2.html)-->
+                        <!--@import(/import/right-menu.html)-->
+                       
+                    </div>               
+                </div>
+            </header>
+            <hr class="layout">
+            <div id="contents" style="min-height: 250px;">
+                
+                <!--@contents-->
+            </div>
+            <hr class="layout">
+            
+            <!--@import(/layout/basic/footer_detail.html)-->
+        </div>
+    </div>
+</body>
+</html>

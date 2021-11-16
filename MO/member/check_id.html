@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <title></title>
+    <!--@css(/css/common.css)-->
+    <!--@css(/css/custom.css)-->
+    <!--@js(/js/ui.js)-->
+</head>
+<body>
+    <div id="contents" module="member_checkId">
+        <div class="mTitle">
+            <h2>아이디 중복 체크</h2>
+        </div>
+
+        <div class="mIdCheck">
+            <p><strong>아이디는 영문(소문자), 숫자로 4-16자 이내로 입력해주세요.</strong></p>
+            <p class="chkForm">{$form.member_id}&nbsp;<a href="#none" class="tButton type2" onclick="{$action_check_id}"><span>중복확인</span></a></p>
+            <ul>
+                <li class="{$display_desc|display}">공백 또는 특수문자가 포함된 아이디는 사용할 수 없습니다.</li>
+                <li class="{$display_desc|display}">숫자로 시작 또는 숫자로 이루어진 아이디는 사용할 수 없습니다.</li>
+                <li class="{$display_able|display}">{$member_id}는 사용 가능한 아이디입니다. </li>
+                <li class="{$display_unable|display}">{$member_id}는 이미 사용중인 아이디입니다. </li>
+                <li class="{$display_out|display}">{$member_id}는 탈퇴한 아이디입니다. </li>
+            </ul>
+            <div class="mButton">
+                <p><a href="#none" class="tSubmit1" onclick="{$action_use_id}"><span>사용하기</span></a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<div class="accordion1">
+    <section class="accordion-item">
+        <a href="#">en</a>
+        <div class="accordion-item-content">
+            <div style="margin-bottom:7px;"><a href="#">en</a></div>
+            <div><a href="#">kr</a></div>
+        </div>
+    </section>
+</div>
+
+
+<style>
+.accordion1{    
+        display: inline-block;
+    position: absolute;
+    right: 55px;
+    top: 18px;
+    font-size: 16px;
+}
+.accordion1:hover .accordion-item:hover .accordion-item-content,
+.accordion1 .accordion-item--default .accordion-item-content {
+    height: 3em;
+    padding-top:10px;
+}
+
+.accordion-item-content,
+.accordion1:hover .accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: height .25s;
+        margin-top: 17px;
+    background: rgba(255,255,255,0.9);
+    width: 55px;
+}
+
+.accordion1 span{    font-size: 6px;
+    position: relative;
+    top: -2px;}
+
+</style>

@@ -1,0 +1,49 @@
+<!--@layout(/layout/basic/main.html)-->
+<style>
+    #main {width:100%;height:100%;}
+    #contents {width:100%;max-width:100%;}
+	.frame{/*width:70%; margin:0px auto; position:relative; background:url(/SkinImg/img/img_philo.jpg) top center; background-size:cover;*/}
+   /* .frame:before {
+        content: "";
+        display: block;
+        padding-bottom: 64%;
+    }*/
+    .frame .text{/*position:absolute;*/ color:#000; font-size:13px; left:5%; bottom:5%;line-height: 23px; text-align:center;}
+    .philosophy {width: 30%;margin-top: 50px;}
+</style>
+<!--@css(/css/fullpage.css)-->
+
+<div id="fullpage">
+    <div class="section slideBox " id="section0" >
+        <img class="philosophy" src="/SkinImg/img/philosophy.png" alt="HAROKIN">
+    </div>
+</div>
+
+
+<!-- Swiper JS -->
+<script type="text/javascript" src="/js/swiper.min.js"></script>
+<script type="text/javascript" src="/js/fullpage.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper('.swiper1', {
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+    paginationClickable: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: 5000,
+    autoplayDisableOnInteraction: false,
+    loop:true
+});
+</script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage'],
+        sectionsColor: ['#fff'],
+        autoScrolling: false,
+        css3: true,
+        fitToSection: false
+    });
+</script>

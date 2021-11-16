@@ -1,0 +1,36 @@
+<!--@layout(/layout/basic/layout_detail.html)-->
+<style>
+    .faq{max-width:1160px; margin:0 auto 0; padding-top:15px;}
+    .faq:after { content:""; clear:both; display:block; }
+    .faq .left{padding:0 4%;    margin-bottom: 25px;}
+    .faq .left .fr{}
+    .faq .left .fr .title{font-family:Calibrib; font-size:13px;display:inline-block;}
+    .faq .left .fr .content{font-family:Calibri; font-size:13px; color:#666;display:inline-block;}
+    .faq .left .fr .content2{font-family:Calibri; font-size:12px; color:#666;display:inline-block;}
+    .faq .left .fr .bt{}
+    .faq .left .fr .bt img{    height: 20px;  margin-top: 10px;}
+</style>
+<div class="faq">
+ 
+    <div class="right">
+        <div module="board_CommentDeletePackage_4">
+            <!--@css(/css/module/board/commentDeletePackage.css)-->
+
+
+
+            <div module="Board_CommentDel_4">
+                <h3>댓글삭제</h3>
+                <div class="comment">
+                    <fieldset>
+                        <legend>댓글삭제</legend>
+                        <p class="info">댓글 등록 시 입력한 비밀번호를<br />입력하여 주십시요.</p>
+                        <p class="password">
+                            <label for="comment_password">비밀번호</label> {$form.comment_password}
+                            <button type="submit" class="btnStrong">확인</button>
+                        </p>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+     </div>
+ </div>

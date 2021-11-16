@@ -1,0 +1,25 @@
+.right_f{}
+
+.right_f .in{
+    position: absolute;
+    right: 30px;
+    top: -8px;
+    bottom: 0px;
+    z-index: 210;
+display:inline-table;}
+.right_f li{margin-left:13px; display:inline-block; vertical-align:middle;}
+.right_f li span{font-size:11px;color:#000;font-family: 'Roboto';
+    border-radius: 100px;margin: 0 0 0 2px;}
+.right_f li img{}
+.right_f li a{font-size:14px; color:#000;}
+.right_f li a:hover{text-decoration:none;}
+
+
+.right_f .lang:hover .map{display:block; transition: all ease 0.3s; }
+.right_f .lang .map{display:none; transition: all ease 0.3s; position:absolute; top: 110px;    right: 20px; min-width:50px; border:1px solid #ccc; background:#fff; padding:5px 10px;}
+
+.right_f input,textarea:focus {
+
+        outline: none !important;
+
+}

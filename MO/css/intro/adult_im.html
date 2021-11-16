@@ -1,0 +1,39 @@
+<!--@layout(/layout/basic/main.html)-->
+<div class="mTitle">
+    <h2>로그인</h2>
+</div>
+
+<div class="mLogin gLogin" module="Member_AdultHead">
+    <fieldset>
+        <p class="under19"><span>19</span>19세 미만의 미성년자는 <br>출입을 금합니다.</p>
+
+        <div module="Member_Login">
+            <h3>회원 성인인증</h3>
+            <p>
+                <span class="loginForm">
+                    {$form.member_id}
+                     {$form.member_passwd}
+                </span>
+                <a href="#none"  onclick="{$action_func_login}" class="tButton type3"><span>로그인</span></a>
+            </p>
+            <p class="security">
+                <span class="auto">{$form.use_login_keeping}</span>
+                <span class="save">{$form.check_save_id}</span> 
+                <span class="ssl"><img src="http://img.echosting.cafe24.com/mobileWeb/common/ico_ssl.gif" alt="보안접속" />보안접속</span>
+            </p>
+            <p class="findInfo">아이디/비밀번호 찾기는 PC버전에서 하실 수 있습니다.</p>
+        </div>
+
+        <div {$display_auth} >
+            <h3>비회원 성인인증</h3>
+            <p class="ipin">
+                <input type="radio" name='AuthType' checked /> 아이핀 인증 <a href="#none"  onclick="{$ipinpopup}" class="tButton type2"><span>아이핀인증</span></a>
+            </p>
+            <p class="agree">아이핀이란 웹사이트에 주민등록번호를 <br>제공하지 않고 본인임을 확인하는 서비스입니다.</p>
+        </div>
+    </fieldset>
+
+    <div class="mButton">
+        <p><a href="/member/agreement.html" class="tSubmit2"><span>회원가입</span></a></p>
+    </div>
+</div>

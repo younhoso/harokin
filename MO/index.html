@@ -1,0 +1,129 @@
+<!--@layout(/layout/basic/main.html)-->
+<!--@css(/css/swiper.min.css)-->
+<!--@css(/css/fullpage.css)-->
+
+<!--@js(/js/video-js/video.js)-->
+<!--@css(/js/video-js/video-js.css)-->
+
+<style>
+    .swiper1{width:90%; padding:30px 0 0;/*margin: 155px auto 95px;*/}
+    .swiper-container {
+        z-index:50;
+        /*width: 100%;*/  
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background:#fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+     .swiper-slide:before{content:"";display:block;padding-bottom:136%;}
+    .swiper-slide img { width:100%; }
+    .swiper-button-prev, .swiper-button-next{top:50%;}
+    .swiper-button-prev{left:10px;}
+    .swiper-button-next{right:10px;}
+    .swiper1 .swiper-button-next{background-image: url(/SkinImg/img/slide_arrow_right.png);
+    width:33px; height:18px;-moz-background-size: 33px 18px;
+    -webkit-background-size: 33px 18px;
+    background-size: 33px 18px;
+    }
+    .swiper1 .swiper-button-prev{background-image: url(/SkinImg/img/slide_arrow_left.png);width:29px; height:18px; -moz-background-size: 29px 18px;
+    -webkit-background-size: 29px 18px;
+    background-size: 29px 18px;}
+    
+    /*#section0 iframe{width: 96%; height: 100vh;}*/
+    
+    #section0 .video{position: absolute; top: 50%; left: 50%; width:100%; -webkit-transform: translate(-50%, -10%); transform: translate(-50%, -10%);}
+    #section0 .video:after {
+        content: "";
+        display: block;
+        /*padding-bottom: 56%;*/}
+    #section0 .video ul{width:100%;}
+    #section0 .video ul:after { content:""; clear:both; display:block; }
+
+    #section0 .video li{float:left; position:relative;}
+    #section0 .video li:nth-child(1){padding-top:20%;}
+    #section0 .video li:nth-child(1):before{content:"";display:block; }
+    #section0 .video li:nth-child(1):after{ content:""; clear:both; display:block; }
+    #section0 .video .image:before {
+        content: "";
+        display: block;
+        padding-bottom: 75%;}
+    #section0 .video li:nth-child(2){width:80%;}
+    #section0 .video .frame{width:100%; height:100%; position:relative;}
+    #section0 .video .frame:after {
+        content: "";
+        display: block;
+        padding-bottom: 56.3%;}
+    #section0 .video iframe{width:100%; height:100%; position:absolute; top:0; left:0}
+    .main_img {width: 30%;}
+</style>
+<!-- Swiper -->
+<div id="fullpage">
+    <div class="section slideBox " id="section0">
+        
+        <div class="video">
+            <div class="frame">
+                <img class="main_img" src="SkinImg/img/main_img.png" alt="harokin">
+            </div>
+        </div>
+        <div class="swiper-container swiper1" style="display:none;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background:url(/SkinImg/img/main_sl1.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">&nbsp;</div>
+            </div>
+            <!-- Add Arrows -->
+            <!--<div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>-->
+        </div>
+    </div>
+    <div class="section fp-auto-height" id="section1">
+        <div class="myContent" style="height:185px;">
+        <!--@import(/layout/basic/footer.html)-->
+        </div>
+    </div>
+</div>
+
+
+<!-- Swiper JS -->
+<script type="text/javascript" src="/js/swiper.min.js"></script>
+<script type="text/javascript" src="/js/fullpage.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper('.swiper1', {
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+    paginationClickable: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+   // autoplay: 5000,
+    //autoplayDisableOnInteraction: false,
+    loop:true
+});
+</script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        menu: '#menu',
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#fff', '#fff', '#7E8F7C'],
+        onLeave: function(origin, destination, direction){
+          if(destination.index === 2){
+             destination.item.classList.add('load-background');
+          }
+        }
+    });
+</script>

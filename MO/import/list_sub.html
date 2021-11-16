@@ -1,0 +1,31 @@
+<style>
+    .list_menu{transition:all ease 0.3s;  float:left;}
+	.menuCategory .active{display:block;}
+    .menuCategory{display:none;}
+</style>
+
+<div class="list_menu">
+    <!--<a href="#" class="list_menu_bt"  id="list_menu"><img src="/SkinImg/new/list_menu.png" style="height:23px;"></a>-->
+    <a href="#" class="list_menu_bt"  id="list_menu" style="font-family: Roboto_r;
+    font-size: 11px;
+    letter-spacing: 1px;
+    background: url(/SkinImg/img/arrow_on.jpg) top right no-repeat;
+    background-size: 10px;
+    background-position-y: 5px;
+    width: 84px;
+    display: block; margin-top:10px;">
+        FILTER
+    </a>
+</div>
+<script>
+    $("#list_menu").click(function(){
+        $menu_cate=$("#menu_cate");
+
+        if($menu_cate.is(":visible")){
+            $menu_cate.hide();
+        } else{
+            $menu_cate.show();
+        }
+    });
+
+</script>

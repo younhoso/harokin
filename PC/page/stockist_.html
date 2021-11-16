@@ -1,0 +1,130 @@
+<!--@layout(/layout/basic/main.html)-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
+<!--@css(/css/stockist.css)-->
+
+<style>
+    #contents {width:100%;max-width:100%;}
+    .location {padding:160px 25px 0px;}
+    .swiper-pagination-store  {bottom:30px !important;}
+	.swiper-pagination-store .swiper-pagination-bullet {width:35px;height:3px;border-radius:1px;background:#ededed;opacity:1;margin:0 !important;}
+    .swiper-pagination-store .swiper-pagination-bullet-active {background:#000;}
+    
+    .store_map {margin:110px 0px;text-align:center;}
+     .right_icon {position: fixed;right: 26px;bottom: 20px;}
+</style>
+
+<div class="location">
+    <div class="left">
+        <ul class="tabs">
+       
+            <li>
+            	<div class="box" style="padding-top:0;">
+                    <div class="in">
+                        <div class="name">
+                            <a href="#tab1">AOYAMA WOMENS</a>
+                        </div>
+                        <div class="address">
+                            1F BLEU CINQ POINT A, 5-3-22 Minamiaoyama,<br>
+                            Minato-ku, Tokyo, Japan 107-0062<br><br>
+
+                            Tel. 03 3407 1232
+                            <a href="">MAP</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<div class="box" style="">
+                    <div class="in">
+                        <div class="name">
+                            <a href="#tab1">AOYAMA WOMENS</a>
+                        </div>
+                        <div class="address">
+                            1F BLEU CINQ POINT A, 5-3-22 Minamiaoyama,<br>
+                            Minato-ku, Tokyo, Japan 107-0062<br><br>
+
+                            Tel. 03 3407 1232
+                            <a href="">MAP</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<div class="box" style="">
+                    <div class="in">
+                        <div class="name">
+                            <a href="#tab1">AOYAMA WOMENS</a>
+                        </div>
+                        <div class="address">
+                            1F BLEU CINQ POINT A, 5-3-22 Minamiaoyama,<br>
+                            Minato-ku, Tokyo, Japan 107-0062<br><br>
+
+                            Tel. 03 3407 1232
+                            <a href="">MAP</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<div class="box" style="">
+                    <div class="in">
+                        <div class="name">
+                            <a href="#tab1">AOYAMA WOMENS</a>
+                        </div>
+                        <div class="address">
+                            1F BLEU CINQ POINT A, 5-3-22 Minamiaoyama,<br>
+                            Minato-ku, Tokyo, Japan 107-0062<br><br>
+
+                            Tel. 03 3407 1232
+                            <a href="">MAP</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<div class="box" style="border:none;">
+                    <div class="in">
+                        <div class="name">
+                            <a href="#tab1">AOYAMA WOMENS</a>
+                        </div>
+                        <div class="address">
+                            1F BLEU CINQ POINT A, 5-3-22 Minamiaoyama,<br>
+                            Minato-ku, Tokyo, Japan 107-0062<br><br>
+
+                            Tel. 03 3407 1232
+                            <a href="">MAP</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+   
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+<script type="text/javascript">
+    var swiper = new Swiper('.swiper-container-store', {
+      pagination: {
+        el: '.swiper-pagination-store',
+      },
+    });
+    
+$(document).ready(function() {
+	$(".tab_content").hide(); 
+	$("ul.tabs li:first").addClass("active").show(); 
+	$(".tab_content:first").show(); 
+
+
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); 
+		$(this).addClass("active"); 
+		$(".tab_content").hide(); 
+		var activeTab = $(this).find("a").attr("href");
+		$(activeTab).fadeIn(); 
+		return false;
+	});
+
+});
+</script>

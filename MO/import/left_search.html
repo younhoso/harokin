@@ -1,0 +1,75 @@
+<div class="accordion_s">
+  <div class="item">
+    <div class="heading">SEARCH</div>
+    <div class="content" style="font-family:'Noto Sans KR';">
+        <div module="Layout_SearchHeader">
+            <!--@css(/css/module/layout/searchHeader.css)-->
+            <!--
+                $product_page=/product/detail.html
+                $category_page=/product/list.html
+            -->
+            <fieldset>
+                <legend>검색</legend>
+                {$form.keyword}<input type="image" src="/SkinImg/new/search.jpg" alt="검색" onclick="{$action_search_submit}" /></fieldset>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script>
+$('.accordion_s .item .heading').click(function() {
+		
+	var a = $(this).closest('.item');
+	var b = $(a).hasClass('open');
+	var c = $(a).closest('.accordion_s').find('.open');
+		
+	if(b != true) {
+		$(c).find('.content').slideUp(200);
+		$(c).removeClass('open');
+	}
+
+	$(a).toggleClass('open');
+	$(a).find('.content').slideToggle(200);
+
+});
+</script>
+
+
+
+
+
+<style>
+.accordion_s {
+  overflow: hidden;
+  margin:0px auto 0;
+}
+
+.accordion_s .item .heading {
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #000;
+  /*background: #fff url('/SkinImg/new/arrow_detail.png') no-repeat;
+  background-position: right 0px top -108px;**/
+
+  box-sizing: border-box;
+    font-family:Calibri;
+    letter-spacing:3px;
+}
+
+.accordion_s .item.open .heading,
+.accordion_s .item:last-child .heading { border: 0; }
+
+.accordion_s .item.open .heading { background-position: right 0px top -18px; }
+
+.accordion_s .item .content {
+  display: none;
+  padding: 10px 0;
+  background: #fff;
+  font-size: 13px;
+    font-family:noto;
+    line-height:24px;
+}
+</style>

@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.gHeader {
+	background:rgb(204,13,13);
+	background:rgb(204,13,13) -webkit-gradient(linear, left top, left bottom, from(rgb(204,13,13)), to(rgb(95,0,0)));
+	background:rgb(204,13,13) -moz-linear-gradient(top,  rgb(204,13,13), rgb(95,0,0));
+}
+.gMember { border-bottom:1px dashed rgb(197,130,130); }
+.gMember a { color:#212530; background:url(http://img.echosting.cafe24.com/mobileWeb/red/bg_member.png) 0 0 no-repeat; background-size:20px 120px;}
+
+.mTitle { border-bottom:1px solid rgb(140,6,6); }
+.mTitle h2 { background:url(http://img.echosting.cafe24.com/mobileWeb/red/bg_member.png) 0 -60px no-repeat; background-size:20px 120px; }
+
+footer address { color:rgb(255,255,255); background:rgb(140,6,6); }
+footer address a { color:rgb(255,255,255); }
+
+/* button */
+.mButton .tSubmit1 span { border:2px solid rgb(140,6,6); color:rgb(255,255,255); background:rgb(140,6,6); }
+.mButton .tSubmit2 span { border:2px solid rgb(140,6,6); color:rgb(140,6,6); background:rgb(255,255,255); }
+.tButton.type1 { border:1px solid rgb(140,6,6); color:rgb(255,255,255); background:rgb(140,6,6); }
+.tButton.type3 { color:rgb(255,255,255); background:rgb(140,6,6); }
+
+/* Tab */
+.mTab { border-bottom:1px solid rgb(140,6,6); }
+.mTab li.selected { background:rgb(140,6,6); }
+.mTab li.selected a { border-bottom:1px solid rgb(140,6,6); }
+
+/* table */
+.mBoard { border-bottom:1px solid rgb(140,6,6); }
+.mBoard h3 { border-bottom:1px solid rgb(140,6,6); color:rgb(140,6,6); }
+
+/* product */
+.mSearch p { border-bottom:1px dashed rgb(140,6,6); }
+.mSearch .border { border:1px solid rgb(140,6,6); }
+.mSearch input { border:0; background:url(http://img.echosting.cafe24.com/mobileWeb/red/bg_search.png) 5px center no-repeat; background-size:18px 18px; }
+.mSearch button { border:1px solid rgb(140,6,6); }
+.mGiftList li { border-bottom:1px dashed rgb(140,6,6); }
+.mOverview { border-bottom:1px dashed rgb(140,6,6); }
+.mSpec { border-bottom:1px dashed rgb(140,6,6); }
+.mReview li { border-bottom:1px solid rgb(140,6,6); }
+.mCommentList ul { border-top:1px dotted rgb(140,6,6);; }
+.mCommentList li { border-bottom:1px dotted rgb(140,6,6); }
+
+/* myshop */
+.mMypage { border-bottom:1px solid rgb(140,6,6); }
+.mShopMain li { background:url(http://img.echosting.cafe24.com/mobileWeb/red/bg_shopMain2.png) 0 center no-repeat; background-size:300px 300px; }
+.mOrderList .order { border-top:1px solid rgb(140,6,6);border-bottom:1px solid rgb(140,6,6); }
+
+/* order */
+.mGift { border-bottom:1px solid rgb(140,6,6); }
+
+/* 갤러리형 게시판 추가 */
+.mGallery .notice { border-bottom:1px solid rgb(140,6,6); }
+
+/* 상품리스트 */
+.mPrdList.typeThumb h2 { border-top:1px dashed rgb(140,6,6); }
+.mPrdList.typeDesc > ul > li { border-bottom:1px dashed #C58282; }

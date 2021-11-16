@@ -1,0 +1,20 @@
+<nav module="Layout_MobileNavigation">
+    <!--@css(/css/module/layout/mobileNavigation.css)-->
+    <!--
+        $eventmenu = yes
+    -->
+    <ul class="grid5">
+        <!--li module="Layout_statelogoff"><a href="/member/join.html">회원가입</a></li-->
+        <li module="Layout_statelogoff"><a href="/member/login.html">Login</a></li>
+        <!--li module="Layout_statelogon"><a href="/member/modify.html">정보수정</a></li-->
+        <li module="Layout_statelogon"><a href="{$action_logout}">Logout</a></li>
+        <li>
+            <p module="Layout_orderBasketcount">
+                <a href="/order/basket.html" class="btnBasket">Your bag<span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+            </p>
+        </li>
+        <!--li><a href="/myshop/order/list.html">주문조회</a></li>
+        <li><a href="/myshop/index.html">마이쇼핑</a></li>
+        <li><a href="/board/free/list.html?board_no=1">커뮤니티</a></li-->
+    </ul>
+</nav>

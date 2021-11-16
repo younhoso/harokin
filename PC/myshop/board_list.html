@@ -1,0 +1,119 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+    .board_list{max-width:1160px; margin:0 auto 0; padding-top:95px;}
+    .board_list:after { content:""; clear:both; display:block; }
+    .board_list .left1{width:15%; float:left;}
+    .board_list .left1 .fr{}
+    .board_list .left1 .fr .title{font-family:Calibrib; font-size:20px; margin-bottom:15px;}
+    .board_list .left1 .fr .content{font-family:Calibri; font-size:20px; margin-bottom:35px; color:#666;}
+    .board_list .left1 .fr .content2{font-family:Calibri; font-size:16px; margin-bottom:20px; color:#666;}
+    .board_list .left1 .fr .bt{}
+    
+    .board_list .right1{width:85%; float:left;}
+    .board_list .ec-base-table thead th{border-bottom:1px solid #000;}
+    .board_list .ec-base-table td{border-top:1px solid #000;}
+</style>
+<div class="board_list">
+    <div class="left1">
+        <div class="fr">
+            <div class="title">
+                CS CENTER
+           	</div>
+            <div class="content">
+                02-511-7288
+           	</div>
+            <div class="title">
+                OPEN HOUR
+           	</div>
+            <div class="content2">
+                AM 11:00 - PM 05:00<br>
+                LUNCH<br>
+                PM 12:00 - PM 01:00<br>
+                HOL : OFF
+           	</div>
+            <div class="bt">
+                <a href="#"><img src="/SkinImg/img/bt_qna.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <div class="right1">
+        <div module="myshop_BoardPackage">
+            <!--@css(/css/module/myshop/boardPackage.css)-->
+            <div module="myshop_boardListHead" style="display:none;">
+                <p>분류 선택 {$board_sort}</p>
+            </div>
+
+            <div class="ec-base-table typeList gBorder gBlank10" module="myshop_boardList">
+                <!--
+                    $count = 10
+                    $relation_post = yes
+                -->
+                <table border="1" summary="" style="border-top:2px solid #000; border-bottom:1px solid #000;">
+                <caption>게시물 관리 목록</caption>
+                <colgroup module="board_listheader_1002">
+                    <col style="width:70px;" />
+                    <col style="width:135px;" />
+                    <col style="width:auto;" />
+                    <col style="width:84px;" />
+                    <col style="width:80px;" />
+                    <col style="width:55px;" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">문의내용</th>
+                        <th scope="col">제목</th>
+                        <!--th scope="col">작성자</th-->
+                        <th scope="col">등록일</th>
+                        <!--th scope="col">조회</th-->
+                    </tr>
+                </thead>
+
+                <tbody class="{$nodata_display|display}">
+                    <tr>
+                        <td colspan="4" class="message">게시물이 없습니다.</td>
+                    </tr>
+                </tbody>
+                <tbody class="{$list_display|display} center">
+                    <tr>
+                        <td>{$no}</td>
+                        <td><a href="{$link_board_list}" class="txtEm">{$board_category}</a></td>
+                        <td class="left subject">{$icon_re}{$icon_lock} <a href="{$board_read_url}">{$subject}</a> {$icon_new}{$icon_file}{$comment_count}</td>
+                        <!--td>{$writer}</td-->
+                        <td><span class="txtNum">{$write_date}</span></td>
+                        <!--td><span class="txtNum">{$hit_count}</span></td-->
+                    </tr>
+                    <tr>
+                        <td>{$no}</td>
+                        <td><a href="{$link_board_list}" class="txtEm">{$board_category}</a></td>
+                        <td class="left subject">{$icon_re}{$icon_lock} <a href="{$board_read_url}">{$subject}</a> {$icon_new}{$icon_file}{$comment_count}</td>
+                        <!--td>{$writer}</td-->
+                        <td><span class="txtNum">{$write_date}</span></td>
+                        <!--td><span class="txtNum">{$hit_count}</span></td-->
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div module="myshop_boardlistPaging" class="ec-base-paginate">
+            <!--
+                $relation_post = yes
+            -->
+            <a href="{$param_prev}"><img src="/SkinImg/img/arrow_left1.jpg" alt="이전 페이지" /></a>
+            <ol>
+                <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+                <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+            </ol>
+            <a href="{$param_next}"><img src="/SkinImg/img/arrow_right1.jpg" alt="다음 페이지" /></a>
+        </div>
+
+        <div module="myshop_boardlistSearch" style="display:none;">
+            <!--@css(/css/module/myshop/boardlistSearch.css)-->
+            <fieldset class="boardSearch">
+                <legend>게시물 검색</legend>
+                <p>{$form.search_key} {$form.search} <a href="#none" onclick="{$action_search}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/board/btn_find.gif" alt="찾기" /></a></p>
+            </fieldset>
+        </div>
+    </div>
+</div>

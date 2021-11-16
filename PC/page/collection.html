@@ -1,0 +1,110 @@
+<!--@layout(/layout/basic/main.html)-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
+<style>
+	#contents {width:100%;max-width:100%;background:#fff;}
+    .collection {padding:130px 25px 0px;background:#fff;}
+    .collection div {width:32.5%;float:left;margin-right:1.2%;margin-bottom:1.2%;cursor:pointer;}
+    .collection div:nth-child(3n) {margin-right:0;}
+    .collection img {width:100%;}
+     .right_icon {position: fixed;right: 26px;bottom: 20px;}
+    .product_modal {
+            position: fixed;
+            z-index: -999; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+    
+        /* Modal Content/Box */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: 10% auto; /* 15% from the top and centered */
+            padding: 0px;
+            border: 1px solid #888;
+            width: 1050px; /* Could be more or less, depending on screen size */                          
+        }
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            position: absolute;
+            right:20px;top:20px;
+            font-size: 28px;
+            font-weight: 400;
+            z-index:10;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+		.swiper-button-next, .swiper-button-prev {top:45%;}
+        .swiper-container {width:100%;}
+        .swiper-slide {text-align:center;width:100%;}
+        .product01 {z-index:-9999;}
+</style>
+<div class="collection">
+	<div id="myBtn01"><img src="/web/img/collection/01/01.png"></div>
+    <div><img src="/web/img/collection/01/02.png"></div>
+    <div><img src="/web/img/collection/01/03.png"></div>
+    <div><img src="/web/img/collection/01/01.png"></div>
+    <div><img src="/web/img/collection/01/02.png"></div>
+    <div><img src="/web/img/collection/01/03.png"></div>
+    <div><img src="/web/img/collection/01/01.png"></div>
+    <div><img src="/web/img/collection/01/02.png"></div>
+    <div><img src="/web/img/collection/01/03.png"></div>
+    <div><img src="/web/img/collection/01/01.png"></div>
+    <div><img src="/web/img/collection/01/02.png"></div>
+    <div><img src="/web/img/collection/01/03.png"></div>
+    <div><img src="/web/img/collection/01/01.png"></div>
+    <div><img src="/web/img/collection/01/02.png"></div>
+    <div><img src="/web/img/collection/01/03.png"></div>
+</div>
+
+<div class="product_modal product01">
+    <div class="modal-content">
+        <span class="close close01"><img src="/SkinImg/img/pop_close.png" style="width:32px;"></span>   
+	<div class="swiper-container swiper-container01">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/web/img/collection/01/02.png"></div>
+					<div class="swiper-slide"><img src="/web/img/collection/01/02.png"></div>
+                    <div class="swiper-slide"><img src="/web/img/collection/01/02.png"></div>
+                    <div class="swiper-slide"><img src="/web/img/collection/01/02.png"></div>
+                    <div class="swiper-slide"><img src="/web/img/collection/01/02.png"></div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-next01 swiper-button-black"></div>
+                <div class="swiper-button-prev swiper-button-prev01 swiper-button-black"></div>
+            </div>
+      </div>
+</div>
+
+
+<div class="right_icon">
+	 <a href=""><img src="/SkinImg/img/merchy_icon.png"></a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container01', {
+        navigation: {
+            nextEl: '.swiper-button-next01',
+            prevEl: '.swiper-button-prev01',
+        },
+    });
+
+    $('#myBtn01').click(function(){
+        $('.product01').css('z-index' , '99');
+    });
+
+    $('.close01').click(function(){
+        $('.product01').css('z-index' , '-999');
+    });
+
+       
+</script>

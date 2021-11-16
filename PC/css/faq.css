@@ -1,0 +1,173 @@
+
+    .faq{max-width:1160px; margin:0 auto 0; padding-top:95px;}
+    .faq:after { content:""; clear:both; display:block; }
+    .faq .left{width:16.8%; float:left;}
+    .faq .left .fr{}
+    .faq .left .fr .title{font-family:Calibrib; font-size:20px; margin-bottom:15px;}
+    .faq .left .fr .content{font-family:Calibri; font-size:20px; margin-bottom:35px; color:#666;}
+    .faq .left .fr .content2{font-family:Calibri; font-size:16px; margin-bottom:20px; color:#666;}
+    .faq .left .fr .bt{}
+    
+    .faq .right{width:83%; float:left;}
+    .faq .right ul.tabs {
+        margin: 0;
+        padding: 0;
+        float: left;
+        list-style: none;
+        height: 33px;
+        border-bottom: 2px solid #000;
+        width: 100%;
+    }
+    
+    .faq .right ul.tabs .active{background:#000;}
+    .faq .right ul.tabs .active a{color:#fff;}
+    
+    .faq .right ul.tabs li {
+        float: left;
+        margin: 0 0.4%;
+        padding: 0;
+        height: 33px;
+        line-height: 33px;
+        text-align:center;
+        border-left: none;
+        
+        background: #efefef;
+        overflow: hidden;
+        position: relative;
+        width: 16%;
+    }
+    
+    .faq .right ul.tabs li:first-child{margin-left:0;}
+    .faq .right ul.tabs li:last-child{margin-right:0;}
+    
+    .faq .right ul.tabs li a {
+        text-decoration: none;
+        color: #000;
+        display: block;
+        font-size: 13px;
+        outline: none;
+    }
+    .faq .right ul.tabs li a:hover {
+        background: #000;
+        color:#fff;
+    }	
+    
+    .faq .right .tab_container {
+       
+        clear: both;
+
+        width: 100%;
+    }
+    .faq .right .tab_content {
+
+    }
+    
+    #cssmenu {
+        width:100%;
+        border-bottom:1px solid #000;
+    }
+    #cssmenu i {
+        margin-right: 5px;
+    }
+    #cssmenu ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        line-height: 1;
+    }
+    #cssmenu ul li {
+        position: relative;
+        display: block;
+    }
+    #cssmenu ul li a {
+        display: block;
+        text-decoration: none;
+        position: relative;
+    }
+    #cssmenu > ul {
+    }
+    #cssmenu > ul > li:not(:last-child) {
+        border-bottom: 1px solid #000;
+    }
+    #cssmenu > ul > li.active > a {
+        color: #000;
+        background-color: #fff;
+    }
+    
+    #cssmenu > ul > li.has-sub > a::before {
+    	content: 'Q';
+            margin-right: 4%;
+    }
+    
+    #cssmenu > ul > li.has-sub > a::after {
+        content: '';
+        position: absolute;
+        display: block;
+        border: 5px solid transparent;
+        border-top-color: #888888;
+        right: 15px;
+        top: 17px;
+        transition: all .25s ease;
+        transform-origin: 0 25%;
+        display:none;
+    }
+    #cssmenu > ul > li.has-sub.active > a::after {
+        transform: rotateX(180deg);
+        border-top-color: #777777;
+    }
+    #cssmenu > ul > li:hover > a::after {
+        border-top-color: #777777;
+    }
+    #cssmenu > ul > li > a {
+        padding: 25px 30px;
+        color: #888888;
+        transition: all 0.3s ease-out;
+        font-size: 13px;
+            font-weight: bold;
+    }
+    /*#cssmenu > ul > li > a:hover {
+        color: #777777;
+        background-color: #e6e6e6;
+    }
+    #cssmenu ul ul li.active > a {
+        background-color: #f2f2f2;
+        color: #777777;
+    }*/
+    
+     #cssmenu ul li ul{background:#f8f8f8}
+    
+    #cssmenu ul ul li.has-sub > a::after {
+        content: '';
+        position: absolute;
+        display: block;
+        border: 5px solid transparent;
+        border-top-color: #888888;
+        right: 15px;
+        top: 15px;
+        transition: all .25s ease;
+        transform-origin: 0 25%;
+        
+    }
+    #cssmenu ul ul li.has-sub.active > a::after {
+        transform: rotateX(180deg);
+        border-top-color: #777777;
+    }
+    #cssmenu ul ul li:hover > a::after {
+        border-top-color: #777777;
+    }
+    #cssmenu ul ul li a {
+        padding: 30px 35px;
+        font-size: 13px;
+        color: #000;
+        transition: all 0.3s ease-out;
+        line-height:24px;
+        margin-bottom:10px;
+    }
+    #cssmenu ul ul li a:hover {
+        background-color: #f2f2f2;
+        color: #777777;
+    }
+    #cssmenu ul ul ul li a {
+        padding-left: 25px;
+    }

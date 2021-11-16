@@ -1,0 +1,59 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+    .collection_list{    padding-bottom:0;    padding-top: 5%;}
+    .collection_list:after { content:""; clear:both; display:block; }
+    .collection_list li{}
+    .collection_list li .box{cursor:pointer; padding:0 4%;}
+    .collection_list li .box .foto{width:100%;}
+    .collection_list li .box .foto:before {  content: "";  display: block;  padding-bottom:63%;}
+    .collection_list li .box .text{font-family:Calibrib; color:#000;     font-size: 12px;    line-height: 20px;    margin-top: 10px;    margin-bottom: 35px; }
+    
+    .collection_list li .box .image1{background:url(/web/img/mo/collection/01/list.jpg) top center no-repeat; background-size:cover;}
+    .collection_list li .box .image2{background:url(/web/img/mo/collection/02/list.jpg) top center no-repeat; background-size:cover;}
+    .collection_list li .box .image3{background:url(/web/img/mo/collection/03/list.jpg) top center no-repeat; background-size:cover;}
+    .collection_list li .box .image4{background:url(/web/img/mo/collection/04/list.jpg) top center no-repeat; background-size:cover;}
+</style>
+<div class="collection_list">
+    <ul>
+        <li>
+            <div class="box" onclick="location.href='/page/collection/01view.html'">
+                <div class="foto image1">
+                </div>
+                <div class="text">
+                    LMC MINIMAL GARMENTS.<br>
+					A/W 2019 CAMPAIGN LOOKBOOK
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="box" onclick="location.href='/page/collection/02view.html'">
+                <div class="foto image2">
+                </div>
+                <div class="text">
+                    LMC MINIMAL GARMENTS.<br>
+					A/W 2019 CAMPAIGN LOOKBOOK
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="box" onclick="location.href='/page/collection/03view.html'">
+                <div class="foto image3">
+                </div>
+                <div class="text">
+                    LMC MINIMAL GARMENTS.<br>
+					A/W 2019 CAMPAIGN LOOKBOOK
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="box" onclick="location.href='/page/collection/04view.html'">
+                <div class="foto image4">
+                </div>
+                <div class="text">
+                    LMC MINIMAL GARMENTS.<br>
+					A/W 2019 CAMPAIGN LOOKBOOK
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

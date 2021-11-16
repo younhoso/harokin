@@ -1,0 +1,31 @@
+<!--@layout(/layout/basic/main.html)-->
+<style>
+	#contents {height:100%;width:100%;max-width:100%;background:url(/SkinImg/img/page_bg02.png);background-position: center;background-repeat: no-repeat;}
+    .archive_01 {width: 50%;position: relative;}
+    .archive_01 .hover_div {position: absolute;width:100%;height:100%;left:0;top:0;background:rgba(255,255,255,0.8);display:none;}
+    .archive_01 .hover_div h1 {font-size:6vw;text-align:center;color:#000;font-family:'Roboto';padding-top:90%;}
+    .archive_01:hover .hover_div {display:block;}
+    .archive_02 {position: absolute;width: 50%;right: 0; top: 0;}
+    .archive_02 .hover_div {position: absolute;width:100%;height:100%;left:0;top:0;background:rgba(255,255,255,0.8);display:none;}
+    .archive_02 .hover_div h1 {font-size:6vw;text-align:center;color:#000;font-family:'Roboto';padding-top:50%;}
+    .archive_02:hover .hover_div {display:block;}
+    .archive_03 {position: absolute;width: 50%;right: 0; bottom: 0;}
+    .archive_03 .hover_div {position: absolute;width:100%;height:100%;left:0;top:0;background:rgba(255,255,255,0.8);display:none;}
+    .archive_03 .hover_div h1 {font-size:6vw;text-align:center;color:#000;font-family:'Roboto';padding-top:30%;}
+    .archive_03:hover .hover_div {display:block;}
+     .right_icon {position: fixed;right: 26px;bottom: 20px;}
+    
+    .link01 {position: absolute;left: 27%; bottom: 44%;width:14%;    max-width: 267px;}
+    .link02 {    position: absolute;right: 35%;top: 35.5%;width: 14%;max-width: 179px;}
+    .link03 {position: absolute;right: 37%; bottom: 21%;width:14%;    max-width: 178px;}
+</style>
+<!--
+<a href="" class="link01"><img src="/SkinImg/img/page_text01.png" style="width:100%;"></a>
+<a href="" class="link02"><img src="/SkinImg/img/page_text02.png" style="width:100%;"></a>
+<a href="" class="link03"><img src="/SkinImg/img/page_text03.png" style="width:100%;"></a>
+-->
+<div class="archive">
+	<a href="/page/collection.html"><div class="archive_01"><img src="/SkinImg/img/archive_01.png" style="width:100%;"><div class="hover_div"><h1>COLLECTION</h1></div></div></a>
+    <a href="/page/product.html"><div class="archive_02"><img src="/SkinImg/img/product.png" style="width:100%;"><div class="hover_div"><h1>PRODUCT</h1></div></div></a>
+    <a href="/page/campaign.html"><div class="archive_03"><img src="/SkinImg/img/campaign.png" style="width:100%;"><div class="hover_div"><h1>CAMPAIGN</h1></div></div></a>
+</div>

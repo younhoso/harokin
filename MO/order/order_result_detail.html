@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <title></title>
+    <!--@css(/css/common.css)-->
+    <!--@css(/css/custom.css)-->
+    <!--@js(/js/ui.js)-->
+</head>
+<body>
+    <div id="contents" class="gMargin" module="Order_result">
+        <div class="mTitle">
+            <h2>주문상품 정보</h2>
+        </div>
+
+        <div class="mResult">
+            <div class="mBoard colType1 {$normal_display|display}">
+                <table border="1" summary="" nspace="normal">
+                <caption></caption>
+                <colgroup>
+                    <col style="width:auto;">
+                    <col style="width:10%">
+                    <col style="width:20%">
+                    <col style="width:20%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">상품명</th>
+                        <th scope="col">수량</th>
+                        <th scope="col">판매가<br>(적립예정)</th>
+                        <th scope="col">합계</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><strong class="txtTitle">[기본배송]</strong> 상품 구매 금액 {$normal_total_product_price}<span class="{$normal_total_option_price_display|display}"> ({$normal_total_option_price})</span> + 배송비  {$normal_total_delv_price} + 특수지역배송비 {$normal_total_special_delv_price} <strong class="txtEm total">합계 {$price_unit_head}{$normal_total_price}{$price_unit_tail}</strong></td>
+                    </tr>
+                </tfoot>
+                <tbody module="Order_normalresultlist">
+                    <tr>
+                        <td class="product">{$product_name} {$product_opt_str}</td>
+                        <td class="quantity">{$product_quantity}</td>
+                        <td class="price">{$price_unit_head}{$product_price}{$price_unit_tail}<br>({$product_mileage})</td>
+                        <td class="price">{$price_unit_head}{$product_total_price}{$price_unit_tail}</td>
+                    </tr>
+                    <tr>
+                        <td class="product">{$product_name} {$product_opt_str}</td>
+                        <td class="quantity">{$product_quantity}</td>
+                        <td class="price">{$price_unit_head}{$product_price}{$price_unit_tail}<br>({$product_mileage})</td>
+                        <td class="price">{$price_unit_head}{$product_total_price}{$price_unit_tail}</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <div class="mBoard colType1 {$individual_display|display}">
+                <table border="1" summary="" nspace="individual">
+                <caption></caption>
+                <colgroup>
+                    <col style="width:auto;">
+                    <col style="width:10%">
+                    <col style="width:20%">
+                    <col style="width:20%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">상품명</th>
+                        <th scope="col">수량</th>
+                        <th scope="col">판매가<br>(적립예정)</th>
+                        <th scope="col">합계</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><strong class="txtTitle">[개별배송]</strong> 상품 구매 금액 {$individual_total_product_price}<span class="{$individual_total_option_price_display|display}"> ({$individual_total_option_price})</span> + 배송비 {$individual_total_delv_price} + 특수지역배송비 {$individual_total_special_delv_price} <strong class="txtEm total">합계 {$individual_total_price}</strong></td>
+                    </tr>
+                </tfoot>
+                <tbody module="Order_individualresultlist">
+                    <tr>
+                        <td class="product">{$product_name} {$product_opt_str}</td>
+                        <td class="quantity">{$product_quantity}</td>
+                        <td class="price">{$price_unit_head}{$product_price}{$price_unit_tail}<br>({$product_mileage})</td>
+                        <td class="price">{$price_unit_head}{$product_total_price}{$price_unit_tail}</td>
+                    </tr>
+                    <tr>
+                        <td class="product">{$product_name} {$product_opt_str}</td>
+                        <td class="quantity">{$product_quantity}</td>
+                        <td class="price">{$price_unit_head}{$product_price}{$price_unit_tail}<br>({$product_mileage})</td>
+                        <td class="price">{$price_unit_head}{$product_total_price}{$price_unit_tail}</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <div class="mBoard colType1 {$gift_display|display}">
+                <table border="1" summary="" nspace="gift">
+                <caption></caption>
+                <colgroup>
+                    <col style="width:auto;">
+                    <col style="width:10%">
+                    <col style="width:20%">
+                    <col style="width:20%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">상품명</th>
+                        <th scope="col">수량</th>
+                        <th scope="col">판매가<br>(적립예정)</th>
+                        <th scope="col">합계</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><strong class="txtTitle">[사은품]</strong> 상품 구매 금액 0 + 배송비 0 + 특수지역배송비 0 <strong class="txtEm total">합계 0</strong></td>
+                    </tr>
+                </tfoot>
+                <tbody module="Order_giftresultlist">
+                    <tr>
+                        <td class="product">{$product_name} {$product_opt_str}</td>
+                        <td class="quantity">{$product_quantity}</td>
+                        <td class="price"></td>
+                        <td class="state"></td>
+                    </tr>
+                    <tr>
+                        <td class="product">{$product_name} {$product_opt_str}</td>
+                        <td class="quantity">{$product_quantity}</td>
+                        <td class="price"></td>
+                        <td class="state"></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <div class="mButton">
+                <p>
+                    <a href="#none" class="tSubmit1" onclick="javascript:self.close();"><span>닫기</span></a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

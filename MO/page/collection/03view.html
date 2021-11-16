@@ -1,0 +1,37 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<!--@css(/css/swiper.min.css)-->
+
+<!--@css(/css/collection.css)-->
+
+<!-- Swiper -->
+<div class="foto store0" style="position:relative;">
+    <div class="swiper-container swiper5">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background:url(/web/img/mo/collection/03/slide1.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+            <div class="swiper-slide" style="background:url(/web/img/mo/collection/03/slide2.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+            <div class="swiper-slide" style="background:url(/web/img/mo/collection/03/slide3.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+        </div>
+		<!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+
+<!-- Swiper JS -->
+<script src="/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper5 = new Swiper('.swiper5', {
+    nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+    paginationClickable: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: 5000,
+    autoplayDisableOnInteraction: false,
+    loop:true
+});
+</script>

@@ -1,0 +1,39 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+    .board_list{max-width:1160px; margin:0 auto 0; padding-top:95px;}
+    .board_list:after { content:""; clear:both; display:block; }
+    .board_list .left1{width:15%; float:left;}
+    .board_list .left1 .fr{}
+    .board_list .left1 .fr .title{font-family:Calibrib; font-size:20px; margin-bottom:15px;}
+    .board_list .left1 .fr .content{font-family:Calibri; font-size:20px; margin-bottom:35px; color:#666;}
+    .board_list .left1 .fr .content2{font-family:Calibri; font-size:16px; margin-bottom:20px; color:#666;}
+    .board_list .left1 .fr .bt{}
+    
+    .board_list .right1{width:100%; float:left;}
+    .board_list .ec-base-table thead th{border-bottom:1px solid #000;}
+    .board_list .ec-base-table td{border-top:1px solid #000;}
+</style>
+<div class="board_list">
+
+    <div class="right1">
+        <div module="board_CommentDeletePackage_4">
+            <!--@css(/css/module/board/commentDeletePackage.css)-->
+
+
+            <div module="Board_CommentDel_4">
+                <div class="commentDel">
+                    <h3><img src="//img.echosting.cafe24.com/skin/base_ko_KR/board/h3_comment.gif" alt="댓글삭제" /></h3>
+                    <fieldset>
+                        <legend>댓글삭제</legend>
+                        <p class="info">댓글 등록 시 입력한 <strong class="txtEm">비밀번호를 입력하여 주십시요.</strong></p>
+                        <p class="password"><label for="comment_password">비밀번호</label> {$form.comment_password}</p>
+                        <div class="ec-base-button gBlank30">
+                            <a href="{$link_board_list}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/board/btn_secret_list.gif" alt="목록" /></a>
+                            <input type="image" src="//img.echosting.cafe24.com/skin/base_ko_KR/board/btn_secret_submit.gif" alt="확인" />
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

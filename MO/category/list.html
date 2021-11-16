@@ -1,0 +1,22 @@
+<!--@layout(/layout/basic/main.html)-->
+<div class="mTitle">
+    <h2>상품 카테고리</h2>
+</div>
+
+<nav id="mCategory" module="layout_category">
+<!--@js(/js/module/layout/category.js)-->
+<ul>
+    <li>
+        <strong>
+            <a href="/product/list.html{$param}">{$name|cut 25}</a>
+            <img src="http://img.echosting.cafe24.com/mobileWeb/common/btn_categoryOpener.png" width="14" height="14" class="opener" cate="{$param}">
+        </strong>
+    </li>
+    <li>
+        <strong>
+            <a href="/product/list.html{$param}">{$name|cut 25}</a>
+            <img src="http://img.echosting.cafe24.com/mobileWeb/common/btn_categoryOpener.png" width="14" height="14" class="opener" cate="{$param}">
+        </strong>
+    </li>
+</ul>
+</nav>

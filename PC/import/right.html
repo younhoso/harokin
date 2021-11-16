@@ -1,0 +1,144 @@
+<!--@css(/css/right.css)-->
+<div class="right_f">
+    <div class="in">
+        <div>
+            <ul>
+                <!--<li style="">
+                    <a href="#" id="toggleButton3"><img src="/SkinImg/img/sch.png" style=""></a>
+                </li>-->
+                <li module="Layout_statelogoff">
+                    <a href="/myshop/index.html" style="font-family:Roboto; font-size:13px;">Account</a>
+                </li>
+                <li module="Layout_statelogon">
+                    <a href="{$action_logout}" style="font-family:Roboto; font-size:13px;">Logout</a>
+                </li>
+                <li module="Layout_statelogon">
+                    <a href="/myshop/index.html" style="font-family:Roboto; font-size:13px;">My page</a>
+                </li>
+                <!--<li>
+                    <a href="#none" style="font-family:Roboto; font-size:13px;">En</a>
+                </li>-->
+                <li>
+                    <a href="/order/basket.html">
+                        <div class="cart_count" style="background:url(/SkinImg/img/new-bag.png);background-size:22px 24px;width:22px;height:24px;text-align:center;line-height:29px;">
+                            <span module="Layout_orderBasketcount">{$basket_count}</span>
+                        </div>
+
+                    </a>
+                </li>
+                <!--
+                <li style="" module="Layout_statelogoff" style="margin-left:25px;"><a href="/member/login.html">로그인</a></li>
+                <li style="" module="Layout_stateLogon" style="margin-left:25px;"><a href="{$action_logout}" style="padding:0;background:none;">로그아웃</a></li>
+       		    <li  module="Layout_shoppingInfo" style="margin-left:15px;"><a href="/myshop/wish_list.html">관심상품 ({$interest_prd_cnt})</a></li>
+-->
+                <!--li><a href="/myshop/index.html">마이페이지</a></li-->
+                
+                 
+                <li style="display:none;">
+                    <a href="/member/login.html" id=""><img src="/SkinImg/img/b_member.png"></a>
+                    <div id="moreMenu2" style="display:none;">
+                        <div module="member_login">
+                            <!--@css(/css/module/member/login.css)-->
+                            <!--
+                                $defaultReturnUrl = /index.html
+                                $forbidIpUrl = member/adminFail.html
+                            -->
+                            <div class="login">
+                                <!--h3><img src="https://img.echosting.cafe24.com/skin/base_ko_KR/member/h3_login.gif" alt="회원로그인" /></h3-->
+                                <fieldset>
+                                    <legend>회원로그인</legend>
+                                    <p class="login_ti">Member ID<span>*</span></p>
+                                    <label class="id ePlaceholder">{$form.member_id}</label>
+                                    <p class="login_ti">Password<span>*</span></p>
+                                    <label class="password ePlaceholder">{$form.member_passwd}</label>
+                                    <p class="security" style="display:none;">
+                                        
+                                        {$form.member_check_save_id}
+                                        {$form.member_check_secret_connect}
+                                    </p>
+                                    <p style="text-align:right; margin-bottom:20px;">
+                                        <a href="/member/join.html">회원가입</a> / <a href="/member/id/find_id.html">아이디 찾기</a> / <a href="/member/passwd/find_passwd_info.html">비밀번호 찾기</a>
+                                    </p>
+                                    <ul class="snsArea2">
+                                        <li class="{$display_naver|display}">
+                                            <a href="#none" onclick="{$naver_func_login}"><img src="/SkinImg/img/login_sns1.png" alt="네이버 로그인" /></a>
+                                        </li>
+                                        <li class="{$display_kakao|display}">
+                                            <a href="#none" onclick="{$kakao_func_login}"><img src="/SkinImg/img/login_sns2.png" alt="카카오계정 로그인" /></a>
+                                        </li>
+                                        <li class="{$display_facebook|display}">
+                                            <a href="#none" onclick="{$facebook_func_login}"><img src="/SkinImg/img/login_sns3.png" alt="페이스북 로그인" /></a>
+                                        </li>
+                                        <li class="{$display_google|display}">
+                                            <a href="#none" onclick="{$google_func_login}"><img src="/SkinImg/img/login_sns4.png" alt="구글 로그인" /></a>
+                                        </li>
+                                    </ul>
+                                    <div class="bt_black">
+                                        <a href="#none" onclick="{$action_func_login}">LOG IN</a>
+                                    </div>
+                                    <div class="bt_gray">
+                                        <a href="{$returnUrl}" onclick="{$action_nomember_order}">비회원 주문</a>
+                                    </div>
+                                    
+                                    <a href="/member/join.html"><img src="/SkinImg/img/join.jpg" alt="회원가입" style="margin-top:5px; display:none;"/></a>
+                                    
+                                    <ul class="snsArea" style="display:none;">
+                                        <li class="{$display_naver|display}">
+                                            <a href="#none" onclick="{$naver_func_login}"><img src="https://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_naver_login.gif" alt="네이버 로그인" /></a>
+                                        </li>
+                                        <li class="{$display_facebook|display}">
+                                            <a href="#none" onclick="{$facebook_func_login}"><img src="https://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_facebook_login.gif" alt="페이스북 로그인" /></a>
+                                        </li>
+                                        <li class="{$display_google|display}">
+                                            <a href="#none" onclick="{$google_func_login}"><img src="https://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_google_login.gif" alt="구글 로그인" /></a>
+                                        </li>
+                                        <li class="{$display_kakao|display}">
+                                            <a href="#none" onclick="{$kakao_func_login}"><img src="https://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_kakao_login.gif" alt="카카오계정 로그인" /></a>
+                                        </li>
+                                    </ul>
+                                    <p class="link" style="display:none;">
+                                        회원가입을 하시면 다양하고 특별한<br />혜택이 준비되어 있습니다.
+                                        <a href="/member/join.html"><img src="https://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_join.gif" alt="회원가입" /></a>
+                                    </p>
+                                    <p class="link {$display_nomember|display}" id="noMemberWrap" style="display:none;">
+                                        비회원님도 상품구매가 가능하나 다양한<br />회원혜택에서 제외됩니다.
+                                        <a href="{$returnUrl}" onclick="{$action_nomember_order}"><img src="https://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_nomember.gif" alt="비회원구매" /></a>
+                                    </p>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <!--로그인전끝-->
+                        <!--로그인후-->
+                        	<div module="Layout_stateLogon">
+                                <!--@css(/css/module/layout/statelogon.css)-->
+                                <span class="myinfo"><strong>{$name}</strong><p class="level">{$group_name}</p></span>
+                                <!--<div class="bt_gray">
+                                    <a href="/member/modify.html">내정보</a>
+                                </div>-->
+								<!--<div class="bt_gray">
+                                    <a href="/myshop/index.html">마이페이지</a>
+                                </div>-->
+                                <!--div class="bt_gray">
+                                    <a href="/member/modify.html">회원등급별 혜택</a>
+                                </div-->
+                                <div class="bt_gray">
+                                    <a href="/member/join.html">ACCOUNT</a>
+                                </div>
+                                <div class="bt_gray">
+                                    <a href="/myshop/index.html">MY PAGE</a>
+                                </div>
+                                <div class="bt_black">
+                                    <a href="{$action_logout}" class="log">LOG OUT</a>
+                                </div>
+                                
+                            </div>
+                        <!--로그인후끝-->
+                 	</div>
+                </li>
+                
+           	</ul>
+        </div>
+        
+    </div>
+</div>
+

@@ -1,0 +1,8 @@
+.top {width:100%;position: absolute;/*height:131px;border-bottom:1px solid #000;*/}
+.top2 {width:100%;position: fixed;height:58px;}
+.left-menu {position: absolute;top:26px;left:10px;z-index:1001;}
+.right-menu {position: absolute;top:21px;right:10px;z-index:1001;}
+.logo {width:100%;text-align:center;position: absolute;top:22px;left:0;z-index:1000;}
+.logo img{   height:30px;
+}
+.white_logo {display:none;}

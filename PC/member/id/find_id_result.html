@@ -1,0 +1,43 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>    #contents {max-width:1400px !important;margin:0 auto;padding-top:250px;}</style>
+<div class="path">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li title="현재 위치"><strong>아이디 찾기</strong></li>
+    </ol>
+</div>
+
+<div class="titleArea" style="display:none;">
+    <h2>아이디 찾기</h2>
+</div>
+
+<div module="member_findidresult">
+    <!--@css(/css/module/member/find_id_result.css)-->
+    <div class="findId">
+        <h3 style="font-family:'Roboto'; font-size:20px; text-align:center; margin-bottom:50px;font-weight:bold;">FIND ID</h3>
+        <p class="info" style="display:none;">고객님 아이디 찾기가 완료 되었습니다.</p>
+        <div class="ec-base-box typeMember gMessage" style="border:none;">
+            <p class="message" style="display:none;">저희 쇼핑몰를 이용해주셔서 감사합니다.<br />다음정보로 가입된 아이디가 총 <span class="txtEm">{$idCnt}</span>개 있습니다.</p>
+            <div class="information">
+                <p class="thumbnail" style="display:none;"><img src="//img.echosting.cafe24.com/skin/base/member/img_member_default.gif" alt="" /></p>
+                <div class="description" style="border:none;">
+                    <ul class="ec-base-desc gSmall" style="font-size:14px;color:#000;">
+                        <li><strong class="term">이름</strong><strong class="desc"> : {$name}</strong></li>
+                        <li><strong class="term">{$searchType}</strong><span class="desc"> : {$searchInfo}</span></li>
+                        <li>{$searchIds}</li>
+                        <li style="display:none;">고객님 즐거운 쇼핑 하세요!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copy" style="display:none;">
+            고객님의 아이디 찾기가 성공적으로 이루어졌습니다. 항상 고객님의 <br />
+            즐겁고 편리한 쇼핑을 위해 최선의 노력을 다하는 쇼핑몰이 되도록 하겠습니다.
+        </p>
+        <p class="ec-base-button">
+            <a href="javascript:go_findlogin('{$id}');" style="display:inline-block;width:100px;height:40px;line-height:40px;text-align:center;font-family:'Roboto';font-weight:bold;color:#fff;font-size:16px;background:#000;margin-top:50px;">LOGIN</a>
+            <a href="javascript:go_findpwd('{$id}','{$mtype}');" style="display:inline-block;width:150px;height:40px;line-height:40px;text-align:center;font-family:'Roboto';font-weight:bold;color:#fff;font-size:16px;background:#000;margin-top:50px;">FIND PASSWORD</a>
+        </p>
+    </div>
+</div>

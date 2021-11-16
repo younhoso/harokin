@@ -1,0 +1,157 @@
+<!--@css(/css/swiper.min.css)-->
+
+<style>
+    .swiper5 {
+        z-index:4;
+        width: 100%;
+        position:relative;
+        top:0;
+        left:0;
+        margin-bottom:20px;
+    }
+    .swiper5 .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background:#fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        top:20px;
+    }
+    .swiper5 .swiper-slide {}
+    .swiper-slide img { }
+    /*.swiper5:after { content:""; clear:both; display:block; padding-bottom:10%; }*/
+    .swiper5 .swiper-slide:before {
+    content: "";
+    display: block; margin-bottom: 20px;
+    padding-bottom: 51%;}
+    
+    .swiper-pagination5{/*bottom: auto !important;  top: 0;*/ text-align: left; left:30% !important;}
+    .swiper-pagination5 .swiper-pagination-bullet{width:10px; height:10px; margin:0 5px !important; background:#fff; vertical-align:middle;}
+    .swiper-pagination5 .swiper-pagination-bullet-active{ width:15px; height:15px; background:#fff; border-radius:20px;}
+    
+    .foto .text_fr{    position: absolute;
+    top: 20px;
+    width: 33%;
+    right: 0;
+    background: rgba(255,255,255,0.9);
+    z-index: 5;}
+    
+    .foto .text_fr:before {
+    content: "";
+    display: block; 
+    padding-bottom:155%;}
+    
+    .foto .text_info{position:absolute; bottom:45px; left:10%;}
+    .foto .text_info .title{color:#000; font-family:Calibrib; font-size:20px; margin-bottom:25px;}
+    .foto .text_info .address{font-family:arial; font-size:14px; color:#000;    line-height: 28px; margin-bottom:30px;}
+    .foto .text_info .address2{font-family: 'Noto Sans KR'; font-size:14px; color:#000;    line-height: 28px; margin-bottom:20px;}
+	.foto .text_info .map{}
+    .foto .text_info .map a{font-family:Calibrib; text-align:center; color:#fff; font-size:16px; background:#000; width:155px; display:block; padding:5px 0;}
+    
+    .white_content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+        z-index:9;
+    background: rgba(0, 0, 0, 0.8);
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.white_content:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.white_content > div {
+	position: absolute;
+	top: 15%;
+	left: 8%;
+	width: 80%;
+	height: 100%;
+	padding: 0px;
+	border: 0px solid orange;
+	overflow: auto;	
+    
+}
+    
+   .white_content .map{position:relative;}
+	.white_content .map:before {   content: "";   display: block;   padding-bottom: 40%;}
+
+	.white_content .map iframe{width:100%; height:100%;position:absolute;    top: 0;   left: 0;}
+    .white_content .close{font-family:Calibrib; font-size:20px; text-align:right; padding-bottom:10px;}
+    .white_content .close a{color:#fff;}
+</style>
+<div class="white_content" id="open">
+    <div>
+        <p class="close"><a href="#close">CLOSE</a></p>
+        <div class="map">
+            <iframe src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.259473534957!2d127.0339213154181!3d37.52538033424147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca388ea20baf9%3A0x63d696c2180dc760!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsi6Dsgqzrj5kgNjQ3LTE!5e0!3m2!1sko!2skr!4v1563420315568!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<!-- Swiper -->
+<div class="foto store0" style="position:relative;">
+    <div class="text_fr">
+        <div class="text_info">
+            <div class="title">
+                APGUJEONG RODEO STREET
+            </div>
+            <div class="address">
+                1F, 647-1, Sinsa-dong, Gangnam-gu, Seoul, Korea<br>
+                Tel +82 70 4205 7288<br>
+                Open Hours 12:00 - 20:00 (코로나 19 사태로 인하여 단축 운영중)<br>
+                * TAX-FREE
+            </div>
+            <div class="address2">
+                서울시 강남구 신사동 647-1 1층<br>
+            </div>
+            <div class="map">
+                <a href="#open">MAP</a>
+            </div>
+        </div>
+   	</div>
+    <div class="swiper-container swiper5">
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination5"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background:url(/web/img/pc/store/store1_1.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+            <div class="swiper-slide" style="background:url(/web/img/pc/store/store1_2.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+            <div class="swiper-slide" style="background:url(/web/img/pc/store/store1_3.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+            <div class="swiper-slide" style="background:url(/web/img/pc/store/store1_4.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+            <div class="swiper-slide" style="background:url(/web/img/pc/store/store1_5.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Swiper JS -->
+<script src="/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper5 = new Swiper('.swiper5', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: 5000,
+    autoplayDisableOnInteraction: false,
+    loop:true
+});
+</script>

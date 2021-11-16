@@ -1,0 +1,8 @@
+.top_cate { border-top:1px solid #000;  }
+.top_cate ul { clear:both; display:block; }
+.top_cate:after { content:""; clear:both; display:block; }
+.top_cate ul li { float:left; text-align:center; width:33.1%;margin:10px 0px;border-right:1px solid #ccc;font-size:14px; font-family:'Futura Std Medium'; }
+.top_cate ul li:nth-child(3n){border:none;}
+.top_cate ul li:first-child { background:none; }
+.top_cate ul li a { display:block; }
+.top_cate ul.line { border-bottom:1px solid #e1e1e1; }

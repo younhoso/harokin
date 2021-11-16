@@ -1,0 +1,100 @@
+<div class="accordion" module="product_additional">
+  <div class="item">
+    <div class="heading"><span>DESCRIBTION</span></div>
+    <div class="content" style="display:block;">
+		{$simple_desc}
+      </div>
+  </div>
+    <!--
+  <div class="item">
+    <div class="heading"><span>SIZE INFO</span></div>
+    <div class="content"id="prdDetail"style="text-align:left;    letter-spacing: 2px;    font-size: 13px;    font-family: Calibri; line-height:22px; margin:10px 0;">
+    	<div>
+            {$exchange_info}
+        </div>
+    </div>
+  </div>-->
+  <!--div class="item">
+    <div class="heading">SHIPPING & RETURNS</div>
+    <div class="content" id="prdInfo" style="text-align:left;    letter-spacing: 2px;    font-size: 13px;    font-family: Calibri; line-height:22px; margin:50px 0;">
+        {$exchange_info}
+    </div>
+  </div-->
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script>
+$('.accordion .item .heading').click(function() {
+		
+	var a = $(this).closest('.item');
+	var b = $(a).hasClass('open');
+	var c = $(a).closest('.accordion').find('.open');
+		
+	if(b != true) {
+		$(c).find('.content').slideUp(200);
+		$(c).removeClass('open');
+	}
+
+	$(a).toggleClass('open');
+	$(a).find('.content').slideToggle(200);
+
+});
+</script>
+
+
+
+
+
+<style>
+.accordion {
+  overflow: hidden;
+  margin:0px auto 0;
+    padding:0px 15px;
+}
+
+.accordion .item .heading {
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #000;
+   font-family:'Roboto';
+/*background: #fff url('/SkinImg/img/detail1.png') top left no-repeat;
+   background-size:12px;
+    background-position-y:13px;
+    background-position-x:92px;*/
+  box-sizing: border-box;
+}
+    
+    .accordion .item.open .heading {
+    /*background: #fff url(/SkinImg/img/detail2.png) top left no-repeat;
+    background-size: 12px;
+    background-position-y: 13px;
+    background-position-x: 92px;*/
+}
+
+.accordion .item.open .heading,
+.accordion .item:last-child .heading { border: 0; }
+
+.accordion .item.open .heading {/* background: #fff url('/SkinImg/img/detail2.png') top left no-repeat;background-size:12px;
+    background-position-y:13px;background-position-x:70px; */}
+
+.accordion .item .content {
+  display: none;
+  padding: 10px 0;
+  background: #fff;
+  font-size: 13px;
+    color:#999;
+    line-height:20px;
+    /*    max-height: 150px;
+    overflow-y: auto;
+    margin-right:2px;*/
+}
+.accordion .item .content img {width:100% !important;}    
+.accordion ::-webkit-scrollbar{width: 6px; border-radius:10px; }
+.accordion ::-webkit-scrollbar-track {background-color:#f0f0f0;}
+.accordion ::-webkit-scrollbar-thumb {background-color:#333;border-radius: 10px;}
+.accordion ::-webkit-scrollbar-thumb:hover {background: #000;}
+.accordion ::-webkit-scrollbar-button:start:decrement,.accordion ::-webkit-scrollbar-button:end:increment {
+width:0px;height:0px;background:#f1ef79;}     
+</style>

@@ -1,0 +1,56 @@
+<!--@css(/css/swiper.min.css)-->
+<style>
+    
+    .lookbook {padding:89px 0px 10px;position: relative;}
+    .lookbook h1 {font-size:14px;font-weight:500;font-family:'Roboto';color:#333333;padding:0px 15px;}
+
+    .swiper-container02 .swiper-slide {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+              justify-content: center;
+      -webkit-transition: all 200ms linear;
+      transition: all 200ms linear;
+      -webkit-transform: scale(0.8);transform: scale(0.8);
+        opacity: 0.7;
+    }
+    .swiper-container02 .swiper-slide img {max-width:443px;width:100%;}
+
+    .swiper-pagination02  {width:100%;bottom:20px;}
+    .swiper-pagination02 .swiper-pagination-bullet {width:6px;height:6px;margin:0px 2.5px;background:none;border:2px solid #9e9e9e;opacity:1;}
+    .swiper-pagination02 .swiper-pagination-bullet-active {background:#000;border-color:#000;}
+</style>
+
+<div class="lookbook">
+    <h1>LOOKBOOK <a href="/page/lookbook.html"><img src="/SkinImg/img/more_btn02.png" style="float:right;margin-top:5px;width:120px;"></a></h1>
+    	<div class="swiper-container swiper-container02">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/SkinImg/img/lookbook01.png"></div>
+              <div class="swiper-slide"><img src="/SkinImg/img/lookbook01.png"></div>
+                <div class="swiper-slide"><img src="/SkinImg/img/lookbook01.png"></div>
+                <div class="swiper-slide"><img src="/SkinImg/img/lookbook01.png"></div>
+                <div class="swiper-slide"><img src="/SkinImg/img/lookbook01.png"></div>
+                <div class="swiper-slide"><img src="/SkinImg/img/lookbook01.png"></div>
+                
+            </div>
+            <!-- Add Pagination
+            <div class="swiper-button-next swiper-button-next02 swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-prev02 swiper-button-white"></div>
+   			  -->
+            
+           
+          </div>
+     	<div class="swiper-pagination swiper-pagination02"></div>
+    </div>
+<script src="/js/swiper.min.js"></script>
+<script>
+	      var swiper = new Swiper(".swiper-container02", {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination02',
+           clickable: true,
+         },
+      });
+</script>

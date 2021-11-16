@@ -1,0 +1,115 @@
+<!--@layout(/layout/basic/main.html)-->
+<!--@css(/css/swiper.min.css)-->
+<!--@css(/css/fullpage.css)-->
+
+<style>
+    .swiper1{width:30%;     padding: 50px 0 0 0;/*margin: 155px auto 95px;*/}
+    .swiper-container {
+        z-index:50;
+        /*width: 100%;*/  
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 13px;
+        background:#fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+    
+     .swiper-slide:before{content:"";display:block;padding-bottom:136%;}
+    .swiper-slide img { width:100%; }
+    
+    .text_div .text{font-size:15px; font-family:'Roboto'; text-align:center;}
+    
+    .swiper-button-prev, .swiper-button-next{top:50%;}
+    .swiper1 .swiper-button-next{background-image: url(/SkinImg/img/slide_arrow_right.png);
+    width:33px; height:33px;-moz-background-size: 33px 33px;
+    -webkit-background-size: 33px 33px;
+    background-size: 33px 33px; right:0;
+    }
+    .swiper1 .swiper-button-prev{background-image: url(/SkinImg/img/slide_arrow_left.png);width:33px; height:33px; -moz-background-size: 33px 33px;
+    -webkit-background-size: 33px 33px;
+    background-size: 33px 33px; left:0;}
+</style>
+<!-- Swiper -->
+<div id="fullpage">
+    <div class="section slideBox " id="section0">
+        <div class="text_div">
+        <div class="swiper-container swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background:url(/SkinImg/img/archive1/01.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">                	
+                </div>
+                <div class="swiper-slide" style="background:url(/SkinImg/img/archive1/02.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                </div>
+                <div class="swiper-slide" style="background:url(/SkinImg/img/archive1/03.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                </div>
+                <div class="swiper-slide" style="background:url(/SkinImg/img/archive1/04.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                </div>
+                <div class="swiper-slide" style="background:url(/SkinImg/img/archive1/05.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                </div>
+                <div class="swiper-slide" style="background:url(/SkinImg/img/archive1/06.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                </div>
+                <div class="swiper-slide" style="background:url(/SkinImg/img/archive1/07.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                </div>
+                <div class="swiper-slide" style="background:url(/SkinImg/img/archive1/08.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                </div>
+                <div class="swiper-slide" style="background:url(/SkinImg/img/archive1/09.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                </div>
+                <div class="swiper-slide" style="background:url(/SkinImg/img/archive1/10.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                </div>
+                <div class="swiper-slide" style="background:url(/SkinImg/img/archive1/11.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                </div>
+                <div class="swiper-slide" style="background:url(/SkinImg/img/archive1/12.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                </div>
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="text">HAROKIN x VOGUE Korea Donation program 판매 수익금은 범죄 피해 아동 지원 사업을 위해 초록우산 어린이재단에 기부됩니다.</div>
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- Swiper JS -->
+<script type="text/javascript" src="/js/swiper.min.js"></script>
+<script type="text/javascript" src="/js/fullpage.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper('.swiper1', {
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+    paginationClickable: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: 5000,
+    autoplayDisableOnInteraction: false,
+    loop:true
+});
+</script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage'],
+        sectionsColor: ['#fff'],
+        autoScrolling: false,
+        css3: true,
+        fitToSection: false
+    });
+</script>

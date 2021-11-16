@@ -1,0 +1,144 @@
+.xans-order-form {}
+.xans-order-form .orderStep { margin:-15px 0 30px; text-align:center; }
+.xans-order-form .orderList {margin:50px 0 20px;}
+.xans-order-form .orderList h3 { font-size:16px; margin:0 0 10px; }
+.xans-order-form .orderList h3 span { padding:0 0 0 9px; color:#34a7b3; font-weight:normal; font-size:11px; }
+
+.xans-order-form .btnArea { text-align:right; overflow:hidden; margin:20px 0 50px; }
+.xans-order-form .btnArea.miniType { margin:10px 0 20px; padding:0 15px; }
+.xans-order-form .btnArea img { float:left; padding:0 1px 0 0; cursor:pointer; }
+
+.xans-order-form .btnArea p.btnLeft { float:left; }
+.xans-order-form .btnArea p.btnRight { float:right; }
+.xans-order-form .btnArea p.btnRight img { float:left; padding:0 0 0 1px; }
+
+.xans-order-form table.boardProduct { /*background:url(http://img.echosting.cafe24.com/design/skin/mono/bg_dot.gif) 0 bottom repeat-x; */}
+.xans-order-form table.boardProduct th { padding:9px 0; font-size:11px; font-weight:normal; }
+.xans-order-form table.boardProduct th.delivery { color:#333; }
+.xans-order-form table.boardProduct td { padding:10px 0; font-size:11px; text-align:center; border-top:1px solid #d9ada0; background:#fdfbfa; }
+.xans-order-form table.boardProduct .chk { width:30px; }
+.xans-order-form table.boardProduct .thumb { width:134px; overflow:hidden; }
+.xans-order-form table.boardProduct .thumb a,
+.xans-order-form table.boardProduct .thumb a:hover { color:#000; }
+.xans-order-form table.boardProduct .thumb img { width:46px; float:left; }
+.xans-order-form table.boardProduct .thumb span { float:left; padding:0 0 0 8px; width:80px; text-align:left; }
+.xans-order-form table.boardProduct .prduct { }
+.xans-order-form table.boardProduct .sell { width:80px; }
+.xans-order-form table.boardProduct .mileage { width:63px;}
+.xans-order-form table.boardProduct .opt { width:280px; }
+.xans-order-form table.boardProduct .quantity { width:80px; }
+.xans-order-form table.boardProduct .quantity img { margin:0 0 0 2px; cursor:pointer; }
+.xans-order-form table.boardProduct .delivery { width:75px; color:#888a86; }
+.xans-order-form table.boardProduct .charge { width:58px; }
+.xans-order-form table.boardProduct .total { width:110px; }
+.xans-order-form table.boardProduct .state { width:75px; }
+.xans-order-form table.boardProduct .delivery1 { width:75px; }
+.xans-order-form table.boardProduct .delivery2 { width:75px; }
+
+.xans-order-form table.boardProduct td.chk {}
+.xans-order-form table.boardProduct td.thumb {}
+.xans-order-form table.boardProduct td.prduct { text-align:left;}
+.xans-order-form table.boardProduct td.prduct strong { display:block; padding:5px 0 0; font-weight:normal; color:#888a86; overflow:hidden; }
+.xans-order-form table.boardProduct td.prduct .btnPrdWrite a { float:left; padding:1px; background:#b0b0b0; color:#fff; }
+.xans-order-form table.boardProduct td.prduct ul { padding:5px 0 0; color:#888a86;}
+.xans-order-form table.boardProduct td.sell {}
+.xans-order-form table.boardProduct td.mileage { }
+.xans-order-form table.boardProduct td.opt {}
+.xans-order-form table.boardProduct td.quantity input { border:1px solid #bcbcbc; width:25px; text-align:center; }
+.xans-order-form table.boardProduct td.delivery { }
+.xans-order-form table.boardProduct td.charge { }
+.xans-order-form table.boardProduct td.total { font-weight:bold; color:#34a7b3; }
+
+.xans-order-form table.boardProduct tfoot td { text-align:right; padding:7px 7px 20px; background:none; color:#000; }
+.xans-order-form table.boardProduct tfoot td .total { color:#f8941d; }
+
+.xans-order-form .ordDetail1 { background:none; }
+.xans-order-form .ordDetail1 tfoot td { border-top:2px solid #d9ada0; }
+.xans-order-form .ordDetail1 .thumb { width:60px; text-align:center; }
+.xans-order-form .ordDetail1 .thumb img { float:none; }
+
+.xans-order-form .ordDetail2 { background:none; }
+.xans-order-form .ordDetail2 tbody td { border-top:1px solid #a0bdd9; background:#fafcfd; }
+.xans-order-form .ordDetail2 tfoot td {border-top:2px solid #a0bdd9;  }
+
+.xans-order-form #totalOrder { overflow:hidden; background:#beb1a4; color:#fff; margin:30px 0 10px; padding:22px 17px 22px 39px; }
+.xans-order-form #totalOrder h4 { float:left; margin:0; }
+.xans-order-form #totalOrder h4 strong { display:block; color:#fff799; font-size:2.0em; padding:0 0 10px; }
+.xans-order-form #totalOrder h4 span { font-weight:normal; }
+.xans-order-form #totalOrder ul { float:right; width:344px; }
+.xans-order-form #totalOrder li { overflow:hidden; font-size:.9em; padding:4px 0; }
+.xans-order-form #totalOrder li strong { float:left; width:150px; text-align:right; font-weight:normal; }
+.xans-order-form #totalOrder li span { float:right; width:174px;  padding:0 0 0 20px; text-align:right; font-weight:bold; font-family: "돋움", Dotum, AppleGothic, sans-serif;  }
+.xans-order-form #totalOrder li em { font-style:normal; }
+.xans-order-form #totalOrder li.total strong { padding:4px 0 0;}
+.xans-order-form #totalOrder li.total span { color:#fff799; font-size:2.0em; }
+.xans-order-form #totalOrder p.ship { clear:both; text-align:right; }
+
+.xans-order-form .orderArea { margin:50px 0 20px; overflow:hidden; zoom:1; }
+.xans-order-form .orderArea h3 { float:left; margin:0 0 18px; }
+.xans-order-form .orderArea table { clear:both; }
+.xans-order-form .orderArea .chkAdd { float:right; margin:4px 0 0; color:#34a7b3; font-size:.9em; }
+.xans-order-form .orderArea .chkAdd label { color:#202020; }
+.xans-order-form .orderArea .chkAdd img { vertical-align:middle; }
+
+.xans-order-form div.boardView { clear:both; margin-top:18px; border-top:3px solid #333; border-bottom:3px solid #333; }
+.xans-order-form table.boardView { background:#f6f7f9; font-size:.9em; }
+.xans-order-form table.boardView input,
+.xans-order-form table.boardView textarea { border:1px solid #bcbcbc; background:#fff; color:#202020; padding:1px 0 2px 4px; }
+.xans-order-form table.boardView thead th { border-bottom:3px solid #333; }
+.xans-order-form table.boardView thead td { border-bottom:3px solid #333; }
+.xans-order-form table.boardView tfoot th { border-top:3px solid #333; }
+.xans-order-form table.boardView tfoot td { border-top:3px solid #333; }
+.xans-order-form table.boardView .first { border-top:0; padding-top:20px; }
+.xans-order-form table.boardView th { width:120px; padding:5px 0 5px 20px; text-align:left; line-height:2em; border-bottom:1px solid #e6e6e6; color:#868686;}
+.xans-order-form table.boardView td { width:616px; padding:5px 0 5px; border-bottom:1px solid #e6e6e6; line-height:2em; color:#8b8b8c;  }
+.xans-order-form table.boardView td.write { width:100%; }
+.xans-order-form table.boardView td img { vertical-align:middle; }
+
+.xans-order-form table.ordAdd .price { color:#34a7b3; font-size:16px; }
+.xans-order-form table.ordAdd .mileage { color:#00aeef; font-weight:normal; }
+.xans-order-form table.ordAdd .colType { padding-left:0 }
+.xans-order-form table.ordAdd input.btn { padding:1px 3px;}
+.xans-order-form table.ordAdd #total_price { background:#f6f7f9; margin:0 4px 0 0; }
+.xans-order-form table.ordAdd #eguarantee_personal #eguarantee_ssn1 { width:80px; }
+.xans-order-form table.ordAdd #eguarantee_personal #eguarantee_ssn2 { width:80px; }
+
+.basketInfo { font-size:.9em; color:#8B8B8C; margin:30px 0;}
+.basketInfo h3 { padding:0 0 18px 0; padding:0 0 18px 0; line-height:18px; color:#34a7b3; font-weight:normal; }
+.basketInfo li { padding:0 0 0 10px; line-height:18px; background:url(http://img.echosting.cafe24.com/design/skin/mono/ico_info.gif) 0 2px no-repeat; }
+.basketInfo li > strong { display:block; padding:0 0 5px; }
+.basketInfo li ul { padding:0 0 20px; }
+.basketInfo li li { padding:0; background:none;}
+.basketInfo a,
+.basketInfo a:hover {color:#8B8B8C; }
+.basketInfo.mileageType { margin:50px 0 0;}
+.basketInfo.couponType em { color:#34a7b3; text-decoration:underline; }
+
+#bankBenefit { overflow:hidden; zoom:1; margin:30px 0; padding:20px; color:#8b8b8c; background:#f6f7f9; border-top:3px solid #333; border-bottom:3px solid #333; }
+#bankBenefit p { float:left; padding:0 20px 0 0; }
+#bankBenefit p.myInfo { width:550px; line-height:20px; }
+#bankBenefit p strong { color:#8c91a2; }
+#bankBenefit p span.typeBlock { display:block; }
+
+#bankBenefit p span.typeBlock { display:block; }
+
+.xans-order-form table.boardView input#hope_shipping_fast0 { border:0; background:none;}
+.xans-order-form table.boardView input#nm_agreement0 { border:0; background:none;}
+.xans-order-form table.boardView input#nm_agreement1 { border:0; background:none;}
+.xans-order-form table.boardView input#subscription_agreement0 { border:0; background:none;}
+.xans-order-form table.boardView input#subscription_agreement1 { border:0; background:none;}
+.xans-order-form table.boardView input#addr_paymethod0 { border:0; background:none;}
+.xans-order-form table.boardView input#addr_paymethod1 { border:0; background:none;}
+.xans-order-form table.boardView input#addr_paymethod2 { border:0; background:none;}
+.xans-order-form table.boardView input#addr_paymethod3 { border:0; background:none;}
+.xans-order-form table.boardView input#addr_paymethod4 { border:0; background:none;}
+.xans-order-form table.boardView input#addr_paymethod5 { border:0; background:none;}
+.xans-order-form table.boardView input#addr_paymethod6 { border:0; background:none;}
+.xans-order-form table.boardView input#addr_paymethod7 { border:0; background:none;}
+
+#subscription_terms { width:590px; height:200px; }
+
+#divNvPointInfo { display:none; position:absolute; z-index:99; width:245px; padding:10px; color:#777; font-size:11px; line-height:14px; background:#fff; border:1px solid #5B9761; }
+#divNvPointInfo a { display:block; padding:5px 0 0; color:#1ec228; }
+#divNvPointInfo a img { vertical-align:middle; }
+#imgNaverMileageHelp { cursor:pointer; }

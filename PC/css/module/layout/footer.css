@@ -1,0 +1,39 @@
+.footer{}
+.footer:after { content:""; clear:both; display:block; }
+.footer .left{float:left; text-align:left;}
+.footer .left .title{font-family:Calibrib; font-size:16px; color:#000; margin-bottom:22px;}
+.footer .left .address{font-family:Calibri; font-size:14px; color:#000;line-height: 26px;}
+
+.footer .right{float:right;}
+.footer .right ul:after { content:""; clear:both; display:block; }
+.footer .right li{display:inline-block; vertical-align:top;padding: 0 27px}
+.footer .right .title{font-family:Calibrib; font-size:16px; color:#000; margin-bottom:12px; text-align:center;}
+.footer .right .content{font-family:Calibri; font-size:13px; color:#000;line-height: 26px;text-align:center;}
+.footer .right .sns{    text-align: right; margin-right: 20px; margin-top:30px;}
+.footer .right .sns img{margin:0 5px;}
+
+.xans-layout-footer { float:right; width:1100px; height:176px; }
+.xans-layout-footer .utilMenu { overflow:hidden; height:32px; line-height:32px; *zoom:1; width:500px; float:left;}
+.xans-layout-footer .utilMenu li { float:left; padding:0 20px 0 0;/* background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar2.gif") no-repeat 0 15px; */}
+.xans-layout-footer .utilMenu li:last-child{padding-right:0px;}
+.xans-layout-footer .utilMenu li.home { padding-left:0; background:none; }
+.xans-layout-footer .utilMenu li a { color:#2e2e2e; }
+.xans-layout-footer .address { color:#6d6d6d; line-height:25px; text-align:center; }
+.xans-layout-footer .address span { padding:0 25px 0 0; }
+.xans-layout-footer .address span a { color:#757575; }
+.xans-layout-footer .copyright { position:absolute; left:204px; bottom:0; height:32px; color:#ededed; font-size:11px; line-height:32px; }
+.xans-layout-footer .pageTop { position:absolute; right:0; top:10px; }
+.xans-layout-footer .hosting { position:absolute; right:0; top:77px; }
+.footer-quick {min-width: 1415px;position:relative;background:#000000;border-bottom:1px solid #333;padding:13px 0px;}
+.footer-quick img {vertical-align:middle;}
+.bottom_right{
+    position:absolute;
+    right:38px;
+    top:9px;
+}
+
+.btn01, .btn02{padding: 2px 4px 2px 4px; text-align: center; font-weight: 600; line-height: 1.4em; box-shadow: 1px 1px 2px #333; border-radius: 15px;}
+.btn01{background-color: #008DFF; color: #333;}
+.btn02{background-color: #FF3E00; color: #fff;}
+.example01{padding: 5px; text-align: center; border: 1px solid #008DFF; position:relative; height:auto;}
+

@@ -1,0 +1,164 @@
+<!--@css(/css/swiper.min.css)-->
+
+<style>
+    .swiper5 {
+        z-index:5;
+        width: 100%;
+        position:relative;
+        top:0;
+        left:0;
+        margin-bottom:20px;
+    }
+    .swiper5 .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background:#fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        background-size:100%;
+        bottom:20px;
+    }
+    .swiper5 .swiper-slide {}
+    .swiper-slide img { }
+    /*.swiper5:after { content:""; clear:both; display:block; padding-bottom:10%; }*/
+    .swiper5 .swiper-slide:before {
+    content: "";
+    display: block; margin-bottom: 20px; padding-bottom: 62%}
+    
+    .swiper-pagination5{    bottom: 0px !important;    vertical-align: middle;}
+    .swiper-pagination5 .swiper-pagination-bullet{width:8px; height:8px; margin:0 4px !important; background:#000;}
+    .swiper-pagination5 .swiper-pagination-bullet-active{ width:10px; height:10px; background:#000; border-radius:20px;}
+    
+    .foto .text_info{}
+    .foto .text_info .title{color:#000; font-family:Calibrib; font-size:16px; margin-bottom:10px;}
+    .foto .text_info .title:after { content:""; clear:both; display:block; }
+
+    .foto .text_info .address{font-size:12px; color:#000;    line-height: 22px; margin-bottom:10px;}
+    .foto .text_info .address2{font-family: 'Noto Sans KR'; font-size:12px; color:#000;    line-height: 22px; margin-bottom:20px;}
+	.foto .text_info .map{float:left;}
+    .foto .text_info .map a{    font-family: Calibrib;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: #000;
+    width: 75px;
+    display: block;
+    padding: 2px 0;
+    margin-top: -1px;
+    margin-left: 10px;}
+    
+    .white_content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+        z-index:9;
+    background: rgba(0, 0, 0, 0.8);
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.white_content:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.white_content > div {
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	width: 90%;
+	height: 100%;
+	padding: 0px;
+	border: 0px solid orange;
+	overflow: auto;	
+    
+}
+    
+   .white_content .map{position:relative;}
+	.white_content .map:before {   content: "";   display: block;   padding-bottom: 80%;}
+
+	.white_content .map iframe{width:100%; height:100%;position:absolute;    top: 0;   left: 0;}
+    .white_content .close{font-family:Calibrib; font-size:16px; text-align:right; padding-bottom:10px;}
+    .white_content .close a{color:#fff;}
+    
+</style>
+<div class="white_content" id="open2">
+    <div>
+        <p class="close"><a href="#close">CLOSE</a></p>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.6449143005807!2d126.98067006541899!3d37.563428882063555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f1b863bb1f%3A0x74415d427f1d8fb9!2z64iI7Iqk7YCY7Ja0!5e0!3m2!1sko!2skr!4v1563420747197!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<!-- Swiper -->
+<div class="foto store0">
+    <div class="swiper-container swiper5">
+        
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background:url(/web/img/mo/store/store2_1.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+            <div class="swiper-slide" style="background:url(/web/img/mo/store/store2_2.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+            <div class="swiper-slide" style="background:url(/web/img/mo/store/store2_3.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+            <div class="swiper-slide" style="background:url(/web/img/mo/store/store2_4.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+            <div class="swiper-slide" style="background:url(/web/img/mo/store/store2_5.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+            <div class="swiper-slide" style="background:url(/web/img/mo/store/store2_6.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+            <div class="swiper-slide" style="background:url(/web/img/mo/store/store2_7.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>
+            <div class="swiper-slide" style="background:url(/web/img/mo/store/store2_8.jpg) no-repeat top center;background-size: cover;">&nbsp;</div>        
+        </div>
+		<!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination5"></div>
+    </div>
+    
+    <div class="text_fr">
+        <div class="text_info">
+            <div class="title">
+                <div style="float:left;">
+                LMC HONGDAE
+                </div>
+                <div class="map">
+                    <a href="#open2">MAP</a>
+                </div>
+            </div>
+            <div class="address">
+                27, Jandari-ro, Mapo-gu, Seoul, Korea<br>
+                Tel +82 2 336 7338<br>
+                Open Hours 11:00 - 21:00<br>
+                * TAX-FREE
+            </div>
+            <div class="address2">
+                서울시 마포구 잔다리로 27, LMC
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<!-- Swiper JS -->
+<script src="/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper5 = new Swiper('.swiper5', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: 5000,
+    autoplayDisableOnInteraction: false,
+    loop:true
+});
+</script>

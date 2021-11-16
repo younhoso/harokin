@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <title></title>
+    <!--@css(/css/common.css)-->
+    <!--@css(/css/custom.css)-->
+    <!--@js(/js/ui.js)-->
+</head>
+<body>
+<div id="contents" class="gMargin" module="myshop_AddrList">
+    <div class="mTitle">
+        <h2>배송주소록</h2>
+    </div>
+
+    <div class="mBoard colType1">
+        <table border="1">
+        <caption>배송주소록</caption>
+        <colgroup>
+            <col style="width:80px">
+            <col style="width:auto;">
+            <col style="width:60px">
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">배송지명</th>
+            <th scope="col">주소</th>
+            <th scope="col">적용</th>
+        </tr>
+        </thead>
+        <tbody class="{$nodata_display|display}">
+        <tr>
+            <td colspan="3">등록된 주소가 없습니다.</td>
+        </tr>
+        </tbody>
+        <tbody class="{$list_display|display}">
+        <tr>
+            <td>{$ma_rcv_title}</td>
+            <td>({$ma_rcv_zipcode}) {$ma_rcv_addr1} {$ma_rcv_addr2}</td>
+            <td class="btn"><a href="#none" class="tButton type2" onclick="{$action_order}"><span>적용</span></a></td>
+        </tr>
+        <tr>
+            <td>{$ma_rcv_title}</td>
+            <td>({$ma_rcv_zipcode}) {$ma_rcv_addr1} {$ma_rcv_addr2}</td>
+            <td class="btn"><a href="#none" class="tButton type2" onclick="{$action_order}"><span>적용</span></a></td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <div class="mButton">
+        <p>
+            <a href="#none" class="tSubmit1" onclick="javascript:self.close();"><span>닫기</span></a>
+        </p>
+    </div>
+</div>
+</body>
+</html>

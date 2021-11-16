@@ -1,0 +1,11 @@
+.xans-layout-footer {float:left; width:756px; }
+.xans-layout-footer .utilMenu { overflow:hidden; zoom:1; }
+.xans-layout-footer .utilMenu li { float:left; }
+.xans-layout-footer .utilMenu li a { color:#7a7a7a; font-size:11px; border-right:1px solid #7a7a7a; margin:0 10px 0 0; padding:0 9px 0 0;}
+.xans-layout-footer .inner {}
+.xans-layout-footer p#copy { color:#7a8998; }
+.xans-layout-footer p#address { padding:10px 0 15px; margin:11px 0 0; color:#999; line-height:17px; font-size:11px; border-top:3px solid #dedcdc; }
+.xans-layout-footer p#address span { padding:0 15px 0 0; }
+.xans-layout-footer p#address span a,
+.xans-layout-footer p#address span a:hover { color:#999;}
+.xans-layout-footer #top { position:absolute; right:0; top:0; }

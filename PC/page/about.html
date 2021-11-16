@@ -1,0 +1,107 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<style>
+    .about .line{ margin-bottom:95px;}
+    .about .line:after { content:""; clear:both; display:block; }
+    .about .line .left{width:15%; float:left;}
+    .about .line .left .title1{font-size:18px; font-family:Calibrib;}
+    .about .line .right{width:85%; float:left;}
+    .about .line .right .content{font-size:14px;    line-height: 24px;}
+    .about .line .right .content span{font-size:16px; font-family:Calibrib; color:#999;}
+    .about li{display:inline-block; vertical-align:middle;}
+    .about li:nth-child(1){width:65%;}
+	.about li:nth-child(2){text-align:left; width:30%;   }
+
+    .about .text .logo{font-size:25px; font-family:arial_b; margin-bottom:15px;}
+	.about .text .logo span{font-size:16px;     display: inline-block;  margin-left: 10px;}
+	.about .text .address{font-size:14px; font-family: 'Noto Sans KR';}
+	.about .text .title{font-size:18px; font-family:Calibrib; margin-top:35px; margin-bottom:15px;}
+	.about .text .con{font-size:14px; font-family: 'Noto Sans KR';    line-height: 24px;}
+	.about .text .map{position:relative;}
+	.about .text .map:before {   content: "";   display: block;   padding-bottom: 70%;}
+
+	.about .text .map iframe{width:100%; height:100%;position:absolute;    top: 0;   left: 0;}
+</style>
+
+    <div class="about" style="padding-top:5%;">
+        <div class="line">
+            <div class="left">
+                <div class="title1">
+                    ABOUT US
+                </div>
+            </div>
+            <div class="right">
+                <div class="content">
+                    LAYER.는 우리가 옷을 입거나 무언가를 우리 몸에 걸치는 모든 행위가 결국 우리 몸에 새로운 레이어 (층,겹) 를 입히는 행위와 동일하다는 뜻에서 연상되었습니다.<br>
+                    또한, 옷을 만드는 것에서 더 나아가 다양한 문화를 접목시켜 새로운 결과물을 만들고 공유하기 위해 노력하는 디자인 레이블입니다.<br><br>
+
+                    <span>LAYER. = PLANNING > DESIGN > PRODUCTION > QUALITY CONTROL > CUSTOMER SERVICE</span><br><br>
+
+                    기획부터 디자인, 국내생산, 제품 검수부터 고객서비스까지 모든걸 LAYER. 자체적으로 진행합니다.<br>
+                    시작부터 끝까지 모든 단계를 직접 컨트롤 함으로써 최상의 퀄리티를 지닌 결과물을 만들어 내고 유지합니다.
+                </div>
+            </div>
+        </div>
+        <div class="line" style="margin-bottom:0;">
+            <div class="left">
+                <div class="title1">
+                    CONTACT
+                </div>
+            </div>
+            <div class="right">
+               <div class="text">
+                    <ul>
+                        <li>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.1846315692696!2d127.03270831542171!3d37.527144779805276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca388aa4f354b%3A0x8b5c7425e74f730f!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsi6Dsgqzrj5kg7JWV6rWs7KCV66GcNDLquLggMjY!5e0!3m2!1sko!2skr!4v1563415362225!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <div style=" padding-left: 60px;">
+                                <div class="logo">
+                                    LAYER.<span>co., LTD.</span>
+                                </div>
+                                <div class="address">
+                                    서울특별시 강남구 압구정로 42길 26
+                                </div>
+
+                                <div class="title">
+                                    CONTACT
+                                </div>
+                                <div class="con">
+                                    keemkun@layercoltd.com
+                                </div>
+                                <div class="title">
+                                    ONLINE STORE
+                                </div>
+                                <div class="con">
+                                    02- 511 - 7288<br>
+                                    AM 10:00 - PM 17:00<br>
+                                    LUNCH<br>
+                                    AM : 11:30 - PM 12:30<br>
+                                    DAY OFF (주말 / 공휴일)
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+		
+	</div>
+
+
+
+<script type="text/javascript" src="/js/fullpage.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        //anchors: ['firstPage', 'secondPage', '3rdPage'],
+        
+        navigation: true,
+        navigationPosition: 'right',
+    });
+</script>
+
+

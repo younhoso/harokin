@@ -1,0 +1,75 @@
+.jounal{padding: 0;}
+.jounal .ov_text{
+    color:#fff;
+    font-size:20px;
+    font-family: Calibri; display:none;}
+
+.jounal .box1{background:#000;}
+.jounal .box1:after { content:""; clear:both; display:block; }
+.jounal .box1 .left{background: #000 url(/web/img/magazine/jounal/01.jpg) top center no-repeat; background-size:cover; width:60%; position:relative; float:left; cursor:pointer;}
+.jounal .box1 .left:before{content:"";display:block;padding-bottom:73.7%;}
+.jounal .box1 .left .ov_text{position:absolute;width:100%;text-align:center;  left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);}
+.jounal .box1 .left:hover .ov_text{display:block; opacity:1; }
+.jounal .box1 .left:hover:before{ background-color: rgba(0, 0, 0, 0.37);}
+
+.jounal .box1 .right{background:url(/web/img/magazine/jounal/02.jpg) top center no-repeat; background-position-y: 96%;background-size:cover; width:40%; position:relative; float:left; cursor:pointer;}
+.jounal .box1 .right:before{content:"";display:block;padding-bottom:110.56%;}
+.jounal .box1 .right .ov_text{position:absolute;width:100%; text-align:center; left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);}
+.jounal .box1 .right:hover .ov_text{display:block; opacity:1; }
+.jounal .box1 .right:hover:before{ background-color: rgba(0, 0, 0, 0.37);}
+
+
+.jounal .box2{background:#000;}
+.jounal .box2:after { content:""; clear:both; display:block; }
+.jounal .box2 .left{background: #000 url(/web/img/magazine/jounal/03.jpg) top center no-repeat;     background-position-y: 90%;background-size:cover; width:100%; position:relative; float:left; cursor:pointer;}
+.jounal .box2 .left:before{content:"";display:block;padding-bottom:29.7%;}
+.jounal .box2 .left .ov_text{position:absolute;width:100%;text-align:center;  left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);}
+.jounal .box2 .left:hover .ov_text{display:block; opacity:1; }
+.jounal .box2 .left:hover:before{ background-color: rgba(0, 0, 0, 0.37);}
+
+
+.jounal .box3{background:#000;}
+.jounal .box3:after { content:""; clear:both; display:block; }
+.jounal .box3 .left{background: #000 url(/web/img/magazine/jounal/04.jpg) top center no-repeat; background-size:cover; width:50%; position:relative; float:left; cursor:pointer;}
+.jounal .box3 .left:before{content:"";display:block;padding-bottom:73.7%;}
+.jounal .box3 .left .ov_text{position:absolute;width:100%;text-align:center;  left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);}
+.jounal .box3 .left:hover .ov_text{display:block; opacity:1; }
+.jounal .box3 .left:hover:before{ background-color: rgba(0, 0, 0, 0.37);}
+
+.jounal .box3 .right{background:url(/web/img/magazine/jounal/05.jpg) top center no-repeat;background-size:cover; width:50%; position:relative; float:left; cursor:pointer;}
+.jounal .box3 .right:before{content:"";display:block;padding-bottom:73.56%;}
+.jounal .box3 .right .ov_text{position:absolute;width:100%; text-align:center; left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);}
+.jounal .box3 .right:hover .ov_text{display:block; opacity:1; }
+.jounal .box3 .right:hover:before{ background-color: rgba(0, 0, 0, 0.37);}
+
+
+
+.jounal .box4{background:#000;}
+.jounal .box4:after { content:""; clear:both; display:block; }
+.jounal .box4 .left{background: #000 url(/web/img/magazine/jounal/06.jpg) top center no-repeat; background-size:cover; width:50%; position:relative; float:left; cursor:pointer;}
+.jounal .box4 .left:before{content:"";display:block;padding-bottom:73.7%;}
+.jounal .box4 .left .ov_text{position:absolute;width:100%;text-align:center;  left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);}
+.jounal .box4 .left:hover .ov_text{display:block; opacity:1; }
+.jounal .box4 .left:hover:before{ background-color: rgba(0, 0, 0, 0.37);}
+
+.jounal .box4 .right{background:url(/web/img/magazine/jounal/07.jpg) top center no-repeat;background-size:cover; width:50%; position:relative; float:left; cursor:pointer;}
+.jounal .box4 .right:before{content:"";display:block;padding-bottom:73.56%;}
+.jounal .box4 .right .ov_text{position:absolute;width:100%; text-align:center; left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);}
+.jounal .box4 .right:hover .ov_text{display:block; opacity:1; }
+.jounal .box4 .right:hover:before{ background-color: rgba(0, 0, 0, 0.37);}
+
+
+
+.jounal .box5{background:#000;}
+.jounal .box5:after { content:""; clear:both; display:block; }
+.jounal .box5 .left{background: #000 url(/web/img/magazine/jounal/08.jpg) top center no-repeat; background-size:cover; width:50%; position:relative; float:left; cursor:pointer;}
+.jounal .box5 .left:before{content:"";display:block;padding-bottom:73.7%;}
+.jounal .box5 .left .ov_text{position:absolute;width:100%;text-align:center;  left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);}
+.jounal .box5 .left:hover .ov_text{display:block; opacity:1; }
+.jounal .box5 .left:hover:before{ background-color: rgba(0, 0, 0, 0.37);}
+
+.jounal .box5 .right{background:url(/web/img/magazine/jounal/09.jpg) top center no-repeat;background-size:cover; width:50%; position:relative; float:left; cursor:pointer;}
+.jounal .box5 .right:before{content:"";display:block;padding-bottom:73.56%;}
+.jounal .box5 .right .ov_text{position:absolute;width:100%; text-align:center; left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);}
+.jounal .box5 .right:hover .ov_text{display:block; opacity:1; }
+.jounal .box5 .right:hover:before{ background-color: rgba(0, 0, 0, 0.37);}
