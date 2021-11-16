@@ -40,14 +40,14 @@ EC$(function() {
             }
         });
         if (iCheckPrdCnt > 0) {
-            var sTotalPrice = SHOP_PRICE_FORMAT.toShopPrice(iSumPrice);
+            var sTotalPrice = CAFE24.SHOP_PRICE_FORMAT.toShopPrice(iSumPrice);
             EC$('#checked_order_count').html('<strong>' + sprintf(__('%s'),iCheckPrdCnt) + '</strong>' +'개 상품선택').css('padding-bottom','5px');
             EC$('#checked_order_price').html('결제예정금액 <strong><em>'+sTotalPrice+'</em></strong>').css('padding-bottom','5px');
         } else {
             fixLayerPriceRest();
         }
 
-        var sPriceRef = SHOP_PRICE_FORMAT.shopPriceToSubPrice(iSumPrice);
+        var sPriceRef = CAFE24.SHOP_PRICE_FORMAT.shopPriceToSubPrice(iSumPrice);
         if (sPriceRef != '') {EC$('#checked_order_price').find('strong').append(sPriceRef);}
     };
 

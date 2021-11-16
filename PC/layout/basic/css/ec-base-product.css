@@ -141,7 +141,7 @@
 .ec-base-product .spec { margin:0px 0 0 0; }
 .ec-base-product .spec li { text-align:center;font-family:'Roboto';margin-top:0px;  }
 .ec-base-product .spec li span { text-decoration-color: red !important;}
-.ec-base-product .spec li:nth-child(1){margin-bottom:10px;}
+.ec-base-product .spec li:nth-child(1){}
 /*.ec-base-product .spec li:last-child{display:none;}*/
 
 .ec-base-product .spec li .title { font-weight:normal; vertical-align:top; }

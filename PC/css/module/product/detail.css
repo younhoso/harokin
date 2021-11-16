@@ -9,7 +9,7 @@
 .delete img {  }
 
 #btn_restock{display:none;}
-
+#span_product_price_text {text-decoration-color: red !important;}
 @media screen and (max-width: 1520px) {
     .xans-product-detail .infoArea .xans-product-option .ec-product-button.ec-product-preview li a{min-width:75 !important; }
 }

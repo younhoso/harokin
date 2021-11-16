@@ -24,8 +24,7 @@
                 </colgroup>
                 <tbody>
                     <tr class="emailCheck {$display_use_email|display}">
-                        <th scope="row">이메일 <span class="icoRequired">필수</span>
-</th>
+                        <th scope="row">이메일 <span class="icoRequired">필수</span></th>
                         <td>
                             {$etc_subparam_email} {$emailDuplCheck}{$login_id_type}
                             <ul class="ec-base-help">
@@ -35,24 +34,21 @@
                         </td>
                     </tr>
                     <tr class="idCheck {$display_use_id|display}">
-                        <th scope="row">아이디 <span class="icoRequired">필수</span>
-</th>
+                        <th scope="row">아이디 <span class="icoRequired">필수</span></th>
                         <td>
                             {$etc_subparam_member_id} {$idDuplCheck}
                             <p id="{$idMsg_id}" class="ec-base-help"></p>
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">비밀번호 <span class="icoRequired">필수</span>
-</th>
+                        <th scope="row">비밀번호 <span class="icoRequired">필수</span></th>
                         <td>
                             {$etc_subparam_passwd} {$etc_subparam_passwd_type}
                             <p class="ec-base-help">{$passwd_type_desc}</p>
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">비밀번호 <br>확인 <span class="icoRequired">필수</span>
-</th>
+                        <th scope="row">비밀번호 <br>확인 <span class="icoRequired">필수</span></th>
                         <td>
                             {$etc_subparam_user_passwd_confirm}
                             <p id="{$pwConfirmMsg_id}" class="ec-base-help txtWarn"></p>
