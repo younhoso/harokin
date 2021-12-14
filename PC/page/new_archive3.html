@@ -1,0 +1,72 @@
+<!--@layout(/layout/basic/main.html)-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+<!--@css(/css/fullpage.css)-->
+<!--@import(/import/archive_menu.html)-->
+<style>
+    .swiper1{width:100%;     padding: 0px 0 0 0;/*margin: 155px auto 95px;*/}
+    .swiper-container {
+        z-index:50;
+        /*width: 100%;*/  
+    }
+ 
+    
+     .swiper-slide:before{content:"";display:block;}
+    .swiper-slide img { width:100%; }
+    
+    .text_div .text{font-size:15px; font-family:'Roboto'; text-align:center;}
+    
+    .swiper-button-prev, .swiper-button-next{top:45%;}
+
+
+</style>
+<!-- Swiper -->
+        <div class="text_div">
+        <div class="swiper-container swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style=""><img src="/SkinImg/img/new_archive3/archive00.png" style="width:100%;"></div>
+                <div class="swiper-slide" style=""><img src="/SkinImg/img/new_archive3/archive01.png" style="width:100%;"></div>
+                <div class="swiper-slide" style=""><img src="/SkinImg/img/new_archive3/archive02.png" style="width:100%;"></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-black"></div>
+            <div class="swiper-button-prev swiper-button-black"></div>
+        </div>
+        </div>
+<!--@import(/import/footer.html)-->
+<style>
+	    .footer {
+    	    position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: 20px;
+            z-index: 99;
+        	padding:0px;
+    }
+</style>
+<!-- Swiper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<script type="text/javascript" src="/js/fullpage.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+   var swiper = new Swiper(".swiper1", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+       loop:true,
+      });
+</script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage'],
+        sectionsColor: ['#fff'],
+        autoScrolling: false,
+        css3: true,
+        fitToSection: false
+    });
+</script>
