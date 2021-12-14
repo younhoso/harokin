@@ -1,5 +1,6 @@
 @charset "utf-8";
-
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 @font-face {
 font-family:arial;
 src: url(/SkinImg/font/Arial-BoldMT.eot);

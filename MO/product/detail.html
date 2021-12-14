@@ -136,41 +136,7 @@
             </tbody>
         </table><!-- //참고 -->
     </div>
-	<div style="margin-top:20px;padding:0px 4px;display:none;">
-            <p style="font-size:13px;margin-bottom:15px;font-family:'Roboto';">RELATED PRODUCT</p>
-            <div module="product_relation" id="prdRelated" class="tabTheme mid-0">
-                <!--@css(/css/module/product/relation.css)-->
-                <!--
-                $count = 4
-                -->
-                <div class="relation">
-                    <div module="product_relationlist">
-                        <ul class="prdList  column4  wyImgSizeFlex">
-                            <li class="item">
-                                <div class="box">
-                                    <a href="{$link_product_detail}"><img src="{$img_medium}" alt="{$seo_alt_tag}" class="thumb" /></a>
-                                    <!--<p class="name"><a href="{$link_product_detail}">{$name}</a></p>
-                                    <ul>
-                                    <li><div class="{$product_sale_strike}">{$disp_product_price}</div></li>
-                                    <li class="{$sale_price_display|display}">{$disp_sale_price}</li>
-                                    </ul>-->
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="box">
-                                    <a href="{$link_product_detail}"><img src="{$img_medium}" alt="{$seo_alt_tag}" class="thumb" /></a>
-                                    <!--<p class="name"><a href="{$link_product_detail}">{$name}</a></p>
-                                    <ul>
-                                    <li><div class="{$product_sale_strike}">{$disp_product_price}</div></li>
-                                    <li class="{$sale_price_display|display}">{$disp_sale_price}</li>
-                                    </ul>-->
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    </div>
+
     <div module="coupon_productdetail" class="toggle eToggle">
         <div class="title">
             <h2>쿠폰 다운로드</h2>
@@ -401,8 +367,8 @@
         <div class="btnArea type2 {$action_display|display}" style="max-width:100%;text-align:left;padding: 0 10px;
     margin: 0;">
             
-            <a href="#none" class="btnSubmit {$buy_display|display}" onclick="{$action_buy}" style="margin-right:5px; line-height:45px;color:#000; background:#fff;text-align:center;font-size:12px;border-bottom:1px solid #000; border-left:1px solid #fff; border-top:1px solid #fff; border-right:1px solid #fff;font-weight:normal;font-family:'Roboto'; width:auto;"><span id="{$btn_buy_mobile_id}">BUY NOW</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span></a>
-            <button type="button" class="btnEm {$basket_display|display}" onclick="{$action_basket}" id="actionCart" style="margin-right:5px; line-height:45px;color:#000; background:#fff;text-align:center;font-size:12px;border-bottom:1px solid #000; border-left:1px solid #fff; border-top:1px solid #fff; border-right:1px solid #fff;font-weight:normal;font-family:'Roboto'; width:auto;">ADD TO CART</button>
+            <a href="#none" class="btnSubmit {$buy_display|display}" onclick="{$action_buy}" style="width:49%;display:inline-block;height:39px;border:1px solid #000;text-align:center;font-family:'Roboto';font-weight:500;font-size:14px;line-height:39px;background:none;color:#000;"><span id="{$btn_buy_mobile_id}">BUY NOW</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span></a>
+            <button type="button" class="btnEm {$basket_display|display}" onclick="{$action_basket}" id="actionCart" style="width:49%;display:inline-block;height:39px;border:1px solid #000;text-align:center;font-family:'Roboto';font-weight:500;font-size:14px;line-height:39px;background:none;color:#000;">ADD TO CART</button>
             <button type="button" class="btnEm {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWish" style="font-weight:500; line-height:41px; color:#000; font-size:16px; border:2px solid #000; background:none; height:45px; border-radius:0px;margin-top:15px;width:355px;display:none;">관심상품</button>
             
         </div>
@@ -411,7 +377,7 @@
             <!--button type="button" class="btnEm {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWishSoldout">관심상품</button-->
         </div>
         <!-- 네이버 체크아웃 구매 버튼  -->
-        <div>
+        <div style="margin:30px 0px;">
             <div id="NaverChk_Button" style="display:none;"></div>
             <div id="{$app_payment_button_box_id}"></div>
         </div>
@@ -420,8 +386,8 @@
     <!-- 하단 고정 버튼 액션 레이어 -->
     <div module="product_action" class="fixed" id="orderFixArea" style="background:#fff; padding:0;">
         <div class="btnArea type2 {$action_display|display}" style="padding: 0 0 10px 0;">
-            <a href="#none" class="btnSubmit {$buy_display|display}" onclick="{$action_buy}" style="margin-right:5px; line-height:25px;color:#000; background:#fff;text-align:center;font-size:12px;border-bottom:1px solid #000; border-left:1px solid #fff; border-top:1px solid #fff; border-right:1px solid #fff;font-weight:normal;font-family:'Roboto'; width:auto;height: 25px;"><span id="{$btn_buy_mobile_id}">BUY NOW</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span></a>
-            <button type="button" class="btnEm {$basket_display|display}" onclick="{$action_basket}" id="actionCart" style=" margin-right:5px; line-height:25px;color:#000; background:#fff;text-align:center;font-size:12px;border-bottom:1px solid #000; border-left:1px solid #fff; border-top:1px solid #fff; border-right:1px solid #fff;font-weight:normal;font-family:'Roboto'; width:auto;height: 25px;">ADD TO CART</button>
+            <a href="#none" class="btnSubmit {$buy_display|display}" onclick="{$action_buy}" style="width:49%;display:inline-block;height:39px;border:1px solid #000;text-align:center;font-family:'Roboto';font-weight:500;font-size:14px;line-height:39px;background:none;color:#000;"><span id="{$btn_buy_mobile_id}">BUY NOW</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span></a>
+            <button type="button" class="btnEm {$basket_display|display}" onclick="{$action_basket}" id="actionCart" style="width:49%;display:inline-block;height:39px;border:1px solid #000;text-align:center;font-family:'Roboto';font-weight:500;font-size:14px;line-height:39px;background:none;color:#000;">ADD TO CART</button>
             <!--button type="button" class="btnEm {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWish" style="font-weight:bold; line-height:38px; color:#fff; font-size:11px; border:1px solid #ccc; background:#ccc; height:40px; border-radius:0px;">WISH LIST</button-->
             
         </div>
@@ -624,7 +590,73 @@
         </div>
     </div>
 
+    
+    
 </div>
-
+<div style="margin-top:20px;padding:0px 10px 150px;">
+            <div module="product_relation" id="prdRelated" class="tabTheme mid-0">
+                <!--@css(/css/module/product/relation.css)-->
+                <!--
+                $count = 4
+                -->
+                <style>
+            	.box td span {font-size:11px !important;}
+                .box td span strong {font-weight:400;font-size:11px !important;}
+            </style>
+                <div class="relation" style="">
+                    <div module="product_relationlist">
+                        <ul class="prdList  column2  wyImgSizeFlex">
+                            <li class="item">
+                                <div class="box">
+                                    {$soldout_icon}
+                                    <a href="{$link_product_detail}" class="thumb_link"><img src="{$img_medium}" alt="{$seo_alt_tag}" class="thumb" /></a>
+                                    <div module="product_detaildesign">
+            <!--
+                출력 갯수 지정 변수, 없으면 설정된 전체가 나옵니다.
+                count = 10
+                -->
+            <table>
+                <tbody>
+                    <tr class="{$item_display|display}">
+                        <!--th scope="row">{$item_title}</th-->
+                        <td>{$item_content}</td>
+                    </tr>
+                    <tr class="{$item_display|display}">
+                        <!--th scope="row">{$item_title}</th-->
+                        <td>{$item_content}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="box">
+                                    <a href="{$link_product_detail}"><img src="{$img_medium}" alt="{$seo_alt_tag}" class="thumb" /></a>
+                                    <div module="product_detaildesign">
+            <!--
+                출력 갯수 지정 변수, 없으면 설정된 전체가 나옵니다.
+                count = 10
+                -->
+            <table>
+                <tbody>
+                    <tr class="{$item_display|display}">
+                        <!--th scope="row">{$item_title}</th-->
+                        <td>{$item_content}</td>
+                    </tr>
+                    <tr class="{$item_display|display}">
+                        <!--th scope="row">{$item_title}</th-->
+                        <td>{$item_content}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
 
 <!--@import(/apps/cafe24plusapp/marketing/recommend_install.html)-->

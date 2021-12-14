@@ -3,6 +3,5 @@
 .left-menu {position: absolute;top:26px;left:10px;z-index:1001;}
 .right-menu {position: absolute;top:21px;right:10px;z-index:1001;}
 .logo {width:100%;text-align:center;position: absolute;top:22px;left:0;z-index:1000;}
-.logo img{   height:30px;
-}
+.logo img{   height:30px; margin-top:5px;}
 .white_logo {display:none;}

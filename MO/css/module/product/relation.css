@@ -2,7 +2,7 @@
 .xans-product-relation:first-child h2 { border-top:0; }
 .xans-product-relation h2 { margin:0; padding:14px 14px 0; height:43px; font-size:13px; line-height:43px; }
 .xans-product-relation img { max-width:100%; }
-.xans-product-relation li { vertical-align:top; margin:0 0 14px;display:inline-block;width:24%; }
+.xans-product-relation li { vertical-align:top; margin:0 0 0px;display:inline-block;width:49.5%; }
 .xans-product-relation > ul > li > ul { display:table; table-layout:fixed; width:100%; font-size:0; line-height:0; box-sizing:border-box; padding:0 7px; }
 .xans-product-relation > ul > li > ul > li { position:relative; display:inline-block; padding:0; text-align:center; vertical-align:top; }
 .xans-product-relation .strike { font-weight:normal; text-decoration:line-through; }
@@ -20,3 +20,20 @@
 .xans-product-relation .grid3 li { width:33.333%; }
 .xans-product-relation .grid4 li { width:25%; }
 .xans-product-relation .grid5 li { width:20%; }
+.xans-product-relation .relation ul.prdList li.item .box > .icon_img + .thumb_link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.xans-product-relation .relation ul.prdList li.item .box > .icon_img + .thumb_link::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,.5) url(/web/upload/icon_201912051546215100.png) no-repeat center;
+}

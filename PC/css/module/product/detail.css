@@ -1,7 +1,7 @@
 .infoArea{ max-width:570px; width:100%; float:left; margin-top:0px;font-family:'Roboto';position: fixed;}
 
 .xans-product-detail { position:relative; margin:0 auto; padding:0px 0 0 0; max-width:100%;width:100%;}
-.xans-product-detail .detailArea { /*padding:0 0 0 335px;*/ margin:0 auto 100px;margin-top:0px;text-align:center; }
+.xans-product-detail .detailArea { /*padding:0 0 0 335px;*/ margin:0 auto 100px;margin-top:0px; display: flex;}
 .xans-product-detail .detailArea:after { content:""; display:block; clear:both; }
 
 .delete { z-index: 9999; margin: 0px 0px 0px 0; position: relative; right: -5px;
@@ -108,12 +108,12 @@
 /* 상품 옵션 */
 .xans-product-detail .infoArea .xans-product-option .value { color:#767479; word-break:break-all; display:none; }
 .xans-product-detail .infoArea .xans-product-option .value .ec-product-value { color:#363437; }
-.xans-product-detail .infoArea .xans-product-option .ec-product-button li { position:relative; overflow:hidden; font-size:12px; display:inline-block; margin:0 30px 3px 0; vertical-align:top; border:none; background:#fff; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; *display:inline; *zoom:1; }
+.xans-product-detail .infoArea .xans-product-option .ec-product-button li { position:relative; overflow:hidden; font-size:12px; display:inline-block; margin:0 10px 3px 0;width:30px;height:30px;border:1px solid #000;line-height:30px; vertical-align:top; background:#fff; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; *display:inline; *zoom:1; }
 .xans-product-detail .infoArea .xans-product-option .ec-product-button li:last-child { margin-right:0; }
 .xans-product-detail .infoArea .xans-product-option .ec-product-button li a { display:block; text-align:center; text-decoration:none; word-break:break-all; }
 .xans-product-detail .infoArea .xans-product-option .ec-product-button li a span { display:inline-block;-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 .xans-product-detail .infoArea .xans-product-option .ec-product-button.ec-product-preview li { padding:0px; border:1px solid #fff;    margin: 0;margin-right:4px;}
-.xans-product-detail .infoArea .xans-product-option .ec-product-button.ec-product-preview li a { min-width:21px; width:21px; height:21px; margin:0; }
+.xans-product-detail .infoArea .xans-product-option .ec-product-button.ec-product-preview li a { min-width:30px; width:30px; height:30px;border:1px solid #000;  margin:0; }
 .xans-product-detail .infoArea .xans-product-option .ec-product-button.ec-product-preview li a img { max-width:100%; max-height:100%; }
 .xans-product-detail .infoArea .xans-product-option .ec-product-button.ec-product-preview li a span { overflow:hidden; line-height:0; font-size:0; padding:0; text-indent:120%; white-space:nowrap; }
 .xans-product-detail .infoArea .xans-product-option .ec-product-button.ec-product-preview .ec-product-soldout span,
@@ -274,10 +274,10 @@
 
 /*이미지뷰::Philip Kim(추가)*/
 #small_image_list{display:none;}
-#big_image_list{    max-width: 935px;    width: 100%;margin:0 auto 0px;}
+#big_image_list{    max-width: 1000px;    width: 100%;margin:0 auto 0px;}
 #big_image_list .slides{}
 #big_image_list #zoomMouseGiude{display:none !important;}
-#big_image_list .slides li img{width:100%;max-width: 700px;display:inline-block;}
+#big_image_list .slides li img{width:100%;max-width: 1000px;display:inline-block;}
 
 #big_image_list .slides.slick-dotted.slick-slider{margin-bottom: 40px;}
 #big_image_list .slick-prev,

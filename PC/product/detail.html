@@ -26,7 +26,7 @@ window.jQuery1_11_2 = jQuery.noConflict(true);
     <!--@css(/css/module/product/detail.css)-->
 
     <div class="detailArea">
-            	<div style="display:inline-block;vertical-align: top; width:49%;">
+            	<div style="display:inline-block;vertical-align: top; width:55%;max-width:1000px;padding-top:100px;">
             	
             		<!--/*이미지뷰::Philip Kim(추가)*/-->
 					<div module="product_image">
@@ -49,9 +49,9 @@ window.jQuery1_11_2 = jQuery.noConflict(true);
 					    </div>
 					</div>
                 </div>
-                <div style="display:inline-block;padding-top:100px;vertical-align: top;text-align:left; width:49%;">
+                <div style="display:inline-block;padding-top:100px;vertical-align: top;text-align:left; width:45%;flex-grow: 1;">
                     	<!-- 상세정보 내역 -->
-                    <div class="infoArea" style="padding-left:110px;">
+                    <div class="infoArea" style="padding-left:110px;position: sticky;top: 150px;">
                         <div class="promotion" style="">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
                         <div module="product_detaildesign">
                             <!--
@@ -318,41 +318,7 @@ window.jQuery1_11_2 = jQuery.noConflict(true);
                                 </div>
                             </div>
                         </div><!-- //참고 -->
-						<div style="margin-top:15px; display:none;">
-                            <p style="font-size:13px;font-weight:400;font-family:'Roboto';margin-bottom:15px;">RELATED PRODUCT</p>
-                            <div module="product_relation" id="prdRelated" class="tabTheme mid-0">
-                            <!--@css(/css/module/product/relation.css)-->
-                            <!--
-                                $count = 4
-                            -->
-                            <div class="relation">
-                                <div module="product_relationlist" style="height: 151px;overflow: hidden;">
-                                    <ul class="prdList  column4  wyImgSizeFlex">
-                                        <li class="item">
-                                            <div class="box">
-                                                <a href="{$link_product_detail}"><img src="{$img_medium}" alt="{$seo_alt_tag}" class="thumb" /></a>
-                                                <!--<p class="name"><a href="{$link_product_detail}">{$name}</a></p>
-                                                <ul>
-                                                    <li><div class="{$product_sale_strike}">{$disp_product_price}</div></li>
-                                                    <li class="{$sale_price_display|display}">{$disp_sale_price}</li>
-                                                </ul>-->
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="box">
-                                                <a href="{$link_product_detail}"><img src="{$img_medium}" alt="{$seo_alt_tag}" class="thumb" /></a>
-                                                <!--<p class="name"><a href="{$link_product_detail}">{$name}</a></p>
-                                                <ul>
-                                                    <li><div class="{$product_sale_strike}">{$disp_product_price}</div></li>
-                                                    <li class="{$sale_price_display|display}">{$disp_sale_price}</li>
-                                                </ul>-->
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
+						
                         <!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
                         <div id="{$total.total_id}" class="{$total.total_display|display}">
                             <!--p class="ec-base-help txtWarn txt11 {$single_item_display|display}"> 수량을 선택해주세요.</p>
@@ -426,12 +392,12 @@ window.jQuery1_11_2 = jQuery.noConflict(true);
                         <div module="product_action" style="margin:10px 0px 0px;">
                             <div class="ec-base-button" style="text-align:left;">
                                 
-                                <a href="#none" class="first {$buy_display|display}" onclick="{$action_buy}" style="display:inline-block;border-bottom:1px solid #000;line-height:30px;text-align:center;font-size:16px; margin:0 32px 0 0;     font-weight: bold;">BUY NOW<!--img src="https://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_reserve.gif" alt="예약주문" class="{$btn_reserve_class|display}" id="{$btn_reserve_id}" /--></a>
-                                <a href="#none" class="{$basket_display|display}" onclick="{$action_basket}" style="display:inline-block;border-bottom:1px solid #000;line-height:30px;text-align:center;font-size:16px;    font-weight: bold;">ADD TO CART</a>
-                                <span class="{$soldout_display|display}" style="width: 100%;  border: 1px solid #000; background:#000; color:#fff; display: block;  font-family: Calibrib;font-size: 16px; padding: 8px 0;">SOLD OUT</span>
+                                <a href="#none" class="first {$buy_display|display}" onclick="{$action_buy}" style="display:inline-block;width:198px;height:39px;line-height:39px;border:1px solid #000;font-weight:500;font-family:'Roboto';font-size:14px;text-align:center;margin-right:6px;">BUY NOW<!--img src="https://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_reserve.gif" alt="예약주문" class="{$btn_reserve_class|display}" id="{$btn_reserve_id}" /--></a>
+                                <a href="#none" class="{$basket_display|display}" onclick="{$action_basket}" style="display:inline-block;width:198px;height:39px;line-height:39px;border:1px solid #000;font-weight:500;font-family:'Roboto';font-size:14px;text-align:center;">ADD TO CART</a>
+                                <span class="{$soldout_display|display}" style="display:inline-block;width:198px;height:39px;line-height:39px;border:1px solid #000;font-weight:500;background:#000;color:#fff;font-family:'Roboto';font-size:14px;text-align:center;">SOLD OUT</span>
                                 <a href="#none" onclick="{$action_wishlist}" style="width:524px;height:46px;border:2px solid #000;text-align:center;display:block;margin-top:15px;line-height:46px;font-size:18px;font-weight:500;color:#000;display:none;" class="{$wishlist_display|display}">관심상품</a>
                             <!-- 네이버 체크아웃 구매 버튼 -->
-                            <div id="NaverChk_Button"></div>
+                            <div id="NaverChk_Button" style="float:left;"></div>
                             <div id="{$app_payment_button_box_id}"></div>
                             </div>
 
@@ -690,7 +656,72 @@ window.jQuery1_11_2 = jQuery.noConflict(true);
             </div>
         </div>
     </div>
-     
+    
 </div>
-
+<div style="padding:0px 30px;">
+        <div module="product_relation" id="prdRelated" class="tabTheme mid-0">
+            <style>
+            	.box td span {font-size:13px !important;}
+            </style>
+            <!--@css(/css/module/product/relation.css)-->
+            <!--
+$count = 4
+-->
+            <div class="relation">
+                <div module="product_relationlist" style="">
+                    <ul class="prdList  column4  wyImgSizeFlex">
+                        <li class="item">
+                            <div class="box">
+                                 {$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}
+                                <a href="{$link_product_detail}" class="thumb_link"><img src="{$img_medium}" alt="{$seo_alt_tag}" class="thumb" /></a>
+                                <div module="product_detaildesign">
+                                    
+                                    <!--
+출력 갯수 지정 변수, 없으면 설정된 전체가 나옵니다.
+count = 10
+-->
+                                    <table>
+                                        <tbody>
+                                            <tr class="{$item_display|display}">
+                                                <!--th scope="row">{$item_title}</th-->
+                                                <td style="text-align:left;">{$item_content}</td>
+                                            </tr>
+                                            <tr class="{$item_display|display}">
+                                                <!--th scope="row">{$item_title}</th-->
+                                                <td style="text-align:left;">{$item_content}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="box">
+                                  {$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}
+                                <a href="{$link_product_detail}" class="thumb_link"><img src="{$img_medium}" alt="{$seo_alt_tag}" class="thumb" /></a>
+                                <div module="product_detaildesign">
+                            <!--
+                            출력 갯수 지정 변수, 없으면 설정된 전체가 나옵니다.
+                            count = 10
+                            -->
+                            <table>
+                                <tbody>
+                                    <tr class="{$item_display|display}">
+                                        <!--th scope="row">{$item_title}</th-->
+                                        <td style="text-align:left;">{$item_content}</td>
+                                    </tr>
+                                    <tr class="{$item_display|display}">
+                                        <!--th scope="row">{$item_title}</th-->
+                                        <td style="text-align:left;">{$item_content}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 <!--@define(cmc_log)-->

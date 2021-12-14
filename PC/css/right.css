@@ -3,7 +3,7 @@
 .right_f .in{
     position: absolute;
     right: 30px;
-    top: -8px;
+    top: 1px;
     bottom: 0px;
     z-index: 210;
 display:inline-table;}

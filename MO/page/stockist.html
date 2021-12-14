@@ -1,57 +1,66 @@
-<!--@layout(/layout/basic/main.html)-->
+<!--@layout(/layout/basic/layout.html)-->
 <style>
-    #main {width:100%;height:100%;}
-    #contents {width:100%;max-width:100%;}
-	.frame{}
-    .frame .text{/*position:absolute;*/ color:#000; font-size:13px; line-height: 23px; text-align:center; margin:25px 0 0 0}
-    .frame .box1 .foto{width:50%; margin:0px auto; position:relative; background:url(/SkinImg/img/img_stockist1.jpg) top center; background-size:cover;}
-    .frame .box1 .foto:before {
-        content: "";
-        display: block;
-        padding-bottom: 157%;
-    }
-    .frame .box2 .foto{width:50%; margin:60px auto 0; position:relative; background:url(/SkinImg/img/img_stockist2.jpg) top center; background-size:cover;}
-    .frame .box2 .foto:before {
-        content: "";
-        display: block;
-        padding-bottom: 25%;
-    }
+	.stockist {width:95%;margin:0 auto;}
+    .stockist h1 {font-family:'Roboto';font-size:15px;font-weight:500;padding-bottom:15px;border-bottom:1px solid #000;margin-bottom:30px;}
+    
+    table {width:100%;}
+    table tr td {font-family:'Roboto';font-size:9px;font-weight:400;    vertical-align: middle;padding:10px 0px;}
+    table tr td img {vertical-align: middle;margin-right:5px;width:20px;}
+    .link_btn {border-bottom:1px solid #000;text-align:center;display:inline-block;font-size:9px;margin-right:5px;}
+    .ko {font-family:'Noto Sans KR';}
 </style>
-<!--@css(/css/fullpage.css)-->
+<div class="stockist" style="margin-top:50px;">
+    <h1>ONLINE STORE</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="5">HAROKIN OFFICIAL</td>
 
-<div id="fullpage">
-    <div class="section slideBox " id="section0" >
-        <div style="    padding: 50px 0 0 0;">
-            <div class="frame">
-                <div class="box1">
-                    <div class="foto"></div>
-                    <div class="text">
-                       BOONTHESHOP / CASE STUDY<br/>
-						<a href="https://www.google.com/maps?q=%EC%84%9C%EC%9A%B8+%EA%B0%95%EB%82%A8%EA%B5%AC+%EC%95%95%EA%B5%AC%EC%A0%95%EB%A1%9C+60%EA%B8%B821+N%EA%B4%80+1%EC%B8%B5&iflsig=AINFCbYAAAAAYIaDhnYpLuutc8vgtpn7eEF7Hl559G7-&gs_lcp=Cgdnd3Mtd2l6EANQiANYiANgqARoAHAAeACAAZgBiAGYAZIBAzAuMZgBAKABAqABAaoBB2d3cy13aXo&uact=5&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjS5pTvupvwAhVayIsBHfWwAIEQ_AUoAXoECAEQAw" target="_blank">서울 강남구 압구정로 60길21 N관 1층</a>
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="foto"></div>
-                    <div class="text">
-                       
-						<a href="https://www.29cm.co.kr/" target="_blank">www.29cm.co.kr</a>
-                    </div>
-                </div>
-            </div>
-         </div>
-    </div>
+            </tr>
+            <tr>
+                <td colspan="3"><a href="https://harokin.net/" target="_blank">www.harokin.net</a></td>
+                <td>+82 2 541 5686</td>
+                <td style="text-align:right;"><a href="https://harokin.net/" class="link_btn" target="_blank">View more</a></td>
+            </tr>
+            <tr>
+                <td colspan="5">MUSINSA</td>
+
+            </tr>
+            <tr>
+                <td colspan="3"><a href="https://www.musinsa.com/brands/harokin" target="_blank">www.musinsa.com</a></td>
+                <td>+82 1544 7199</td>
+                <td style="text-align:right;"><a href="https://www.musinsa.com/brands/harokin" class="link_btn" target="_blank">View more</a></td>
+            </tr>
+            <tr>
+                <td colspan="5">29CM</td>
+
+            </tr>
+            <tr>
+                <td colspan="3"><a href="https://shop.29cm.co.kr/brand/13421" target="_blank">www.29cm.co.kr</a></td>
+                <td>+82 1644 0560</td>
+                <td style="text-align:right;"><a href="https://shop.29cm.co.kr/brand/13421" class="link_btn" target="_blank">View more</a></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
-
-
-<script type="text/javascript" src="/js/fullpage.js"></script>
-
-<script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        anchors: ['firstPage'],
-        sectionsColor: ['#fff'],
-        autoScrolling: false,
-        css3: true,
-        fitToSection: false
-    });
-</script>
+<div class="stockist" style="margin-top:30px;">
+	<h1>OFFLINE STORE</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="5">NICEWEATHER</td>
+        </tr>
+            <tr>
+                <td colspan="3"><span class="ko">경기도 성남시 분당구 황새울로360번길 42, 1층 나이스웨더</span></td>
+                <td style="">+31 8023 2150</td>
+                <td style="text-align:right;"><a href="https://map.naver.com/v5/search/%EB%82%98%EC%9D%B4%EC%8A%A4%EC%9B%A8%EB%8D%94/place/1453565934?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14150411.4921735,4492913.7739148,15,0,0,0,dh" class="link_btn" target="_blank">Location</a></td>
+            </tr>
+            <tr>
+                <td colspan="3"><span class="ko">서울특별시 영등포구 여의대로 108, 더현대 서울 지하 2층 나이스웨더</span></td>
+                <td style="">+2 3277 0845</td>
+                <td style="text-align:right;"><a href="https://map.naver.com/v5/search/%EB%82%98%EC%9D%B4%EC%8A%A4%EC%9B%A8%EB%8D%94/place/1892129285?placePath=%3Fentry%253Dpll&c=14128662.3130764,4512668.5440516,15,0,0,0,dh" class="link_btn" target="_blank">Location</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

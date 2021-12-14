@@ -84,15 +84,15 @@
         $basket_result = /product/add_basket.html
         $basket_option = /product/basket_option.html
     -->
-    <ul class="prdList grid2">
+    <ul class="prdList grid1">
         <li>
             <div class="thumbnail">
                 <a href="/product/detail.html{$param}"><img src="{$image_medium}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                 <span class="wish">{$list_wish_icon}</span>
-                <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+                <div class="icon"> {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
             </div>
             <div class="description">
-                <strong class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></strong>
+                <span><strong class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></strong>{$soldout_icon}</span>
                 <ul class="spec">
                     
                     <li class="simple {$simple_desc|display}">{$simple_desc}</li>
@@ -139,7 +139,7 @@
                     <li class="simple {$simple_desc|display}">{$simple_desc}</li>
                     <li class="summary {$summary_desc|display}" style="display:none; font-size:12px; color:#666; font-weight:normal; margin-top:10px;">{$summary_desc}</li>
                     <li class="price {$product_sale_strike}">{$disp_product_price}<span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></li>
-                    <li class="price sale {$product_sale_display|display}" style="display:none;">{$prd_price_sale}</li>
+                    <li class="price sale {$product_sale_display|display}">{$prd_price_sale}</li>
                     
                     <li class="color {$colorchip_display|display}">
                         <div module="product_Colorchip">

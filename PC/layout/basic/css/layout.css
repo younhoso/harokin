@@ -12,11 +12,11 @@
 .event_tab li a:hover {background:#fff;color:#111;border:1px solid #999;}
 .right_icon {position: fixed;right: 26px;bottom: 25px;}
 .head{    position: fixed;
-    top:45px;
+    top:35px;
     z-index: 9999999;
-    text-align: center;
+    
     width: 100%;}
-.head .logo{margin: -5px 0 0px 0px;}
+.head .logo{margin:0;padding-left:30px;}
 .head .logo img {position: relative;z-index: 999;    height: 40px;}
 .head .logo .white_logo {display:none;}
 .bt_line{    border: 1px solid #ddd;
