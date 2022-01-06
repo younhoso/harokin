@@ -9,13 +9,25 @@
         padding-bottom: 64%;
     }*/
     .frame .text{/*position:absolute;*/ color:#000; font-size:13px; left:5%; bottom:5%;line-height: 23px; text-align:center;}
-    .philosophy {width: 100%;margin-top: 50px;max-width:734px;}
+    .inner {
+        position: absolute;
+        text-align: left;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .inner .philosophy {width: 100%;margin-top: 150px;max-width:734px;}
+    .inner .philosophy2 {margin-top: 70px;}
 </style>
 <!--@css(/css/fullpage.css)-->
 
-<div id="fullpage">
+<div id="fullpage" aria-label="harokin shop">
     <div class="section slideBox " id="section0" >
-        <img class="philosophy" src="/SkinImg/img/about_img.png" alt="HAROKIN">
+        <div class="inner">
+            <div><img class="philosophy" src="/SkinImg/img/about_img1.png" alt="HAROKIN 스토리"></div>
+            <div><img class="philosophy2" src="/SkinImg/img/about_img2.png" alt="HAROKIN"></div>
+        </div>
     </div>
 </div>
 

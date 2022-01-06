@@ -1,8 +1,1 @@
-/* File start */
-EC$('.wrap').on('keyup', 'textarea', function () {
-    EC$(this).height(0);
-    EC$(this).height(this.scrollHeight);
-});
-EC$('.wrap').find('textarea').keyup();
-
-/* File end */
+/home/12r/program/resource/protected/order/ec_orderform/pc/ko_KR/js/auto_resize.js
